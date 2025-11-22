@@ -48,7 +48,7 @@ export function HeroSection() {
                         song={song} 
                         playlist={albumData.songs} 
                         key={song.id} 
-                        isLocked={song.id !== 1}
+                        isLocked={![1, 2, 8].includes(song.id)}
                     />
                 ))}
             </CardContent>
