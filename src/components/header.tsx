@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -15,10 +14,12 @@ const navLinks = [
 ];
 
 const iconLinks = [
-  { href: '#', icon: Mail, label: 'Email' },
+  { href: `mailto:gwen@evecount.com?subject=${encodeURIComponent(
+    `Inquiry from 3AMΣ Website`
+  )}`, icon: Mail, label: 'Email' },
   { href: '#', icon: Search, label: 'Search' },
-  { href: '#', icon: User, label: 'Account' },
-  { href: '#', icon: ShoppingCart, label: 'Cart' },
+  { href: '#', label: 'Account', icon: User },
+  { href: '#', label: 'Cart', icon: ShoppingCart },
 ];
 
 export function Header() {
