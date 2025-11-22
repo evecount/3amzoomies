@@ -1,19 +1,31 @@
 
+'use client';
+
 import Image from 'next/image';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { ArrowRight } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { VinylRecord } from '@/components/vinyl-record';
+import { WaitlistDialog } from '@/components/waitlist-dialog';
+import { useState } from 'react';
 
 export default function MerchPage() {
     const tShirtImage = PlaceHolderImages.find(img => img.id === 'merch-tshirt');
     const cupImage = PlaceHolderImages.find(img => img.id === 'merch-cup');
     const pillowImage = PlaceHolderImages.find(img => img.id === 'merch-pillow-case');
+    const [dialogOpen, setDialogOpen] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState('');
+
+    const handleJoinWaitlist = (productTitle: string) => {
+        setSelectedProduct(productTitle);
+        setDialogOpen(true);
+    }
 
     return (
+        <>
         <div className="flex flex-col min-h-screen bg-background text-foreground">
             <Header />
             <main className="flex-grow container mx-auto px-4 py-12 md:py-24">
@@ -49,8 +61,8 @@ export default function MerchPage() {
                             </p>
                         </CardContent>
                          <CardContent>
-                            <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
-                                Add to Cart <ArrowRight className="ml-2 h-5 w-5" />
+                            <Button onClick={() => handleJoinWaitlist('"The Observer" Official Tee')} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                Join The Waitlist <Mail className="ml-2 h-5 w-5" />
                             </Button>
                         </CardContent>
                     </Card>
@@ -72,8 +84,8 @@ export default function MerchPage() {
                             </p>
                         </CardContent>
                         <CardContent>
-                            <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
-                                Add to Cart <ArrowRight className="ml-2 h-5 w-5" />
+                            <Button onClick={() => handleJoinWaitlist('"Midnight Murmurs" Vinyl')} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                Join The Waitlist <Mail className="ml-2 h-5 w-5" />
                             </Button>
                         </CardContent>
                     </Card>
@@ -103,8 +115,8 @@ export default function MerchPage() {
                             </p>
                         </CardContent>
                          <CardContent>
-                            <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
-                                Add to Cart <ArrowRight className="ml-2 h-5 w-5" />
+                            <Button onClick={() => handleJoinWaitlist('"The Judgmental Mug"')} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                Join The Waitlist <Mail className="ml-2 h-5 w-5" />
                             </Button>
                         </CardContent>
                     </Card>
@@ -134,8 +146,8 @@ export default function MerchPage() {
                             </p>
                         </CardContent>
                          <CardContent>
-                            <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
-                                Add to Cart <ArrowRight className="ml-2 h-5 w-5" />
+                            <Button onClick={() => handleJoinWaitlist('"The Usurped Pillow Case"')} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                Join The Waitlist <Mail className="ml-2 h-5 w-5" />
                             </Button>
                         </CardContent>
                     </Card>
@@ -144,5 +156,11 @@ export default function MerchPage() {
             </main>
             <Footer />
         </div>
+        <WaitlistDialog 
+            isOpen={dialogOpen}
+            onOpenChange={setDialogOpen}
+            productTitle={selectedProduct}
+        />
+        </>
     );
 }
