@@ -1,9 +1,16 @@
+
 'use client';
 
 import Link from 'next/link';
 import { Mail, Search, User, ShoppingCart, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const navLinks = [
   { href: '/album', label: 'SONG LIST' },
@@ -14,13 +21,16 @@ const navLinks = [
 ];
 
 const iconLinks = [
-  { href: `mailto:gwen@evecount.com?subject=${encodeURIComponent(
-    `Inquiry from 3AMΣ Website`
-  )}`, icon: Mail, label: 'Email' },
-  { href: '#', icon: Search, label: 'Search' },
-  { href: '#', label: 'Account', icon: User },
-  { href: '#', label: 'Cart', icon: ShoppingCart },
+  { 
+    href: `mailto:gwen@evecount.com?subject=${encodeURIComponent(
+      `Inquiry from 3AMΣ Website`
+    )}`, 
+    icon: Mail, 
+    label: 'Email' 
+  },
 ];
+
+const disabledIconTooltip = "This website is a satirical work of art. However, if enough people join the waitlist, we'll actually make the merch. No, really.";
 
 export function Header() {
   return (
@@ -71,15 +81,47 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <nav className="flex items-center space-x-2">
-            {iconLinks.map((link) => (
-              <Link key={link.label} href={link.href}>
-                <Button variant="ghost" size="icon" aria-label={link.label}>
-                  <link.icon className="h-5 w-5" />
-                </Button>
-              </Link>
-            ))}
-          </nav>
+          <TooltipProvider>
+            <nav className="flex items-center space-x-2">
+              {iconLinks.map((link) => (
+                <Link key={link.label} href={link.href}>
+                  <Button variant="ghost" size="icon" aria-label={link.label}>
+                    <link.icon className="h-5 w-5" />
+                  </Button>
+                </Link>
+              ))}
+               <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button variant="ghost" size="icon" aria-label="Search" disabled className="text-muted-foreground/50 cursor-not-allowed">
+                    <Search className="h-5 w-5" />
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{disabledIconTooltip}</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button variant="ghost" size="icon" aria-label="Account" disabled className="text-muted-foreground/50 cursor-not-allowed">
+                    <User className="h-5 w-5" />
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{disabledIconTooltip}</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                   <Button variant="ghost" size="icon" aria-label="Cart" disabled className="text-muted-foreground/50 cursor-not-allowed">
+                    <ShoppingCart className="h-5 w-5" />
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{disabledIconTooltip}</p>
+                </TooltipContent>
+              </Tooltip>
+            </nav>
+          </TooltipProvider>
         </div>
       </div>
     </header>
