@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useRouter } from 'next/navigation';
@@ -8,6 +9,7 @@ import { usePurchase } from '@/hooks/use-purchase';
 import { useToast } from '@/hooks/use-toast';
 import { ArrowRight } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
+import { AlbumArtDisplay } from './album-art-display';
 
 export function HeroSection() {
   const router = useRouter();
@@ -27,16 +29,7 @@ export function HeroSection() {
     <section className="container mx-auto px-4 py-12 md:py-24">
       <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
         <div className="group w-full max-w-md mx-auto md:sticky md:top-24">
-            <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
-                <video
-                    src="/public/video/Cat_Licks_Paw_Looks_Up.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="object-cover w-full h-full"
-                />
-            </div>
+            <AlbumArtDisplay />
         </div>
 
         <div className="flex flex-col items-start text-left">

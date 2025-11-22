@@ -46,7 +46,7 @@ export function VinylRecord({ className }: VinylRecordProps) {
           transform="rotate(90 200,200)"
           className="uppercase"
         >
-          3AMZ
+          3AMΣ
         </text>
         <circle cx="200" cy="200" r="10" fill="hsl(var(--background))" />
       </svg>
