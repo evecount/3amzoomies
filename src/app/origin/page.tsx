@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { CheckCircle2, Music, Users, Mic, Cpu } from 'lucide-react';
 
 
 function InfoBox() {
@@ -35,6 +36,19 @@ function InfoBox() {
     );
 }
 
+const influences = [
+    { title: "Vocal Style", description: "Male vocals in a light lyric tenor range, with prominent use of falsetto." },
+    { title: "Genre Fusion", description: "A seamless blend of alternative R&B, Pop, Funk, Hip-Hop, and Electronic music." },
+    { title: "Thematic Depth", description: "Exploration of introspection, melancholia, nihilism, addiction, and complex emotional states, recontextualized through the cat's perspective." },
+    { title: "Conceptual Narratives", description: "The album adopts a 'linear time format,' guiding the listener through a sequential progression of a single day/night cycle, akin to the narrative structure of Dawn FM." },
+    { title: "Atmospheric Production", description: "Heavy use of dark, pulsing synth basslines, shimmering pads, crisp drum machine beats, and atmospheric soundscapes." }
+]
+
+const personnel = [
+    { name: "3AMΣ", role: "Lead Vocals, Songwriting, Concept", icon: Mic },
+    { name: "Gemini AI", role: "Co-Songwriting, Narrative", icon: Cpu },
+    { name: "Suno AI", role: "Instrumentals, Vocal Performance", icon: Music },
+]
 
 export default function OriginPage() {
   return (
@@ -62,19 +76,24 @@ export default function OriginPage() {
                             <p>
                                 The creative process was highly collaborative, utilizing advanced AI tools (specifically, Gemini) to co-write lyrics and shape the album's narrative and sonic direction. This allowed for rapid iteration, thematic consistency, and the precise alignment of lyrical content with the intended musical style. The project aimed to create a coherent "concept album" that could stand alongside works by artists known for their intricate storytelling and thematic development.
                             </p>
+                        </article>
+                        
+                        <div className="my-16">
+                             <h2 className="font-headline text-3xl uppercase text-primary/90 not-prose mb-6">Artistic Influences & Style</h2>
+                             <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 not-prose font-serif">
+                                {influences.map(item => (
+                                    <div key={item.title} className="flex items-start gap-4">
+                                        <CheckCircle2 className="w-5 h-5 text-primary/70 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-bold text-stone-800">{item.title}</h4>
+                                            <p className="text-stone-600">{item.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
 
-                            <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Artistic Influences and Style</h2>
-                            <p>
-                                The primary artistic influence for _Midnight Murmurs_ is <strong>The Weeknd (Abel Tesfaye)</strong>, particularly his *After Hours* and *Dawn FM* eras. This influence is evident in:
-                            </p>
-                            <ul>
-                                <li><strong>Vocal Style:</strong> Male vocals in a light lyric tenor range, with prominent use of falsetto.</li>
-                                <li><strong>Genre Fusion:</strong> A seamless blend of alternative R&B, Pop, Funk, Hip-Hop, and Electronic music.</li>
-                                <li><strong>Thematic Depth:</strong> Exploration of introspection, melancholia, nihilism, addiction, and complex emotional states, recontextualized through the cat's perspective.</li>
-                                <li><strong>Conceptual Narratives:</strong> The album adopts a "linear time format," guiding the listener through a sequential progression of a single day/night cycle, akin to the narrative structure of *Dawn FM*.</li>
-                                <li><strong>Atmospheric Production:</strong> Heavy use of dark, pulsing synth basslines, shimmering pads, crisp drum machine beats, and atmospheric soundscapes.</li>
-                            </ul>
-
+                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
                             <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Themes</h2>
                             <p>
                                 _Midnight Murmurs_ delves into several core themes:
@@ -86,12 +105,14 @@ export default function OriginPage() {
                                 <li><strong>Critique of Modern Life:</strong> Subtle commentary on human "overworking," digital distraction, and the search for meaning in mundane routines.</li>
                                 <li><strong>Finding Meaning in the Mundane:</strong> The cat's ability to find profound satisfaction and meaning in simple pleasures like food, a cardboard box, or the chase of a laser dot.</li>
                             </ul>
+                        </article>
 
-                            <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Track Listing</h2>
+                        <div className="my-16">
+                             <h2 className="font-headline text-3xl uppercase text-primary/90 not-prose !mb-6 !mt-12">Track Listing</h2>
                             
-                            <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act I: Delusion & Chaos (The Party Never Ends)</h3>
+                            <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act I: Delusion & Chaos (The Party Never Ends)</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800">
+                                <Table className="not-prose text-stone-800 font-serif">
                                     <TableHeader>
                                         <TableRow>
                                             <TableHead className="text-stone-600">No.</TableHead>
@@ -134,9 +155,9 @@ export default function OriginPage() {
                                 </Table>
                             </div>
 
-                            <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act II: Reflection & Co-Dependence</h3>
+                            <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act II: Reflection & Co-Dependence</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800">
+                                <Table className="not-prose text-stone-800 font-serif">
                                     <TableHeader>
                                         <TableRow>
                                             <TableHead className="text-stone-600">No.</TableHead>
@@ -172,9 +193,9 @@ export default function OriginPage() {
                                 </Table>
                             </div>
 
-                            <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act III: Confrontation & Acceptance (The Loop)</h3>
+                            <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act III: Confrontation & Acceptance (The Loop)</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800">
+                                <Table className="not-prose text-stone-800 font-serif">
                                     <TableHeader>
                                         <TableRow>
                                             <TableHead className="text-stone-600">No.</TableHead>
@@ -209,19 +230,30 @@ export default function OriginPage() {
                                     </TableBody>
                                 </Table>
                             </div>
+                        </div>
 
-                            <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Personnel</h2>
-                            <ul>
-                                <li><strong>3AMΣ:</strong> Lead Vocals, Songwriting, Concept Development</li>
-                                <li><strong>Gemini AI:</strong> Co-Songwriting, Lyrical Development, Narrative Structuring</li>
-                                <li><strong>Suno AI:</strong> Instrumental Generation, Vocal Performance/Arrangement</li>
-                            </ul>
+                        <div className="my-16">
+                            <h2 className="font-headline text-3xl uppercase text-primary/90 not-prose !mb-6 !mt-12">Personnel</h2>
+                            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 not-prose">
+                                {personnel.map((p) => (
+                                    <Card key={p.name} className="bg-stone-100 border-stone-200/80">
+                                        <CardContent className="p-6 flex flex-col items-center text-center">
+                                            <div className="p-3 mb-4 rounded-full bg-primary/10 text-primary">
+                                                <p.icon className="w-8 h-8" />
+                                            </div>
+                                            <h4 className="font-bold text-stone-900 text-lg">{p.name}</h4>
+                                            <p className="text-stone-600 text-sm">{p.role}</p>
+                                        </CardContent>
+                                    </Card>
+                                ))}
+                            </div>
+                        </div>
 
+                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
                             <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Reception</h2>
                             <p>
                                 Initial reception to _Midnight Murmurs_ has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
                             </p>
-
                         </article>
                     </div>
                     <aside className="lg:col-span-1 lg:sticky top-24 h-fit hidden lg:block">
@@ -230,7 +262,7 @@ export default function OriginPage() {
                                 <CardTitle className="font-headline text-3xl text-stone-900">3AMΣ</CardTitle>
                                 <CardDescription className="text-stone-600">Conceptual Musical Project</CardDescription>
                             </CardHeader>
-                            <CardContent className="text-sm space-y-4 text-stone-800">
+                            <CardContent className="text-sm space-y-4 text-stone-800 font-serif">
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Also known as</h4>
                                     <p className="text-stone-600">3 AM Zoomies</p>
