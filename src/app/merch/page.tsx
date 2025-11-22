@@ -11,6 +11,7 @@ import { Mail } from 'lucide-react';
 import { VinylRecord } from '@/components/vinyl-record';
 import { WaitlistDialog } from '@/components/waitlist-dialog';
 import { useState } from 'react';
+import { AlbumArtDisplay } from '@/components/album-art-display';
 
 export default function MerchPage() {
     const tShirtImage = PlaceHolderImages.find(img => img.id === 'merch-tshirt');
@@ -67,9 +68,16 @@ export default function MerchPage() {
                         </CardContent>
                     </Card>
 
-                     <Card className="bg-card/50 overflow-hidden flex flex-col">
-                         <CardContent className="p-8">
-                            <VinylRecord />
+                    <Card className="bg-card/50 overflow-hidden flex flex-col">
+                         <CardContent className="p-8 aspect-square flex items-center justify-center">
+                            <div className="w-full max-w-[80%] aspect-square relative">
+                                <div className="absolute inset-0 transform -rotate-10 transition-transform group-hover:rotate-0">
+                                    <AlbumArtDisplay />
+                                </div>
+                                <div className="absolute inset-0 transform rotate-10 translate-x-8 -translate-y-8 transition-transform group-hover:translate-x-0 group-hover:translate-y-0 group-hover:rotate-0">
+                                    <VinylRecord />
+                                </div>
+                            </div>
                         </CardContent>
                         <CardHeader>
                             <CardTitle className="font-headline text-3xl uppercase">"Midnight Murmurs" Vinyl</CardTitle>
