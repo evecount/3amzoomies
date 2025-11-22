@@ -8,7 +8,6 @@ import { SongPlayer } from './song-player';
 import { usePurchase } from '@/hooks/use-purchase';
 import { useToast } from '@/hooks/use-toast';
 import { ArrowRight } from 'lucide-react';
-import { VinylRecord } from './vinyl-record';
 
 export function HeroSection() {
   const previewSong = albumData.songs[0];
@@ -28,18 +27,8 @@ export function HeroSection() {
   return (
     <section className="container mx-auto px-4 py-12 md:py-24">
       <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-        <div className="flex flex-col items-center gap-8">
-          <div className="group w-full max-w-md mx-auto">
-            <AlbumArtDisplay />
-          </div>
-          <div className="relative w-full max-w-md h-56 flex items-center justify-start -mt-3 pt-[10px]">
-            <div className="group w-40 absolute left-0">
-              <AlbumArtDisplay />
-            </div>
-            <div className="w-40 h-40 absolute right-0">
-              <VinylRecord />
-            </div>
-          </div>
+        <div className="group w-full max-w-md mx-auto">
+          <AlbumArtDisplay />
         </div>
         <div className="flex flex-col items-start text-left">
           <p className="text-primary font-headline text-lg tracking-widest uppercase">Debut Album</p>
