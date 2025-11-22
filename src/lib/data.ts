@@ -119,7 +119,7 @@ I'll love you until one of us is dead.`,
 The can opens, a holy sound
 The scent of ocean, all around
 For this one moment, nothing's wrong
-Just the sweet taste where I belong
+Just the aweet taste where I belong
 ...and then it's gone.`,
       coverArtId: "song-8-cover",
     },
