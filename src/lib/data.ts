@@ -56,11 +56,16 @@ But do they understand true happiness? It's a guess.`,
     },
     {
       id: 4,
-      title: "Velocity & Void",
+      title: "The Fading Feather (Afternoon Chase)",
       duration: "2:58",
       audioSrc: "/audio/placeholder-4.mp3",
-      lyrics: `[Instrumental with frantic energy]
-(The sound of claws on a wooden floor, a vase crashing, and a distant, muffled human shouting "What was that?!")`,
+      lyrics: `[Verse]
+A shadow drifts, a silent grace
+Across the sunbeam on this space
+My muscles coil, a whispered threat
+A dance with death, not over yet
+It floats, it falls, a final sigh
+Just dust and light beneath my eye.`,
       coverArtId: "song-4-cover",
     },
     {
