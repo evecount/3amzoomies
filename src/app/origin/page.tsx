@@ -24,7 +24,7 @@ function InfoBox() {
                 </div>
                 <div>
                     <h4 className="font-semibold text-foreground">Debut Album</h4>
-                    <p className="text-muted-foreground">3 AM Zoomies (2024)</p>
+                    <p className="text-muted-foreground">Midnight Murmurs (2024)</p>
                 </div>
                  <div>
                     <h4 className="font-semibold text-foreground">Primary Influences</h4>
@@ -42,15 +42,15 @@ export default function OriginPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">The Story of "3 AM Zoomies"</h1>
+            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">The Story of "Midnight Murmurs"</h1>
             <p className="text-lg text-muted-foreground mt-1">An encyclopedic entry on the conceptual album.</p>
         </div>
         <Separator className="mb-12"/>
         <div className="grid lg:grid-cols-4 gap-12">
             <div className="lg:col-span-3">
-                <article className="prose prose-invert prose-lg max-w-none text-foreground/80 font-serif leading-relaxed space-y-6">
+                <article className="prose prose-invert prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
                     <p>
-                        <strong><em>3 AM Zoomies</em></strong> is the debut studio album by <strong>3AMΣ</strong>, a conceptual musical project known for its unique blend of alternative R&B, pop, funk, hip-hop, and electronic music, heavily influenced by the sound and thematic depth of The Weeknd. The album is a deeply introspective and often darkly humorous exploration of the mundane yet profound existence of a domestic cat, told from both feline and human perspectives over a full 24-hour cycle.
+                        <strong><em>Midnight Murmurs</em></strong> is the debut studio album by <strong>3AMΣ</strong>, a conceptual musical project known for its unique blend of alternative R&B, pop, funk, hip-hop, and electronic music, heavily influenced by the sound and thematic depth of The Weeknd. The album is a deeply introspective and often darkly humorous exploration of the mundane yet profound existence of a domestic cat, told from both feline and human perspectives over a full 24-hour cycle.
                     </p>
 
                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Background and Development</h2>
@@ -63,7 +63,7 @@ export default function OriginPage() {
 
                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Artistic Influences and Style</h2>
                     <p>
-                        The primary artistic influence for _3 AM Zoomies_ is <strong>The Weeknd (Abel Tesfaye)</strong>, particularly his *After Hours* and *Dawn FM* eras. This influence is evident in:
+                        The primary artistic influence for _Midnight Murmurs_ is <strong>The Weeknd (Abel Tesfaye)</strong>, particularly his *After Hours* and *Dawn FM* eras. This influence is evident in:
                     </p>
                     <ul>
                         <li><strong>Vocal Style:</strong> Male vocals in a light lyric tenor range, with prominent use of falsetto.</li>
@@ -75,7 +75,7 @@ export default function OriginPage() {
 
                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Themes</h2>
                     <p>
-                        _3 AM Zoomies_ delves into several core themes:
+                        _Midnight Murmurs_ delves into several core themes:
                     </p>
                     <ul>
                         <li><strong>Existentialism from a Feline Perspective:</strong> The cat's detached, often nihilistic view of its own existence and the human world.</li>
@@ -217,7 +217,7 @@ export default function OriginPage() {
 
                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Reception</h2>
                     <p>
-                        Initial reception to _3 AM Zoomies_ has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
+                        Initial reception to _Midnight Murmurs_ has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
                     </p>
 
                 </article>
