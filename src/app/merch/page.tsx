@@ -34,6 +34,9 @@ export default function MerchPage() {
                     <p className="text-primary font-headline text-lg tracking-widest uppercase">Official Gear</p>
                     <h1 className="font-headline text-5xl md:text-6xl uppercase tracking-wider">Merchandise</h1>
                     <p className="text-lg text-muted-foreground mt-2">Approved by the Apex Predator.</p>
+                    <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                        A note on fulfillment: We'll assign a 'print to order' service close to your location. Or, if you're nice, we might just send you the high-res image so you can make your own damn shirt.
+                    </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
