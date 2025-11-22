@@ -6,6 +6,8 @@ import { Separator } from '@/components/ui/separator';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { CheckCircle2, Music, Users, Mic, Cpu } from 'lucide-react';
 import Image from 'next/image';
+import { memeSong } from '@/lib/data';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 
 function InfoBox() {
@@ -52,6 +54,8 @@ const personnel = [
 ]
 
 export default function OriginPage() {
+    const memeCoverArt = PlaceHolderImages.find(img => img.id === memeSong.coverArtId);
+
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
@@ -234,6 +238,31 @@ export default function OriginPage() {
                             </div>
                         </div>
 
+                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6 my-16">
+                            <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-6 !mt-12">Singles</h2>
+                            <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8">"Stupid Fucking Hooman Remix"</h3>
+                            {memeCoverArt && (
+                                <div className="float-right ml-6 mb-4 w-48 lg:w-64 not-prose">
+                                    <div className="aspect-square relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
+                                        <Image src={memeCoverArt.imageUrl} alt={memeCoverArt.description} fill className="object-cover" />
+                                    </div>
+                                    <p className="text-xs text-center text-stone-500 font-serif mt-2">The iconic cover art for the single.</p>
+                                </div>
+                            )}
+                            <p>
+                                In 2024, 3AMΣ released "Stupid Fucking Hooman Remix," a standalone viral single. The track serves as a direct, unfiltered, and humorously aggressive rebuttal to Mike Polk Jr.'s 2011 viral hit, "I'm a Stupid Cat."
+                            </p>
+                            <p>
+                                Whereas Polk's song portrays the inner monologue of a self-deprecating cat, the 3AMΣ single flips the script, offering the feline's scathing perspective on its human companion's perceived incompetence and subservience.
+                            </p>
+                             <p>
+                                The single's release was accompanied by its now-iconic cover art featuring a Siamese cat in a full denim ensemble—a "Canadian tuxedo"—lounging amidst a post-party mess of pizza boxes and scattered catnip, embodying a rebellious, hip-hop aesthetic. This visual, combined with the track's biting lyrics, quickly garnered attention on social media platforms, igniting a playful "feud" between the two feline-centric musical narratives.
+                            </p>
+                            <p>
+                                The track showcases 3AMΣ's ability to blend its signature moody, Weeknd-esque production with a more explicit, meme-driven lyrical approach, expanding the project's thematic reach into direct social commentary on pet-owner dynamics.
+                            </p>
+                        </article>
+
                         <div className="my-16">
                             <h2 className="font-headline text-3xl uppercase text-primary/90 not-prose !mb-6 !mt-12">Personnel</h2>
                             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 not-prose">
@@ -276,7 +305,7 @@ export default function OriginPage() {
 
 
                          <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
-                            <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Reception</h2>
+                            <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-6 !mt-12">Reception</h2>
                             <p>
                                 Initial reception to _Midnight Murmurs_ has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
                             </p>
@@ -300,7 +329,7 @@ export default function OriginPage() {
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Debut Album</h4>
                                     <p className="text-stone-600">Midnight Murmurs (2024)</p>
-                                </div>
+                                d    </div>
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Primary Influences</h4>
                                     <p className="text-stone-600">The Weeknd (After Hours, Dawn FM)</p>
@@ -315,4 +344,5 @@ export default function OriginPage() {
       <Footer />
     </div>
   );
-}
+    
+    
