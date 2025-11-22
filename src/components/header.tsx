@@ -11,7 +11,7 @@ const navLinks = [
   { href: '/merch', label: 'MERCH' },
   { href: '/film', label: 'FILM' },
   { href: '/origin', label: 'THE ORIGIN' },
-  { href: '#', label: 'SHOP INTERNATIONAL' },
+  { href: '/media', label: 'MEDIA' },
 ];
 
 const iconLinks = [
