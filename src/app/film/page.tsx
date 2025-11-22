@@ -4,6 +4,41 @@ import { Footer } from '@/components/footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 
+const applyCrewHref = `mailto:gwen@evecount.com?subject=${encodeURIComponent(
+  `Application for 'Midnight Murmurs' Music Video (Crew)`
+)}&body=${encodeURIComponent(
+  `Hello,
+
+I would like to apply for a crew position for the "Eternal Dawn (Loop)" music video.
+
+Role I am applying for: [Please specify the role]
+
+My resume/portfolio/reel can be found here: [Link to your work]
+
+A brief statement of interest: [Tell us what draws you to this project]
+
+Thank you,
+[Your Name]`
+)}`;
+
+const applyCastHref = `mailto:gwen@evecount.com?subject=${encodeURIComponent(
+    `Application for 'Midnight Murmurs' Music Video (Cast)`
+)}&body=${encodeURIComponent(
+    `Hello,
+
+I would like to apply for a cast role for the "Eternal Dawn (Loop)" music video.
+
+Role I am applying for: [The Human / The Cat]
+
+My headshot/reel/video compilation can be found here: [Link to your materials]
+
+A brief statement of interest: [Tell us what draws you to this project]
+
+Thank you,
+[Your Name / Your Cat's Name (and Your Name)]`
+)}`;
+
+
 export default function FilmPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -43,7 +78,7 @@ export default function FilmPage() {
                         <li><strong>Production Assistants:</strong> Enthusiastic individuals eager to learn and contribute to various aspects of the production.</li>
                     </ul>
                     <p>
-                        <strong>To Apply for Crew:</strong> Please send your resume, portfolio/reel, and a brief statement of interest detailing your relevant experience and what draws you to the "3 AM Zoomies" project to <strong>gwen@evecount.com</strong>.
+                        <strong>To Apply for Crew:</strong> Please send your resume, portfolio/reel, and a brief statement of interest detailing your relevant experience and what draws you to this project by <a href={applyCrewHref}>clicking here to open your email client</a>.
                     </p>
 
                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Cast Call (Singapore-Based)</h2>
@@ -63,7 +98,7 @@ export default function FilmPage() {
                         <li><strong>Audition Material:</strong> Owners to submit videos showcasing their cat's "zoomies," periods of intense focus (e.g., chasing a laser pointer), and moments of quiet contemplation/sleep.</li>
                     </ul>
                     <p>
-                        <strong>To Apply for Cast:</strong> Please send your headshot/photo (and acting reel for human, or video compilation for cat), along with a brief statement of interest, to <strong>gwen@evecount.com</strong>. Please specify whether you are applying for "The Human" or "The Cat" role.
+                        <strong>To Apply for Cast:</strong> Please send your headshot/photo (and acting reel for human, or video compilation for cat), along with a brief statement of interest by <a href={applyCastHref}>clicking here to open your email client</a>.
                     </p>
 
                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Vision for "Eternal Dawn (Loop)" Music Video</h2>
