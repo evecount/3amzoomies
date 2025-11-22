@@ -32,11 +32,11 @@ export function HeroSection() {
           <div className="group w-full max-w-md mx-auto">
             <AlbumArtDisplay />
           </div>
-          <div className="relative w-80 h-64 flex items-center justify-center -mt-[12px]">
-            <div className="group w-52 absolute left-0">
+          <div className="relative w-80 h-64 flex items-center justify-center -mt-[12px] pt-[10px]">
+            <div className="group w-52 absolute left-0 scale-115">
               <AlbumArtDisplay />
             </div>
-            <div className="w-52 h-52 absolute right-0 -mr-12">
+            <div className="w-52 h-52 absolute right-0 -mr-12 scale-115 -ml-8">
               <VinylRecord />
             </div>
           </div>
