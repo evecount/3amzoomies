@@ -36,22 +36,24 @@ export function VinylRecord({ className }: VinylRecordProps) {
          <text
           x="200"
           y="180"
-          fontFamily="Belleza, sans-serif"
+          fontFamily="sans-serif"
           fontSize="16"
           fill="white"
           textAnchor="middle"
           transform="rotate(90 200,200)"
+          className="uppercase"
         >
           3 AM
         </text>
          <text
           x="200"
           y="225"
-          fontFamily="Belleza, sans-serif"
+          fontFamily="sans-serif"
           fontSize="16"
           fill="white"
           textAnchor="middle"
           transform="rotate(90 200,200)"
+          className="uppercase"
         >
           Zoomies
         </text>

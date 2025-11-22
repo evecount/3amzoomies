@@ -42,7 +42,7 @@ export function SongPlayer({ song, isLocked = false }: SongPlayerProps) {
           )}
         </Button>
         <div className="flex-grow">
-          <p className={`font-medium ${isLocked ? 'text-muted-foreground' : 'text-foreground'}`}>{song.title}</p>
+          <p className={`font-medium uppercase ${isLocked ? 'text-muted-foreground' : 'text-foreground'}`}>{song.title}</p>
           <p className="text-sm text-muted-foreground">{song.duration}</p>
         </div>
         <Button

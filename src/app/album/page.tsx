@@ -58,7 +58,7 @@ export default function AlbumPage() {
             
             <Card>
                 <CardHeader>
-                    <CardTitle className="font-headline text-5xl">{albumData.title}</CardTitle>
+                    <CardTitle className="font-headline text-5xl uppercase">{albumData.title}</CardTitle>
                     <CardDescription className="text-lg">By {albumData.artist} &middot; {albumData.releaseDate}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-2">

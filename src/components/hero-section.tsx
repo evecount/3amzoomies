@@ -31,8 +31,8 @@ export function HeroSection() {
           <AlbumArtDisplay />
         </div>
         <div className="flex flex-col items-start text-left">
-          <p className="text-primary font-headline text-lg tracking-widest">New Album</p>
-          <h1 className="font-headline text-5xl md:text-7xl font-bold mt-2 mb-6 leading-tight">
+          <p className="text-primary font-headline text-lg tracking-widest uppercase">New Album</p>
+          <h1 className="font-headline text-5xl md:text-7xl font-bold mt-2 mb-6 leading-tight uppercase">
             {albumData.title}
           </h1>
           <p className="text-lg text-muted-foreground max-w-prose mb-8">
@@ -42,7 +42,7 @@ export function HeroSection() {
             <SongPlayer song={previewSong} />
           </div>
 
-          <Button onClick={handlePurchase} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button onClick={handlePurchase} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground uppercase">
             Buy Full Album <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
