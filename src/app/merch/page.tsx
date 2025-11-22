@@ -70,7 +70,7 @@ export default function MerchPage() {
 
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                          <CardContent className="p-8 aspect-square flex items-center justify-center">
-                            <div className="w-full max-w-[80%] aspect-square relative">
+                            <div className="w-full max-w-[80%] aspect-square relative group">
                                 <div className="absolute inset-0 transform -rotate-10 transition-transform group-hover:rotate-0">
                                     <AlbumArtDisplay />
                                 </div>
