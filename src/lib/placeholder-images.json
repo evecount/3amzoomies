@@ -1,3 +1,16 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "album-cover",
+      "description": "Album cover for Midnight Murmurs",
+      "imageUrl": "https://images.unsplash.com/photo-1662586684776-5387c4d571cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMG11c2ljfGVufDB8fHx8MTc2MzcyMTA0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract music"
+    },
+    {
+      "id": "artist-photo",
+      "description": "Photo of the artist 3 AM Zoomies",
+      "imageUrl": "https://images.unsplash.com/photo-1593459866242-426f7768f3dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtdXNpY2lhbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Mzc5NDQwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "musician portrait"
+    }
+  ]
 }
