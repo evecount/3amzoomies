@@ -35,19 +35,20 @@ export function VinylRecord({ className }: VinylRecordProps) {
         <circle cx="200" cy="200" r="46" fill="#1a1a1a" />
          <text
           x="200"
-          y="180"
+          y="190"
           fontFamily="sans-serif"
-          fontSize="16"
+          fontSize="22"
+          fontWeight="bold"
           fill="white"
           textAnchor="middle"
           transform="rotate(90 200,200)"
           className="uppercase"
         >
-          3 AM
+          3AM
         </text>
          <text
           x="200"
-          y="225"
+          y="215"
           fontFamily="sans-serif"
           fontSize="16"
           fill="white"
