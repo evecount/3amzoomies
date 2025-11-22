@@ -5,6 +5,7 @@ export interface Song {
   duration: string;
   audioSrc: string;
   lyrics: string;
+  coverArtId: string;
 }
 
 export interface Album {
@@ -28,6 +29,7 @@ export const albumData: Album = {
       audioSrc: "/audio/placeholder-1.mp3",
       lyrics: `(Radio static, a smooth jazz intro, and a deep, calm voice)
 DJ: "You're listening to Feline FM. The time is 3:00 AM. For our next listener, who's been up all night, here's a track to match that... unique energy."`,
+      coverArtId: "song-1-cover",
     },
     {
       id: 2,
@@ -39,6 +41,7 @@ Top of the food chain, king of this domain
 A jungle of carpets, a desert of plains
 But the rumble inside is a primal decree
 The bowl is a void, mocking me`,
+      coverArtId: "song-2-cover",
     },
     {
       id: 3,
@@ -50,6 +53,7 @@ The tall one stares at a glowing rectangle, laughing at nothing
 The other one talks to a plant, as if it could hear something
 They fill my bowl, they clean my mess
 But do they understand true happiness? It's a guess.`,
+      coverArtId: "song-3-cover",
     },
     {
       id: 4,
@@ -58,6 +62,7 @@ But do they understand true happiness? It's a guess.`,
       audioSrc: "/audio/placeholder-4.mp3",
       lyrics: `[Instrumental with frantic energy]
 (The sound of claws on a wooden floor, a vase crashing, and a distant, muffled human shouting "What was that?!")`,
+      coverArtId: "song-4-cover",
     },
     {
       id: 5,
@@ -71,6 +76,7 @@ My claws scrabble, a desperate ballet
 It dances away, come what may
 Is this the meaning? This endless chase?
 To hunt a light in this empty space?`,
+      coverArtId: "song-5-cover",
     },
     {
       id: 6,
@@ -84,6 +90,7 @@ No grand design, no lofty quest
 Just in this box, I find my rest
 The scent of paper, the enclosed dark
 A simple fortress, a private ark.`,
+      coverArtId: "song-6-cover",
     },
     {
       id: 7,
@@ -97,6 +104,7 @@ But when you curl up, a rumbling sigh...
 I guess this is love. I won't ask why.
 This strange little pact, unsigned and unsaid
 I'll love you until one of us is dead.`,
+      coverArtId: "song-7-cover",
     },
     {
       id: 8,
@@ -109,6 +117,7 @@ The scent of ocean, all around
 For this one moment, nothing's wrong
 Just the sweet taste where I belong
 ...and then it's gone.`,
+      coverArtId: "song-8-cover",
     },
     {
       id: 9,
@@ -119,6 +128,7 @@ Just the sweet taste where I belong
 "It's okay, buddy. We'll do it all again tomorrow."
 [Cat's Purr, fading into a synth loop]
 Tomorrow... and tomorrow... and tomorrow...`,
+      coverArtId: "song-9-cover",
     },
     {
       id: 10,
@@ -128,6 +138,7 @@ Tomorrow... and tomorrow... and tomorrow...`,
       lyrics: `(Smooth jazz fades back in)
 DJ: "And that brings us to the edge of dawn. The birds are stirring. The world is waking up. But here, in the quiet, we'll keep the night going, just for you. Until next time... stay nocturnal."
 (Radio static fades out)`,
+      coverArtId: "song-10-cover",
     },
   ],
 };
