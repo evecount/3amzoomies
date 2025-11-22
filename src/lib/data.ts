@@ -60,10 +60,49 @@ But do they understand true happiness? It's a guess.`,
 (The sound of claws on a wooden floor, a vase crashing, and a distant, muffled human shouting "What was that?!")`,
     },
     {
+      id: 5,
+      title: "Chasing the Crimson Ghost",
+      duration: "4:20",
+      audioSrc: "/audio/placeholder-5.mp3",
+      lyrics: `[Verse 1]
+A flicker on the wall, a ghost I can't catch
+A phantom of ruby, a maddening latch
+My claws scrabble, a desperate ballet
+It dances away, come what may
+Is this the meaning? This endless chase?
+To hunt a light in this empty space?`,
+    },
+    {
+      id: 6,
+      title: "My Cardboard Sanctuary",
+      duration: "3:50",
+      audioSrc: "/audio/placeholder-6.mp3",
+      lyrics: `[Verse 1]
+Four brown walls, a perfect square
+Forget the world, I don't care
+No grand design, no lofty quest
+Just in this box, I find my rest
+The scent of paper, the enclosed dark
+A simple fortress, a private ark.`,
+    },
+    {
+      id: 7,
+      title: "The Unspoken Contract",
+      duration: "3:10",
+      audioSrc: "/audio/placeholder-7.mp3",
+      lyrics: `[Human Voice, tired]
+You step on my face while I'm sleeping
+You scream at the door for no reason
+But when you curl up, a rumbling sigh...
+I guess this is love. I won't ask why.
+This strange little pact, unsigned and unsaid
+I'll love you until one of us is dead.`,
+    },
+    {
       id: 8,
       title: "Ambrosia & Oblivion",
       duration: "4:30",
-      audioSrc: "/audio/placeholder-5.mp3",
+      audioSrc: "/audio/placeholder-8.mp3",
       lyrics: `[Verse 1]
 The can opens, a holy sound
 The scent of ocean, all around
@@ -75,7 +114,7 @@ Just the sweet taste where I belong
       id: 9,
       title: "Eternal Dawn (Loop)",
       duration: "5:02",
-      audioSrc: "/audio/placeholder-6.mp3",
+      audioSrc: "/audio/placeholder-9.mp3",
       lyrics: `[Human Voice, softly]
 "It's okay, buddy. We'll do it all again tomorrow."
 [Cat's Purr, fading into a synth loop]
@@ -85,7 +124,7 @@ Tomorrow... and tomorrow... and tomorrow...`,
       id: 10,
       title: "Conclusion (Feline FM)",
       duration: "1:30",
-      audioSrc: "/audio/placeholder-7.mp3",
+      audioSrc: "/audio/placeholder-10.mp3",
       lyrics: `(Smooth jazz fades back in)
 DJ: "And that brings us to the edge of dawn. The birds are stirring. The world is waking up. But here, in the quiet, we'll keep the night going, just for you. Until next time... stay nocturnal."
 (Radio static fades out)`,

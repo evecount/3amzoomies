@@ -10,7 +10,7 @@ const navLinks = [
   { href: '#', label: 'MERCH' },
   { href: '#', label: 'MUSIC' },
   { href: '#', label: 'FILM' },
-  { href: '#', label: 'BACK IN STOCK' },
+  { href: '#', label: 'THE ORIGIN' },
   { href: '#', label: 'SHOP INTERNATIONAL' },
 ];
 
