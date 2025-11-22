@@ -267,7 +267,7 @@ export default function OriginPage() {
                                 </div>
                                 <div className="space-y-4">
                                      <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
-                                        <Image src="/public/images/cellphone-screen.png" alt="3AMΣ Website on Mobile" fill className="object-contain p-8 bg-stone-200" />
+                                        <Image src="/public/images/phone.png" alt="3AMΣ Website on Mobile" fill className="object-contain p-8 bg-stone-200" />
                                     </div>
                                     <p className="text-sm text-center text-stone-500 font-serif">The mobile experience for the 3AMΣ website.</p>
                                 </div>
@@ -316,5 +316,3 @@ export default function OriginPage() {
     </div>
   );
 }
-
-    
