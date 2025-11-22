@@ -1,10 +1,5 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function ArtistInfo() {
-    const artistPhoto = PlaceHolderImages.find(img => img.id === 'artist-photo');
-    if (!artistPhoto) return null;
-
     return (
         <section className="container mx-auto px-4 py-12 md:py-24">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -22,12 +17,13 @@ export function ArtistInfo() {
                 </div>
                 <div className="w-full max-w-md mx-auto md:max-w-none">
                     <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
-                        <Image
-                            src={artistPhoto.imageUrl}
-                            alt={artistPhoto.description}
-                            fill
-                            data-ai-hint={artistPhoto.imageHint}
-                            className="object-cover"
+                        <video
+                            src="/publc/video/Cat_Licks_Paw_Looks_Up.mp4"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="object-cover w-full h-full"
                         />
                     </div>
                 </div>
