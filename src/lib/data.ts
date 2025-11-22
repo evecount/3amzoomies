@@ -27,8 +27,7 @@ export const albumData: Album = {
       title: "Introduction (Feline FM)",
       duration: "1:15",
       audioSrc: "/audio/placeholder-1.mp3",
-      lyrics: `(Radio static, a smooth jazz intro, and a deep, calm voice)
-DJ: "You're listening to Feline FM. The time is 3:00 AM. For our next listener, who's been up all night, here's a track to match that... unique energy."`,
+      lyrics: `You are tuning in to Fee-line FM, your only stop for the best in existential dread and unwarranted napping. It's late, you're lonely, and you're contemplating the meaningless of your life, which is fine, because you're a human. Our first track tonight is a deep dive into the true cost of companionship. Settle in, buckle up, and try not to spill your water glass. You're about to hear the gospel according to your four-legged overlord.`,
       coverArtId: "song-1-cover",
     },
     {
