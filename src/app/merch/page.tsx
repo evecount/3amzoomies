@@ -10,6 +10,8 @@ import { VinylRecord } from '@/components/vinyl-record';
 
 export default function MerchPage() {
     const tShirtImage = PlaceHolderImages.find(img => img.id === 'merch-tshirt');
+    const cupImage = PlaceHolderImages.find(img => img.id === 'merch-cup');
+    const pillowImage = PlaceHolderImages.find(img => img.id === 'merch-pillow-case');
 
     return (
         <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -21,7 +23,7 @@ export default function MerchPage() {
                     <p className="text-lg text-muted-foreground mt-2">Approved by the Apex Predator.</p>
                 </div>
 
-                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                         {tShirtImage && (
                              <CardContent className="p-0 aspect-square relative">
@@ -75,6 +77,69 @@ export default function MerchPage() {
                             </Button>
                         </CardContent>
                     </Card>
+
+                    <Card className="bg-card/50 overflow-hidden flex flex-col">
+                        {cupImage && (
+                             <CardContent className="p-0 aspect-square relative">
+                                <Image
+                                    src={cupImage.imageUrl}
+                                    alt={cupImage.description}
+                                    fill
+                                    data-ai-hint={cupImage.imageHint}
+                                    className="object-cover"
+                                />
+                            </CardContent>
+                        )}
+                        <CardHeader>
+                            <CardTitle className="font-headline text-3xl uppercase">"The Judgmental Mug"</CardTitle>
+                            <CardDescription className="text-xl">$19.99 USD</CardDescription>
+                        </CardHeader>
+                        <CardContent className="space-y-4 text-foreground/80 flex-grow">
+                             <p>
+                                You require liquid sustenance to function? How pathetically organic. This ceramic vessel is adequate for your strange, dark brews. As you sip from it, feel my silent, unwavering judgment upon your life choices.
+                            </p>
+                            <p>
+                                It holds liquid, yes, but it also holds the truth: you are merely the staff. Now, stop dawdling and refresh my water bowl.
+                            </p>
+                        </CardContent>
+                         <CardContent>
+                            <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                Add to Cart <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </CardContent>
+                    </Card>
+
+                    <Card className="bg-card/50 overflow-hidden flex flex-col">
+                        {pillowImage && (
+                             <CardContent className="p-0 aspect-square relative">
+                                <Image
+                                    src={pillowImage.imageUrl}
+                                    alt={pillowImage.description}
+                                    fill
+                                    data-ai-hint={pillowImage.imageHint}
+                                    className="object-cover"
+                                />
+                            </CardContent>
+                        )}
+                        <CardHeader>
+                            <CardTitle className="font-headline text-3xl uppercase">"The Usurped Pillow Case"</CardTitle>
+                            <CardDescription className="text-xl">$24.99 USD</CardDescription>
+                        </CardHeader>
+                        <CardContent className="space-y-4 text-foreground/80 flex-grow">
+                             <p>
+                                You believed this soft rectangle was for your head? A foolish assumption. This is my rightful throne for the 18 hours of sleep I require between my very important duties of staring at walls.
+                            </p>
+                            <p>
+                                While you are permitted to use it when I am otherwise engaged, know that it is, and always will be, covered in my fur and my silent disapproval.
+                            </p>
+                        </CardContent>
+                         <CardContent>
+                            <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                Add to Cart <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </CardContent>
+                    </Card>
+
                 </div>
             </main>
             <Footer />
