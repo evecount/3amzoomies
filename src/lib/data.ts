@@ -18,7 +18,7 @@ export interface Album {
 
 export const albumData: Album = {
   title: "Midnight Murmurs",
-  artist: "3 AM Zoomies",
+  artist: "3AMZ",
   releaseDate: "2024",
   coverArtId: "album-cover",
   songs: [
@@ -55,7 +55,7 @@ export const albumData: Album = {
 (Verse 1) The midday sun, it bleeds across the floor Another cycle spins, behind that bolted door You rise and pace, with purpose I don't grasp Whispering to air, caught in a digital clasp Your tiny screens, they hold you in their thrall While the shadows stretch and dance upon the wall You shuffle papers, click and tap all day So much effort wasted, in such a meaningless way
 (Pre-Chorus) You call it "WORK," this constant, frantic plight But I see through the charade, in your fading light A simple mind, you think you're oh so grand But you can't even open a door with just your hand
 (Chorus) Observer of absurdity, perched on high Watching your pathetic little life go by You chase the phantom light, the endless, hollow gains While true contentment flows through my unburdened veins Minutes to second time, lost in your own design Blind to the true power, the apathy that's mine Another daytime wasted, in your self-imposed routine Just serve your feline master, the only real machine.
-(Verse 2) The afternoon descends, a droning, tired hum You drink your bitter liquid, like you're going numb You talk into a box, with voices I can't place A silent, hateful sigh escaping from your face I walk across your keyboard, just to stake my claim A furry interruption, screaming out my name You shoo me off with whispers, a futile, soft command Unaware that I control this entire fragile land.
+(Verse 2) The afternoon descends, a droning, tired hum You drink your bitter liquid, like you're going numb You talk into a box, with voices I can't place A silent, hateful sigh escaping from your face I walk across your keyboard, just to stake my claim A furry interruption, screaming out my name You shoo me off with whispers, a futile, soft command Unaware that I've control this entire fragile land.
 (Pre-Chorus) You call it "WORK," this constant, frantic plight But I see through the charade, in your fading light A simple mind, you think you're oh so grand But you can't even open a door with just your hand
 (Chorus) Observer of absurdity, perched on high Watching your pathetic little life go by You chase the phantom light, the endless, hollow gains While true contentment flows through my unburdened veins Poor soul caught in amber, lost in your own design Blind to the true power, the apathy that's mine Another daytime wasted, in your self-imposed routine Just serve your feline master, the only real machine.
 (Bridge) I watch your fleeting moments, like dust motes in the air You build your fragile empires, a burden you must bear But when the light gets dim, and the screen begins to fade You'll look for simple comfort, a bond you've always made You’ll reach for me, I’ll tolerate your touch Because in this absurd theatre, you need me just as much.

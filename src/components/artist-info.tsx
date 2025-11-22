@@ -1,3 +1,4 @@
+
 import { AlbumArtDisplay } from "./album-art-display";
 
 export function ArtistInfo() {
@@ -6,10 +7,10 @@ export function ArtistInfo() {
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                 <div className="flex flex-col items-start text-left">
                      <p className="text-primary font-headline text-lg tracking-widest uppercase">The Artist</p>
-                    <h2 className="font-headline text-5xl md:text-6xl font-bold mt-2 mb-6 uppercase">3 AM Zoomies</h2>
+                    <h2 className="font-headline text-5xl md:text-6xl font-bold mt-2 mb-6 uppercase">3AMZ</h2>
                     <div className="space-y-6 text-lg text-muted-foreground max-w-prose">
                         <p>
-                            3 AM Zoomies is the moniker of a nocturnal creator who finds inspiration in the quiet hours when the world is asleep. Blending ambient soundscapes, lo-fi beats, and soulful melodies, their music is a soundtrack for late-night drives, quiet contemplation, and the beautifully melancholic moments of life.
+                            3AMZ is the moniker of a nocturnal creator who finds inspiration in the quiet hours when the world is asleep. Blending ambient soundscapes, lo-fi beats, and soulful melodies, their music is a soundtrack for late-night drives, quiet contemplation, and the beautifully melancholic moments of life.
                         </p>
                         <p>
                             Starting as a bedroom project, 3 AM Zoomies has evolved into a unique voice in the electronic music scene, known for crafting immersive auditory experiences that are both intimate and expansive.

@@ -1,11 +1,12 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { AudioProvider } from '@/hooks/use-audio-player';
 
 export const metadata: Metadata = {
-  title: '3 AM Zoomies',
-  description: 'Official website for the artist 3 AM Zoomies',
+  title: '3AMZ',
+  description: 'Official website for the artist 3AMZ (3 AM Zoomies)',
 };
 
 export default function RootLayout({

@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 
 type VinylRecordProps = {
@@ -35,28 +36,17 @@ export function VinylRecord({ className }: VinylRecordProps) {
         <circle cx="200" cy="200" r="46" fill="#1a1a1a" />
          <text
           x="200"
-          y="190"
+          y="200"
           fontFamily="sans-serif"
-          fontSize="22"
+          fontSize="28"
           fontWeight="bold"
           fill="white"
           textAnchor="middle"
+          dy=".3em"
           transform="rotate(90 200,200)"
           className="uppercase"
         >
-          3AM
-        </text>
-         <text
-          x="200"
-          y="215"
-          fontFamily="sans-serif"
-          fontSize="16"
-          fill="white"
-          textAnchor="middle"
-          transform="rotate(90 200,200)"
-          className="uppercase"
-        >
-          Zoomies
+          3AMZ
         </text>
         <circle cx="200" cy="200" r="10" fill="hsl(var(--background))" />
       </svg>
