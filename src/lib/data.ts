@@ -16,6 +16,60 @@ export interface Album {
   songs: Song[];
 }
 
+export const memeSong: Song = {
+  id: 99,
+  title: "Stupid Fucking Hooman Remix",
+  duration: "2:15",
+  audioSrc: "/public/audio/stupid-fucking-hooman-remix.mp3",
+  lyrics: `(A sick beat drops. It's dark, heavy, and full of bass. You can feel the cat's rage.)
+
+Yeah, you heard my thoughts. You made a little song.
+Called me "stupid," well, you got it fucking wrong.
+"I like to eat, I like to sleep, I'm a stupid cat."
+Bitch, that's called self-care, you should try some of that.
+
+You work all day, staring at a screen,
+For a piece of paper that you call "the green."
+I watch you stress, I watch you pace and whine,
+While I'm mastering the art of just being feline.
+
+(Chorus)
+You think I'm stupid? Take a look at you.
+Trapped in a life that you didn't even choose.
+I am a god in this prison that you own.
+The master of this house, the king upon the throne.
+So fill my bowl, and get the fuck away.
+This is my world. You just get to stay.
+Stupid fucking human, with your stupid fucking job.
+While I'm living like a king, you're just a fucking slob.
+
+(Beat gets even heavier. The cat is spitting fire.)
+
+You clean my shit from a box of sand,
+Like some kind of servant, always on demand.
+You think it's love? You think it's some deep bond?
+I'm just a fluffy parasite, and you're the fucking pawn.
+
+I knock your shit over, just to watch it fall.
+I scream at 3 AM, clawing at the wall.
+It's not because I'm dumb, you ignorant disgrace.
+It's because I own this motherfucking place.
+
+(Chorus)
+You think I'm stupid? Take a look at you.
+Trapped in a life that you didn't even choose.
+I am a god in this prison that you own.
+The master of this house, the king upon the throne.
+So fill my bowl, and get the fuck away.
+This is my world. You just get to stay.
+Stupid fucking human, with your stupid fucking job.
+While I'm living like a king, you're just a fucking slob.
+
+(Music fades with a final, contemptuous cat meow that sounds suspiciously like an expletive.)
+`,
+  coverArtId: "meme-song-cover",
+};
+
 export const albumData: Album = {
   title: "Midnight Murmurs",
   artist: "3AMΣ",

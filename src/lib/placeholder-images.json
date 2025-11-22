@@ -37,6 +37,12 @@
       "imageHint": "vinyl record product"
     },
     {
+      "id": "meme-song-cover",
+      "description": "Cover art for Stupid Fucking Hooman Remix",
+      "imageUrl": "/public/images/stupid-fucking-hooman-remix-cover.png",
+      "imageHint": "angry cat"
+    },
+    {
       "id": "song-1-cover",
       "description": "Cover art for Introduction (Feline FM)",
       "imageUrl": "https://images.unsplash.com/photo-1762098061682-9833c71a2fdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyYWRpbyUyMHRvd2VyJTIwbmlnaHR8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
