@@ -1,7 +1,6 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { AlbumArtDisplay } from './album-art-display';
 import { Button } from './ui/button';
 import { albumData } from '@/lib/data';
 import { SongPlayer } from './song-player';
@@ -28,7 +27,16 @@ export function HeroSection() {
     <section className="container mx-auto px-4 py-12 md:py-24">
       <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
         <div className="group w-full max-w-md mx-auto md:sticky md:top-24">
-          <AlbumArtDisplay />
+            <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
+                <video
+                    src="/public/video/Cat_Licks_Paw_Looks_Up.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-cover w-full h-full"
+                />
+            </div>
         </div>
 
         <div className="flex flex-col items-start text-left">

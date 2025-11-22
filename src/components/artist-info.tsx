@@ -1,3 +1,4 @@
+import { AlbumArtDisplay } from "./album-art-display";
 
 export function ArtistInfo() {
     return (
@@ -16,16 +17,7 @@ export function ArtistInfo() {
                     </div>
                 </div>
                 <div className="w-full max-w-md mx-auto md:max-w-none">
-                    <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
-                        <video
-                            src="/public/video/Cat_Licks_Paw_Looks_Up.mp4"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className="object-cover w-full h-full"
-                        />
-                    </div>
+                   <AlbumArtDisplay />
                 </div>
             </div>
         </section>
