@@ -11,6 +11,7 @@ import { AlbumArtDisplay } from '@/components/album-art-display';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 function LoadingSkeleton() {
     return (
@@ -62,9 +63,20 @@ export default function AlbumPage() {
                     <CardDescription className="text-lg">By {albumData.artist} &middot; {albumData.releaseDate}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-2">
-                    {albumData.songs.map((song) => (
-                        <SongPlayer key={song.id} song={song} isLocked={false} />
-                    ))}
+                    <Accordion type="multiple" className="w-full">
+                        {albumData.songs.map((song) => (
+                            <AccordionItem value={`item-${song.id}`} key={song.id}>
+                                <AccordionTrigger className="hover:no-underline">
+                                    <SongPlayer song={song} isLocked={false} showLyricsButton={false} />
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    <div className="whitespace-pre-wrap text-foreground/80 leading-relaxed px-4 pb-4">
+                                        {song.lyrics}
+                                    </div>
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
                      <Button onClick={handleResetPurchase} variant="link" className="mt-8 self-center text-muted-foreground">
                         (Test Action: Reset Purchase)
                      </Button>
