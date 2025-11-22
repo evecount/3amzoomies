@@ -3,7 +3,7 @@
     {
       "id": "album-cover",
       "description": "Album cover for Midnight Murmurs",
-      "imageUrl": "https://images.unsplash.com/photo-1662586684776-5387c4d571cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMG11c2ljfGVufDB8fHx8MTc2MzcyMTA0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/3AM ZOOMIES_Album Cover - Cat Remix of the Weekend.png",
       "imageHint": "abstract music"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "id": "song-4-cover",
-      "description": "Cover art for Velocity & Void",
+      "description": "Cover art for The Fading Feather (Afternoon Chase)",
       "imageUrl": "https://images.unsplash.com/photo-1646125912142-806eeeb87b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGlnaHQlMjBzdHJlYWtzJTIwYmx1cnxlbnwwfHx8fDE3NjM4MzAxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "light streaks blur"
     },
