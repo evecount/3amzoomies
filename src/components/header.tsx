@@ -29,7 +29,7 @@ const iconLinks = [
     label: 'Email' 
   },
   {
-    href: '#', // Placeholder for Instagram URL
+    href: 'https://instagram.com/3amzoomie',
     icon: Instagram,
     label: 'Instagram'
   }
@@ -89,7 +89,7 @@ export function Header() {
           <TooltipProvider>
             <nav className="flex items-center space-x-2">
               {iconLinks.map((link) => (
-                <Link key={link.label} href={link.href}>
+                <Link key={link.label} href={link.href} target={link.label === 'Instagram' ? '_blank' : undefined}>
                   <Button variant="ghost" size="icon" aria-label={link.label}>
                     <link.icon className="h-5 w-5" />
                   </Button>
