@@ -36,7 +36,7 @@ export function HeroSection() {
             <div className="group w-52 absolute left-0">
               <AlbumArtDisplay />
             </div>
-            <div className="w-52 h-52 absolute left-[calc(25%+25px)]">
+            <div className="w-52 h-52 absolute right-0">
               <VinylRecord />
             </div>
           </div>
