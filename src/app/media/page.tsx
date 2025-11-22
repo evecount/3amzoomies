@@ -3,14 +3,6 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { Download } from 'lucide-react';
-import Image from 'next/image';
-
-const pressContactHref = `mailto:gwen@evecount.com?subject=${encodeURIComponent(
-  `Press Inquiry: 3AMΣ`
-)}`;
 
 export default function MediaPage() {
   return (
@@ -18,77 +10,54 @@ export default function MediaPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">Media & Press</h1>
-            <p className="text-lg text-muted-foreground mt-1">Press kit for 3AMΣ: "Midnight Murmurs"</p>
+            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">Artist Spotlight: 3AMΣ</h1>
+            <p className="text-lg text-muted-foreground mt-1">An Exclusive Interview with Gravyspoon Magazine</p>
         </div>
         <Separator className="mb-12"/>
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
             <CardContent className="p-6 md:p-12">
                 <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
-                    
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-0">Featured In</h2>
-                    <div className="not-prose rounded-lg overflow-hidden border border-stone-200 shadow-md mb-8">
-                        <Image 
-                            src="/images/gravyspoon magazine.png"
-                            alt="Gravyspoon Magazine Feature on 3AMΣ"
-                            width={1200}
-                            height={800}
-                            className="w-full h-auto object-cover"
-                        />
-                    </div>
-
-                    <p>
-                        Welcome to the official media kit for <strong>3AMΣ</strong> and their debut album, <strong>"Midnight Murmurs."</strong> This page is designed to provide journalists, bloggers, podcasters, and other media professionals with quick access to essential information and assets.
+                    <p className="lead">
+                        <strong>Gravyspoon Magazine:</strong> Thank you for sitting down with us, 3AMΣ. "Midnight Murmurs" is making waves, not just for its unique sound but for its groundbreaking approach to AI collaboration. We want to dive into the deeper philosophy here, particularly concerning the visual elements.
                     </p>
                     <p>
-                        For all press inquiries, interviews, or additional requests, please <a href={pressContactHref}>contact us</a>.
+                        <strong>3AMΣ:</strong> It's my pleasure. This project is as much about the process as it is about the music, so I appreciate the opportunity to talk about it.
                     </p>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">1. About 3AMΣ & "Midnight Murmurs"</h2>
-                     <p className="font-bold">Official Press Release Snippet</p>
                     <p>
-                        <strong>"Midnight Murmurs"</strong> is the groundbreaking debut album from <strong>3AMΣ</strong>, a conceptual musical project blending alternative R&B, pop, funk, hip-hop, and electronic influences in the vein of The Weeknd. Released in 2024, the album offers a unique, introspective, and often darkly humorous exploration of the mundane yet profound existence of a domestic cat, narrated across a full 24-hour cycle from both feline and human perspectives.
+                        <strong>Gravyspoon Magazine:</strong> Let's start with the album art itself – that striking composite of a cat and The Weeknd. It immediately sets a tone. How did that come about, and what were your intentions there?
                     </p>
                     <p>
-                        A testament to innovative collaboration, "Midnight Murmurs" was co-created using advanced AI (Gemini) for lyrical development and narrative structuring, with AI music platforms (Suno AI) generating the instrumental beds and vocal performances.
+                        <strong>3AMΣ:</strong> The core of 3AMΣ is to explore creativity with AI as a true co-creator. When we started, a fundamental rule was: as close to what the AI generates as possible, with human input only for essential lyrical cohesion and safety. The AI was prompted to blend the essence of a cat's perspective with the Weeknd's aesthetic. The resulting image was a direct output. It was unexpected, compelling, and perfectly encapsulated the dualistic nature of the album – the animalistic and the human, the idol and the observer. It was precisely what we needed, unedited.
                     </p>
-                    <blockquote className="border-l-4 border-primary pl-4 italic">
-                        Crucially, the artistic mandate of 3AMΣ is to preserve the AI's creative voice: the final lyrics and structural concepts are kept <strong>as close to the AI's original generation as possible</strong>, filtered only for editorial merit and personal safety. This positioning makes the album a significant, intentional commentary on the future of AI-human artistic partnership, challenging traditional notions of authorship.
-                    </blockquote>
-                    
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">2. Official Album Art</h2>
-                    <p>
-                        The official album cover for "Midnight Murmurs" features a striking and surreal composite image – the face of a Siamese cat with piercing blue eyes subtly integrated into an aged, weary visage, echoing The Weeknd's iconic aesthetic. The artwork encapsulates the album's themes of dual perspective, introspection, and the slightly unsettling beauty of its narrative.
-                    </p>
-                    <div className="flex flex-wrap gap-4">
-                        <Button asChild>
-                            <a href="/images/Image 4_FINAL.png" download>Download Album Art <Download className="ml-2" /></a>
-                        </Button>
-                        <Button asChild variant="outline">
-                             <a href="/images/stupid fucking hooman.png" download>Download "CATNIP CONTENT" Single Art <Download className="ml-2" /></a>
-                        </Button>
-                    </div>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">3. Biography / Project Synopsis</h2>
                     <p>
-                        3AMΣ is an avant-garde musical entity dedicated to exploring the unspoken narratives and hidden philosophical dimensions of the mundane. Their debut, "Midnight Murmurs," is a unique collaborative endeavor between human vision and advanced artificial intelligence, pushing the boundaries of songwriting and conceptual album creation. Drawing deep inspiration from The Weeknd's evocative soundscapes and introspective lyrical style, 3AMΣ crafts a singular sonic universe that is both familiar and profoundly unsettling. The project seeks to provoke thought on themes of connection, dependency, and the endless cycles of modern existence, all through the deceptively simple lens of a domestic cat's day.
+                        <strong>Gravyspoon Magazine:</strong> And this artistic mandate, "no fine edits," extends to your merchandise mockups, like the t-shirt featuring the album art, modelled by a woman with natural hair. There's been a lot of discussion online about cultural representation and appropriation, especially with AI and stock imagery. What are your thoughts on that, particularly given the visual connection to The Weeknd's own identity?
+                    </p>
+                    <p>
+                        <strong>3AMΣ:</strong> That's an extremely important question, and it's something I've spent a lot of time thinking about. My first reaction to seeing that mockup from the template was exactly that internal check: Am I okay here? Is this being interpreted correctly? The reality is, as an artist operating with an "AI-first" mandate, I'm working with the internet as my canvas and the AI's "understanding" of it. When I seek a mockup or a template, the AI or the platform provides diverse options. The model in that t-shirt template, for example, had natural hair. The Weeknd, in our composite album art, also has natural hair. My intention was not to make a statement about natural hair or specific cultural identity in the context of appropriation. My intention was to showcase the album art on a t-shirt, using a readily available, diverse template.
                     </p>
                     
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">4. Key Tracks / Suggested Listening</h2>
-                    <ul>
-                        <li><strong>"Eternal Dawn (Loop)" (Track 9):</strong> The album's title track and emotional climax, perfect for demonstrating the energetic synth-pop and core themes.</li>
-                        <li><strong>"The Unspoken Contract" (Track 7):</strong> Highlights the human perspective and the album's exploration of co-dependence and complex relationships.</li>
-                        <li><strong>"Ambrosia & Oblivion" (Track 8):</strong> Showcases the darker, more addictive sound and the cat's primal desires.</li>
-                        <li><strong>"Apex Predator, Empty Bowl" (Track 2):</strong> A strong introduction to the cat's character and the album's unique lyrical perspective.</li>
-                    </ul>
+                    <p>
+                        <strong>Gravyspoon Magazine:</strong> So, it's about transparency of process?
+                    </p>
+                    <p>
+                        <strong>3AMΣ:</strong> Exactly. The fact that this image was available for me to use is part of the story of the internet now. AI-generated and stock templates are inherently diverse, reflecting the wider world. My choice, under the 3AMΣ mandate, is to present these elements as they are given, not to manipulate them for a different message. It’s a deliberate decision to show the raw collaboration, including the implicit decisions made by the AI or the dataset it was trained on. I believe in transparency. By choosing not to make fine edits or swap models to fit a preconceived notion of "safe," I'm actually being more true to the AI-first ethos. The AI gave me that image, and it gave me that diverse template. To alter it would be to interfere with the very "as close to what AI thinks as possible" aspect of the mandate. It becomes a meta-commentary: this is how AI presents art, and this is how we, as humans, choose to present that AI art to the world, acknowledging the inherent complexities and conversations that arise.
+                    </p>
 
-                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">5. Links</h2>
-                     <ul>
-                        <li><strong>Official Website:</strong> <a href="/">3amzoomies.com</a></li>
-                        <li><strong>The Origin Story:</strong> <Link href="/origin">Read the full story</Link></li>
-                        <li><strong>Film Project:</strong> <Link href="/film">View the Casting Call</Link></li>
-                     </ul>
+                    <p>
+                        <strong>Gravyspoon Magazine:</strong> It's a fascinating tightrope walk, using AI's unfiltered output while remaining ethically conscious. What do you hope listeners take away from this specific aspect of your work?
+                    </p>
+                    <p>
+                        <strong>3AMΣ:</strong> I hope it sparks conversation. I want people to think about how art is made now, how images are consumed, and the responsibility that comes with both. It's about being aware. It's about saying, 'This is the internet as it is. This is AI as it is. And this is how we, 3AMΣ, choose to engage with it – openly, transparently, and with respect for the diverse world we inhabit, even when operating under strict creative constraints.' The discussion itself becomes part of the art.
+                    </p>
 
+                    <p>
+                        <strong>Gravyspoon Magazine:</strong> A truly thought-provoking perspective. Thank you, 3AMΣ.
+                    </p>
+                    <p>
+                        <strong>3AMΣ:</strong> My pleasure.
+                    </p>
                 </article>
             </CardContent>
         </Card>
