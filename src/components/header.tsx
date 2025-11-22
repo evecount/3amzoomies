@@ -6,9 +6,8 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const navLinks = [
-  { href: '#', label: 'COLLECTIONS' },
+  { href: '/album', label: 'SONG LIST' },
   { href: '#', label: 'MERCH' },
-  { href: '#', label: 'MUSIC' },
   { href: '#', label: 'FILM' },
   { href: '#', label: 'THE ORIGIN' },
   { href: '#', label: 'SHOP INTERNATIONAL' },
