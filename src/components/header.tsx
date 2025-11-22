@@ -102,7 +102,7 @@ export function Header() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Button variant="ghost" size="icon" aria-label="Account" disabled className="text-muted-foreground/50 cursor-not-allowed">
+                  <Button variant="ghost" size="icon" aria-label="Account" className="hover:text-accent">
                     <User className="h-5 w-5" />
                   </Button>
                 </TooltipTrigger>
@@ -112,7 +112,7 @@ export function Header() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                   <Button variant="ghost" size="icon" aria-label="Cart" disabled className="text-muted-foreground/50 cursor-not-allowed">
+                   <Button variant="ghost" size="icon" aria-label="Cart" className="hover:text-accent">
                     <ShoppingCart className="h-5 w-5" />
                   </Button>
                 </TooltipTrigger>
