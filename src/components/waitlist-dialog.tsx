@@ -27,13 +27,19 @@ export function WaitlistDialog({ isOpen, onOpenChange, productTitle }: WaitlistD
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the email to your backend
-    console.log(`Email submitted for ${productTitle}: ${email}`);
     
+    const recipient = 'gwen@evecount.com';
+    const subject = `Waitlist Submission for: ${productTitle}`;
+    const body = `Please add the following email to the waitlist for "${productTitle}":\n\n${email}`;
+    
+    // Create a mailto link and open it
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     toast({
-      title: "You're on the list!",
-      description: `We'll notify you at ${email} when "${productTitle}" becomes available.`,
+      title: "Opening your email client...",
+      description: `Please send the pre-filled email to join the waitlist for "${productTitle}".`,
     });
+
     onOpenChange(false);
     setEmail('');
   };
