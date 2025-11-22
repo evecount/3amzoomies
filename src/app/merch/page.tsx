@@ -5,12 +5,11 @@ import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Separator } from '@/components/ui/separator';
 import { ArrowRight } from 'lucide-react';
+import { VinylRecord } from '@/components/vinyl-record';
 
 export default function MerchPage() {
     const tShirtImage = PlaceHolderImages.find(img => img.id === 'merch-tshirt');
-    const vinylImage = PlaceHolderImages.find(img => img.id === 'merch-vinyl');
 
     return (
         <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -55,17 +54,9 @@ export default function MerchPage() {
                     </Card>
 
                      <Card className="bg-card/50 overflow-hidden flex flex-col">
-                        {vinylImage && (
-                             <CardContent className="p-0 aspect-square relative">
-                                <Image
-                                    src={vinylImage.imageUrl}
-                                    alt={vinylImage.description}
-                                    fill
-                                    data-ai-hint={vinylImage.imageHint}
-                                    className="object-cover"
-                                />
-                            </CardContent>
-                        )}
+                         <CardContent className="p-8">
+                            <VinylRecord />
+                        </CardContent>
                         <CardHeader>
                             <CardTitle className="font-headline text-3xl uppercase">"Midnight Murmurs" Vinyl</CardTitle>
                             <CardDescription className="text-xl">$150.00 USD</CardDescription>
