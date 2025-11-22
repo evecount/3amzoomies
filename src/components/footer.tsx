@@ -16,7 +16,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container pb-8 text-center">
-          <p className="text-xs text-muted-foreground/50">
+          <p className="text-sm text-muted-foreground">
             This website is a satirical work of art. However, if enough people join the waitlist, we'll actually make the merch. No, really.
           </p>
       </div>
