@@ -15,19 +15,19 @@
     {
       "id": "merch-tshirt",
       "description": "Black t-shirt with a minimalist design",
-      "imageUrl": "/public/images/merch/t-shirt.png",
+      "imageUrl": "/public/images/merch/3AM_tshirt.png",
       "imageHint": "black t-shirt"
     },
     {
       "id": "merch-cup",
       "description": "Black mug with album branding",
-      "imageUrl": "/public/images/merch/cup.png",
+      "imageUrl": "/public/images/merch/3AM_cup.png",
       "imageHint": "black mug"
     },
     {
       "id": "merch-pillow-case",
       "description": "Pillow case with album branding",
-      "imageUrl": "/public/images/merch/pillow-case.png",
+      "imageUrl": "/public/images/merch/3AM_pillowcase.png",
       "imageHint": "pillow case"
     },
     {
