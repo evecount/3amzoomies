@@ -50,7 +50,7 @@ export function HeroSection() {
             The new album by <span className="text-foreground font-semibold">{albumData.artist}</span>. A journey through nocturnal cityscapes and quiet introspections.
           </p>
           <div className="w-full max-w-md bg-background/50 rounded-lg border p-2 mb-8">
-            <SongPlayer song={previewSong} />
+            <SongPlayer song={previewSong} playlist={albumData.songs} />
           </div>
 
           <Button onClick={handlePurchase} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground uppercase">

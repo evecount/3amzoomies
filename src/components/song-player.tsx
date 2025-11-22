@@ -1,27 +1,35 @@
 'use client';
 
-import { useState } from 'react';
-import { Play, Pause, ListMusic, Lock } from 'lucide-react';
+import { Play, Pause, ListMusic, Lock, Loader } from 'lucide-react';
 import { Button } from './ui/button';
 import type { Song } from '@/lib/data';
 import { LyricsDialog } from './lyrics-dialog';
+import { useAudioPlayer } from '@/hooks/use-audio-player';
+import { useState } from 'react';
 
 interface SongPlayerProps {
   song: Song;
   isLocked?: boolean;
   showLyricsButton?: boolean;
+  playlist?: Song[];
 }
 
-export function SongPlayer({ song, isLocked = false, showLyricsButton = true }: SongPlayerProps) {
-  const [isPlaying, setIsPlaying] = useState(false);
+export function SongPlayer({ song, isLocked = false, showLyricsButton = true, playlist }: SongPlayerProps) {
+  const { playSong, pause, currentSong, isPlaying, isLoading } = useAudioPlayer();
   const [isLyricsOpen, setIsLyricsOpen] = useState(false);
 
-  // We don't have an audio context, so this is a dummy toggle.
-  // A real implementation would use an Audio element or a library.
+  const thisSongIsPlaying = isPlaying && currentSong?.id === song.id;
+  const thisSongIsLoading = isLoading && currentSong?.id === song.id;
+
   const handlePlayPause = (e: React.MouseEvent) => {
-    e.stopPropagation(); // prevent accordion from opening
+    e.stopPropagation();
     if (isLocked) return;
-    setIsPlaying(!isPlaying);
+
+    if (thisSongIsPlaying) {
+      pause();
+    } else {
+      playSong(song, playlist);
+    }
   };
 
   return (
@@ -31,13 +39,15 @@ export function SongPlayer({ song, isLocked = false, showLyricsButton = true }: 
           variant="ghost"
           size="icon"
           onClick={handlePlayPause}
-          aria-label={isPlaying ? 'Pause song' : 'Play song'}
+          aria-label={thisSongIsPlaying ? 'Pause song' : 'Play song'}
           disabled={isLocked}
           className="w-12 h-12"
         >
           {isLocked ? (
             <Lock className="w-5 h-5 text-muted-foreground" />
-          ) : isPlaying ? (
+          ) : thisSongIsLoading ? (
+            <Loader className="w-5 h-5 animate-spin" />
+          ) : thisSongIsPlaying ? (
             <Pause className="w-5 h-5 text-primary" />
           ) : (
             <Play className="w-5 h-5" />

@@ -67,7 +67,7 @@ export default function AlbumPage() {
                         {albumData.songs.map((song) => (
                             <AccordionItem value={`item-${song.id}`} key={song.id}>
                                 <AccordionTrigger className="hover:no-underline">
-                                    <SongPlayer song={song} isLocked={false} showLyricsButton={false} />
+                                    <SongPlayer song={song} playlist={albumData.songs} isLocked={false} showLyricsButton={false} />
                                 </AccordionTrigger>
                                 <AccordionContent>
                                     <div className="whitespace-pre-wrap text-foreground/80 leading-relaxed px-4 pb-4">
