@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -9,7 +10,7 @@ const navLinks = [
   { href: '/album', label: 'SONG LIST' },
   { href: '#', label: 'MERCH' },
   { href: '#', label: 'FILM' },
-  { href: '#', label: 'THE ORIGIN' },
+  { href: '/origin', label: 'THE ORIGIN' },
   { href: '#', label: 'SHOP INTERNATIONAL' },
 ];
 
