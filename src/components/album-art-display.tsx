@@ -14,7 +14,7 @@ export function AlbumArtDisplay() {
     <Card className="aspect-square w-full overflow-hidden rounded-lg shadow-2xl border-2 border-primary/50">
       <CardContent className="p-0 relative w-full h-full">
         <Image
-          src="/images/Cat Remix of the Weekend.png"
+          src={coverArt.imageUrl}
           alt={coverArt.description}
           fill
           className="object-cover"
