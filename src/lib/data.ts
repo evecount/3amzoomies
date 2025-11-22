@@ -158,7 +158,7 @@ Contract... unspoken... Lovely fleeting dreams...`,
       id: 9,
       title: "Eternal Dawn (Loop)",
       duration: "5:02",
-      audioSrc: "/public/audio/placeholder-9.mp3",
+      audioSrc: "/public/audio/TRACK9_Eternal Dawn.wav",
       lyrics: `(Music begins with a low, throbbing synth bassline, sparse, echoing percussion, and a sense of uneasy quiet. A faint, distant siren-like synth sound drifts in. The tempo is slow but with an underlying tension.)
 (Verse 1 - Human's tired internal monologue) The digital clock blinks, zero-three-zero-one Another night erased, a lonely, fading hero Just silence for a moment, then a sudden, frantic sound A blur across the floor, on hallowed, sleeping ground The walls become a canvas, for shadows in the race A tiny engine revving, setting its frantic pace I close my eyes, pretend it isn't real This nightly grand performance, how does it always feel?
 (Pre-Chorus - Human's mounting frustration) This is night time, this fragile, fleeting peace But the chaos finds a way, bringing no release Shadows appear like fright, beneath the moon's pale gaze Lost in this waking nightmare, caught in a boundless maze.
