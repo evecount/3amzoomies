@@ -8,12 +8,7 @@ import { SongPlayer } from './song-player';
 import { usePurchase } from '@/hooks/use-purchase';
 import { useToast } from '@/hooks/use-toast';
 import { ArrowRight } from 'lucide-react';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Card, CardContent } from './ui/card';
 
 export function HeroSection() {
   const router = useRouter();
@@ -45,22 +40,18 @@ export function HeroSection() {
             The new album by <span className="text-foreground font-semibold">{albumData.artist}</span>. A journey through nocturnal cityscapes and quiet introspections.
           </p>
 
-          <div className="w-full max-w-md bg-background/50 rounded-lg border p-2 mb-8">
-            <Accordion type="multiple" className="w-full">
+          <Card className="w-full max-w-md bg-background/50 mb-8">
+            <CardContent className="p-2 flex flex-col gap-1">
                 {albumData.songs.map((song) => (
-                    <AccordionItem value={`item-${song.id}`} key={song.id}>
-                        <AccordionTrigger className="hover:no-underline">
-                            <SongPlayer song={song} playlist={albumData.songs} showLyricsButton={false} />
-                        </AccordionTrigger>
-                        <AccordionContent>
-                            <div className="whitespace-pre-wrap text-foreground/80 leading-relaxed px-4 pb-4">
-                                {song.lyrics}
-                            </div>
-                        </AccordionContent>
-                    </AccordionItem>
+                    <SongPlayer 
+                        song={song} 
+                        playlist={albumData.songs} 
+                        key={song.id} 
+                        isLocked={song.id !== 1}
+                    />
                 ))}
-            </Accordion>
-          </div>
+            </CardContent>
+          </Card>
 
           <Button onClick={handlePurchase} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground uppercase">
             Buy Full Album <ArrowRight className="ml-2 h-5 w-5" />

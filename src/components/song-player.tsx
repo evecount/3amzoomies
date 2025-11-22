@@ -34,7 +34,7 @@ export function SongPlayer({ song, isLocked = false, showLyricsButton = true, pl
 
   return (
     <>
-      <div className="flex items-center gap-4 p-2 rounded-md transition-colors w-full">
+      <div className="flex items-center gap-4 p-2 rounded-md transition-colors w-full hover:bg-muted/50">
         <Button
           variant="ghost"
           size="icon"
