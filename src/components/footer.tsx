@@ -16,8 +16,8 @@ export function Footer() {
         </div>
       </div>
       <div className="container pb-8 text-center">
-          <p className="text-sm text-muted-foreground">
-            This website is a satirical work of art. However, if enough people join the waitlist, we'll actually make the merch. No, really.
+          <p className="text-sm text-foreground/80">
+            This website is a satirical work of art. However, if enough people join the waitlist, we'll actually make the merch. No, really. ACTUALLY.....
           </p>
       </div>
     </footer>
