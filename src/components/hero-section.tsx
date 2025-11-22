@@ -33,16 +33,16 @@ export function HeroSection() {
             <AlbumArtDisplay />
           </div>
           <div className="relative w-full max-w-md h-56 flex items-center justify-start -mt-3 pt-[10px]">
-            <div className="group w-52 absolute left-0">
+            <div className="group w-40 absolute left-0">
               <AlbumArtDisplay />
             </div>
-            <div className="w-52 h-52 absolute right-0">
+            <div className="w-40 h-40 absolute right-0">
               <VinylRecord />
             </div>
           </div>
         </div>
         <div className="flex flex-col items-start text-left">
-          <p className="text-primary font-headline text-lg tracking-widest uppercase">New Album</p>
+          <p className="text-primary font-headline text-lg tracking-widest uppercase">Debut Album</p>
           <h1 className="font-headline text-5xl md:text-7xl font-bold mt-2 mb-6 leading-tight uppercase">
             {albumData.title}
           </h1>
