@@ -6,6 +6,7 @@ import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Download } from 'lucide-react';
+import Image from 'next/image';
 
 const pressContactHref = `mailto:gwen@evecount.com?subject=${encodeURIComponent(
   `Press Inquiry: 3AMΣ`
@@ -24,6 +25,18 @@ export default function MediaPage() {
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
             <CardContent className="p-6 md:p-12">
                 <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                    
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-0">Featured In</h2>
+                    <div className="not-prose rounded-lg overflow-hidden border border-stone-200 shadow-md mb-8">
+                        <Image 
+                            src="/images/gravyspoon magazine.png"
+                            alt="Gravyspoon Magazine Feature on 3AMΣ"
+                            width={1200}
+                            height={800}
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
+
                     <p>
                         Welcome to the official media kit for <strong>3AMΣ</strong> and their debut album, <strong>"Midnight Murmurs."</strong> This page is designed to provide journalists, bloggers, podcasters, and other media professionals with quick access to essential information and assets.
                     </p>
@@ -49,10 +62,10 @@ export default function MediaPage() {
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <Button asChild>
-                            <a href="/public/images/Image 4_FINAL.png" download>Download Album Art <Download className="ml-2" /></a>
+                            <a href="/images/Image 4_FINAL.png" download>Download Album Art <Download className="ml-2" /></a>
                         </Button>
                         <Button asChild variant="outline">
-                             <a href="#" download>Download "CATNIP CONTENT" Overlay <Download className="ml-2" /></a>
+                             <a href="/images/stupid fucking hooman.png" download>Download "CATNIP CONTENT" Single Art <Download className="ml-2" /></a>
                         </Button>
                     </div>
 
