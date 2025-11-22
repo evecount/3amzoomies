@@ -56,8 +56,9 @@ export default function OriginPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">The Story of "Midnight Murmurs"</h1>
-            <p className="text-lg text-muted-foreground mt-1">An encyclopedic entry on the conceptual album.</p>
+            <p className="text-primary font-headline text-lg tracking-widest uppercase">The Story of</p>
+            <h1 className="font-headline text-5xl md:text-7xl tracking-wider uppercase font-bold">Midnight Murmurs</h1>
+            <p className="text-lg text-muted-foreground mt-2">An encyclopedic entry on the conceptual album.</p>
         </div>
         <Separator className="mb-12"/>
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
