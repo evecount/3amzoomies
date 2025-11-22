@@ -52,7 +52,7 @@ export default function AlbumPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
-            <div className="group sticky top-24">
+            <div className="group sticky top-24 w-full max-w-md mx-auto">
               <AlbumArtDisplay />
             </div>
             

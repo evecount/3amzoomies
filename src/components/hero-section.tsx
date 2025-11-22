@@ -27,7 +27,7 @@ export function HeroSection() {
   return (
     <section className="container mx-auto px-4 py-12 md:py-24">
       <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-        <div className="group">
+        <div className="group w-full max-w-md mx-auto">
           <AlbumArtDisplay />
         </div>
         <div className="flex flex-col items-start text-left">
