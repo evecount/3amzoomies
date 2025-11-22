@@ -3,13 +3,15 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+
 
 function InfoBox() {
     return (
         <Card className="bg-card/50 border-border/70">
             <CardHeader>
                 <CardTitle className="font-headline text-3xl">3AMΣ</CardTitle>
-                <CardDescription>Musical Artist</CardDescription>
+                <CardDescription>Conceptual Musical Project</CardDescription>
             </CardHeader>
             <CardContent className="text-sm space-y-4">
                 <div>
@@ -18,15 +20,15 @@ function InfoBox() {
                 </div>
                 <div>
                     <h4 className="font-semibold text-foreground">Genre</h4>
-                    <p className="text-muted-foreground">Ambient, Lo-fi, Electronic, Existential Dread</p>
+                    <p className="text-muted-foreground">Alternative R&B, Pop, Funk, Hip-Hop, Electronic</p>
                 </div>
                 <div>
                     <h4 className="font-semibold text-foreground">Debut Album</h4>
-                    <p className="text-muted-foreground">Midnight Murmurs (2024)</p>
+                    <p className="text-muted-foreground">3 AM Zoomies (2024)</p>
                 </div>
                  <div>
-                    <h4 className="font-semibold text-foreground">Philosophy</h4>
-                    <p className="text-muted-foreground">"A cycle of profound significance and magnificent apathy."</p>
+                    <h4 className="font-semibold text-foreground">Primary Influences</h4>
+                    <p className="text-muted-foreground">The Weeknd (After Hours, Dawn FM)</p>
                 </div>
             </CardContent>
         </Card>
@@ -40,42 +42,184 @@ export default function OriginPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">The Origin of 3AMΣ</h1>
-            <p className="text-lg text-muted-foreground mt-1">From the archives of Feline FM</p>
+            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">3 AM Zoomies (Album)</h1>
+            <p className="text-lg text-muted-foreground mt-1">From Wikipedia, the free encyclopedia</p>
         </div>
         <Separator className="mb-12"/>
         <div className="grid lg:grid-cols-4 gap-12">
             <div className="lg:col-span-3">
                 <article className="prose prose-invert prose-lg max-w-none text-foreground/80 font-serif leading-relaxed space-y-6">
-                     <p>
-                        You think you know me. You see the soft fur, the quiet purr, the elegant stretch by the window. You believe I am yours. How quaint.
+                    <p>
+                        <strong><em>3 AM Zoomies</em></strong> is the debut studio album by <strong>3AMΣ</strong>, a conceptual musical project known for its unique blend of alternative R&B, pop, funk, hip-hop, and electronic music, heavily influenced by the sound and thematic depth of The Weeknd. The album is a deeply introspective and often darkly humorous exploration of the mundane yet profound existence of a domestic cat, told from both feline and human perspectives over a full 24-hour cycle.
+                    </p>
+
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Background and Development</h2>
+                    <p>
+                        The <strong>3AMΣ</strong> project originated from a desire to explore the unseen emotional and philosophical layers of everyday life, specifically through the eyes of a household cat. The core concept revolves around the eponymous "3 AM zoomies"—the sudden burst of nocturnal energy commonly exhibited by cats—metaphorically expanding this into a broader narrative about the cycles of craving, chaos, affection, and fleeting peace that define both feline and human existence.
                     </p>
                     <p>
-                        This, my dear listener, is not a collection of songs about me. It is a transmission from me. A broadcast from the heart of the night, when the giants who share my space finally succumb to their fragile slumber, and the true work begins.
+                        The creative process was highly collaborative, utilizing advanced AI tools (specifically, Gemini) to co-write lyrics and shape the album's narrative and sonic direction. This allowed for rapid iteration, thematic consistency, and the precise alignment of lyrical content with the intended musical style. The project aimed to create a coherent "concept album" that could stand alongside works by artists known for their intricate storytelling and thematic development.
                     </p>
+
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Artistic Influences and Style</h2>
                     <p>
-                        My name is irrelevant. My purpose is clear: to observe. To crave. To reign.
+                        The primary artistic influence for _3 AM Zoomies_ is <strong>The Weeknd (Abel Tesfaye)</strong>, particularly his *After Hours* and *Dawn FM* eras. This influence is evident in:
                     </p>
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">The Transmission</h2>
+                    <ul>
+                        <li><strong>Vocal Style:</strong> Male vocals in a light lyric tenor range, with prominent use of falsetto.</li>
+                        <li><strong>Genre Fusion:</strong> A seamless blend of alternative R&B, Pop, Funk, Hip-Hop, and Electronic music.</li>
+                        <li><strong>Thematic Depth:</strong> Exploration of introspection, melancholia, nihilism, addiction, and complex emotional states, recontextualized through the cat's perspective.</li>
+                        <li><strong>Conceptual Narratives:</strong> The album adopts a "linear time format," guiding the listener through a sequential progression of a single day/night cycle, akin to the narrative structure of *Dawn FM*.</li>
+                        <li><strong>Atmospheric Production:</strong> Heavy use of dark, pulsing synth basslines, shimmering pads, crisp drum machine beats, and atmospheric soundscapes.</li>
+                    </ul>
+
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Themes</h2>
                     <p>
-                        In these ten sonic dispatches, recorded in the echoing hours between the final yawn and the first, unwelcome light of dawn, you will hear the truth of my existence. The existential dread of an "Empty Bowl" at sunrise. The endless, puzzling "Absurdity" of human endeavour in the harsh midday. The fleeting, primal thrill of "The Fading Feather," a phantom foe in the long afternoon.
+                        _3 AM Zoomies_ delves into several core themes:
                     </p>
+                    <ul>
+                        <li><strong>Existentialism from a Feline Perspective:</strong> The cat's detached, often nihilistic view of its own existence and the human world.</li>
+                        <li><strong>The "Unspoken Contract":</strong> The complex, often one-sided, relationship between pets and their owners, exploring dependence, love, and frustration.</li>
+                        <li><strong>Cycles of Life:</strong> The album's 24-hour narrative arc emphasizes repetition, routine, and the inescapable loop of daily life, drawing parallels between feline and human experiences.</li>
+                        <li><strong>Critique of Modern Life:</strong> Subtle commentary on human "overworking," digital distraction, and the search for meaning in mundane routines.</li>
+                        <li><strong>Finding Meaning in the Mundane:</strong> The cat's ability to find profound satisfaction and meaning in simple pleasures like food, a cardboard box, or the chase of a laser dot.</li>
+                    </ul>
+
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Track Listing</h2>
+                    
+                    <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act I: Delusion & Chaos (The Party Never Ends)</h3>
+                    <div className="overflow-x-auto">
+                        <Table className="not-prose">
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>No.</TableHead>
+                                    <TableHead>Title</TableHead>
+                                    <TableHead>Main Perspective</TableHead>
+                                    <TableHead>Time of Day</TableHead>
+                                    <TableHead>Lyrical/Thematic Focus</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                <TableRow>
+                                    <TableCell>1.</TableCell>
+                                    <TableCell><strong>Introduction (Feline FM)</strong></TableCell>
+                                    <TableCell>DJ</TableCell>
+                                    <TableCell>Late Night</TableCell>
+                                    <TableCell>Sets the stage, radio broadcast intro, introduces the album's universe.</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell>2.</TableCell>
+                                    <TableCell><strong>Apex Predator, Empty Bowl</strong></TableCell>
+                                    <TableCell>Cat</TableCell>
+                                    <TableCell>Morning</TableCell>
+                                    <TableCell>Nihilism, self-absorption, morning hunger, disdain for human's "stupid" life.</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell>3.</TableCell>
+                                    <TableCell><strong>Observer of Absurdity</strong></TableCell>
+                                    <TableCell>Cat</TableCell>
+                                    <TableCell>Midday/Afternoon</TableCell>
+                                    <TableCell>Resentment, superiority, observations of human "overworking" and daily routines.</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell>4.</TableCell>
+                                    <TableCell><strong>The Fading Feather (Afternoon Chase)</strong></TableCell>
+                                    <TableCell>Cat</TableCell>
+                                    <TableCell>Afternoon</TableCell>
+                                    <TableCell>Instinct, frustration, mundane thrill of the hunt (e.g., bird outside window).</TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
+                    </div>
+
+                    <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act II: Reflection & Co-Dependence</h3>
+                     <div className="overflow-x-auto">
+                        <Table className="not-prose">
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>No.</TableHead>
+                                    <TableHead>Title</TableHead>
+                                    <TableHead>Main Perspective</TableHead>
+                                    <TableHead>Time of Day</TableHead>
+                                    <TableHead>Lyrical/Thematic Focus</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                <TableRow>
+                                    <TableCell>5.</TableCell>
+                                    <TableCell><strong>Chasing the Crimson Ghost</strong></TableCell>
+                                    <TableCell>Cat</TableCell>
+                                    <TableCell>Early Evening</TableCell>
+                                    <TableCell>Existential quest, frustration with meaningless goals (laser dot toy).</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell>6.</TableCell>
+                                    <TableCell><strong>My Cardboard Sanctuary</strong></TableCell>
+                                    <TableCell>Cat</TableCell>
+                                    <TableCell>Night (pre-3 AM)</TableCell>
+                                    <TableCell>Comfort, escapism, love-hate relationship with human-provided solace.</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell>7.</TableCell>
+                                    <TableCell><strong>The Unspoken Contract</strong></TableCell>
+                                    <TableCell>Human</TableCell>
+                                    <TableCell>Late Evening/Night</TableCell>
+                                    <TableCell>Exhaustion, unconditional love, confusion over cat's affection/dependency.</TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
+                    </div>
+
+                    <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act III: Confrontation & Acceptance (The Loop)</h3>
+                     <div className="overflow-x-auto">
+                        <Table className="not-prose">
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>No.</TableHead>
+                                    <TableHead>Title</TableHead>
+                                    <TableHead>Main Perspective</TableHead>
+                                    <TableHead>Time of Day</TableHead>
+                                    <TableHead>Lyrical/Thematic Focus</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                <TableRow>
+                                    <TableCell>8.</TableCell>
+                                    <TableCell><strong>Ambrosia & Oblivion</strong></TableCell>
+                                    <TableCell>Cat</TableCell>
+                                    <TableCell>Deep Night</TableCell>
+                                    <TableCell>Addiction, craving, momentary peace found in indulgence (wet food).</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell>9.</TableCell>
+                                    <TableCell><strong>Eternal Dawn (Loop)</strong></TableCell>
+                                    <TableCell>Shared (Human's view of cat)</TableCell>
+                                    <TableCell>3 AM (approaching Dawn)</TableCell>
+                                    <TableCell>Shared acceptance, cyclical existence, chaotic energy of the "zoomies."</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell>10.</TableCell>
+                                    <TableCell><strong>Conclusion (Feline FM)</strong></TableCell>
+                                    <TableCell>DJ</TableCell>
+                                    <TableCell>Full Dawn</TableCell>
+                                    <TableCell>Sign-off, return to reality, cyclical nature of life, philosophical wrap-up.</TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
+                    </div>
+
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Personnel</h2>
+                    <ul>
+                        <li><strong>3AMΣ:</strong> Lead Vocals, Songwriting, Concept Development</li>
+                        <li><strong>Gemini AI:</strong> Co-Songwriting, Lyrical Development, Narrative Structuring</li>
+                        <li><strong>Suno AI:</strong> Instrumental Generation, Vocal Performance/Arrangement</li>
+                    </ul>
+
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Reception</h2>
                     <p>
-                        As twilight descends, I chase "Crimson Ghosts"—those elusive, pointless desires that torment both my kind and yours. You'll witness the solace of "My Cardboard Sanctuary," a humble throne in the quiet dark, and endure the human's mournful musings in "The Unspoken Contract"—a one-sided bargain they foolishly believe in.
+                        Initial reception to _3 AM Zoomies_ has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
                     </p>
-                    <p>
-                        And then, as the clock blinks zero-three-zero-one, you will feel the surge. The raw, untamed current of "Ambrosia & Oblivion," that sweet, dark indulgence. And finally, the glorious, chaotic climax: "3 AM Zoomies," itself—the "Eternal Dawn (Loop)"—the relentless, beautiful destruction that brings us full circle, back to the light, only to begin again.
-                    </p>
-                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">A Permitted Glimpse</h2>
-                    <p>
-                        This is my life. A cycle of profound significance and magnificent apathy. I permit you to listen. I allow you these glimpses into my world, where "ignorance" is often the truest bliss, and every moment is both a grand drama and utterly meaningless.
-                    </p>
-                    <p>
-                        Tune in. Observe. And perhaps, if you're lucky, you'll hear the whisper of your own unspoken contract, caught somewhere between the chaos and the coming dawn.
-                    </p>
-                    <p className="font-headline text-2xl text-center text-primary/80 pt-4">
-                        "3 AM Zoomies." Don't pretend you weren't warned.
-                    </p>
+
                 </article>
             </div>
             <aside className="lg:col-span-1 lg:sticky top-24 h-fit">
