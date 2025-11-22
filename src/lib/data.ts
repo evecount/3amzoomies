@@ -26,7 +26,7 @@ export const albumData: Album = {
       id: 1,
       title: "Introduction (Feline FM)",
       duration: "1:15",
-      audioSrc: "/audio/placeholder-1.mp3",
+      audioSrc: "/audio/TRACK1_Welcome to Feline FM.mp3",
       lyrics: `You are tuning in to Fee-line FM, your only stop for the best in existential dread and unwarranted napping. It's late, you're lonely, and you're contemplating the meaningless of your life, which is fine, because you're a human. Our first track tonight is a deep dive into the true cost of companionship. Settle in, buckle up, and try not to spill your water glass. You're about to hear the gospel according to your four-legged overlord.`,
       coverArtId: "song-1-cover",
     },
@@ -46,7 +46,7 @@ The bowl is a void, mocking me`,
       id: 3,
       title: "Observer of Absurdity",
       duration: "4:12",
-      audioSrc: "/audio/placeholder-3.mp3",
+      audioSrc: "/audio/TRACK3_Observer of Absurdity.mp3",
       lyrics: `[Verse 1]
 The tall one stares at a glowing rectangle, laughing at nothing
 The other one talks to a plant, as if it could hear something
@@ -58,7 +58,7 @@ But do they understand true happiness? It's a guess.`,
       id: 4,
       title: "The Fading Feather (Afternoon Chase)",
       duration: "2:58",
-      audioSrc: "/audio/placeholder-4.mp3",
+      audioSrc: "/audio/TRACK4_The Fading Feather.mp3",
       lyrics: `[Verse]
 A shadow drifts, a silent grace
 Across the sunbeam on this space
@@ -72,7 +72,7 @@ Just dust and light beneath my eye.`,
       id: 5,
       title: "Chasing the Crimson Ghost",
       duration: "4:20",
-      audioSrc: "/audio/placeholder-5.mp3",
+      audioSrc: "/audio/TRACK5_Chasing the Cimson Ghost.mp3",
       lyrics: `[Verse 1]
 A flicker on the wall, a ghost I can't catch
 A phantom of ruby, a maddening latch
@@ -86,7 +86,7 @@ To hunt a light in this empty space?`,
       id: 6,
       title: "My Cardboard Sanctuary",
       duration: "3:50",
-      audioSrc: "/audio/placeholder-6.mp3",
+      audioSrc: "/audio/TRACK6_My Cardboard Sanctuary.mp3",
       lyrics: `[Verse 1]
 Four brown walls, a perfect square
 Forget the world, I don't care
@@ -100,7 +100,7 @@ A simple fortress, a private ark.`,
       id: 7,
       title: "The Unspoken Contract",
       duration: "3:10",
-      audioSrc: "/audio/placeholder-7.mp3",
+      audioSrc: "/audio/TRACK7_The Unspoken Contract.mp3",
       lyrics: `[Human Voice, tired]
 You step on my face while I'm sleeping
 You scream at the door for no reason
@@ -114,7 +114,7 @@ I'll love you until one of us is dead.`,
       id: 8,
       title: "Ambrosia & Oblivion",
       duration: "4:30",
-      audioSrc: "/audio/placeholder-8.mp3",
+      audioSrc: "/audio/TRACK8_Ambrosia and Oblivion.mp3",
       lyrics: `[Verse 1]
 The can opens, a holy sound
 The scent of ocean, all around
