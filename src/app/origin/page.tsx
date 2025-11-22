@@ -261,7 +261,7 @@ export default function OriginPage() {
                             <div className="grid md:grid-cols-2 gap-8 mt-8">
                                 <div className="space-y-4">
                                     <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
-                                        <Image src="/public/images/instagram-grid.png" alt="3AMΣ Instagram Page" fill className="object-cover" />
+                                        <Image src="/public/images/instagram.jpeg" alt="3AMΣ Instagram Page" fill className="object-cover" />
                                     </div>
                                     <p className="text-sm text-center text-stone-500 font-serif">The official Instagram grid for @3amzoomie.</p>
                                 </div>
