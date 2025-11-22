@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Mail, Search, User, ShoppingCart, Menu } from 'lucide-react';
+import { Mail, Instagram, User, ShoppingCart, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import {
@@ -28,6 +28,11 @@ const iconLinks = [
     icon: Mail, 
     label: 'Email' 
   },
+  {
+    href: '#', // Placeholder for Instagram URL
+    icon: Instagram,
+    label: 'Instagram'
+  }
 ];
 
 const disabledIconTooltip = "This website is a satirical work of art. However, if enough people join the waitlist, we'll actually make the merch. No, really.";
@@ -90,16 +95,6 @@ export function Header() {
                   </Button>
                 </Link>
               ))}
-               <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button variant="ghost" size="icon" aria-label="Search" disabled className="text-muted-foreground/50 cursor-not-allowed">
-                    <Search className="h-5 w-5" />
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{disabledIconTooltip}</p>
-                </TooltipContent>
-              </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Button variant="ghost" size="icon" aria-label="Account" className="hover:text-accent">
