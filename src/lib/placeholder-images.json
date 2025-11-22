@@ -3,7 +3,7 @@
     {
       "id": "album-cover",
       "description": "Album cover for Midnight Murmurs",
-      "imageUrl": "/publc/images/Image 4_FINAL.png",
+      "imageUrl": "/public/images/Image 4_FINAL.png",
       "imageHint": "abstract music"
     },
     {
@@ -11,6 +11,12 @@
       "description": "Photo of the artist 3 AM Zoomies",
       "imageUrl": "https://images.unsplash.com/photo-1593459866242-426f7768f3dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtdXNpY2lhbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Mzc5NDQwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "musician portrait"
+    },
+    {
+      "id": "merch-tshirt",
+      "description": "Black t-shirt with a minimalist design",
+      "imageUrl": "https://images.unsplash.com/photo-1759572095317-3a96f9a98e2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibGFjayUyMHQtc2hpcnR8ZW58MHx8fHwxNzYzNzYzMjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "black t-shirt"
     },
     {
       "id": "song-1-cover",
