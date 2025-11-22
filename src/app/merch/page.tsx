@@ -10,6 +10,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function MerchPage() {
     const tShirtImage = PlaceHolderImages.find(img => img.id === 'merch-tshirt');
+    const vinylImage = PlaceHolderImages.find(img => img.id === 'merch-vinyl');
 
     return (
         <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -21,8 +22,8 @@ export default function MerchPage() {
                     <p className="text-lg text-muted-foreground mt-2">Approved by the Apex Predator.</p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <Card className="bg-card/50 overflow-hidden">
+                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <Card className="bg-card/50 overflow-hidden flex flex-col">
                         {tShirtImage && (
                              <CardContent className="p-0 aspect-square relative">
                                 <Image
@@ -36,15 +37,48 @@ export default function MerchPage() {
                         )}
                         <CardHeader>
                             <CardTitle className="font-headline text-3xl uppercase">"The Observer" Official Tee</CardTitle>
-                            <CardDescription>$29.99</CardDescription>
+                            <CardDescription className="text-xl">$29.99 USD</CardDescription>
                         </CardHeader>
-                        <CardContent className="space-y-4 text-foreground/80">
+                        <CardContent className="space-y-4 text-foreground/80 flex-grow">
                             <p>
                                 You think your clothes are your own? How quaint. This garment has been pre-approved by the true master of the house. It's comfortable enough for your tedious daily tasks, yet stylish enough to not be an complete embarrassment when you serve my dinner.
                             </p>
                             <p>
                                 Wear it as a reminder of your place in the grand, absurd theater of life. Now, go fill my bowl.
                             </p>
+                        </CardContent>
+                         <CardContent>
+                            <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                Add to Cart <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </CardContent>
+                    </Card>
+
+                     <Card className="bg-card/50 overflow-hidden flex flex-col">
+                        {vinylImage && (
+                             <CardContent className="p-0 aspect-square relative">
+                                <Image
+                                    src={vinylImage.imageUrl}
+                                    alt={vinylImage.description}
+                                    fill
+                                    data-ai-hint={vinylImage.imageHint}
+                                    className="object-cover"
+                                />
+                            </CardContent>
+                        )}
+                        <CardHeader>
+                            <CardTitle className="font-headline text-3xl uppercase">"Midnight Murmurs" Vinyl</CardTitle>
+                            <CardDescription className="text-xl">$150.00 USD</CardDescription>
+                        </CardHeader>
+                        <CardContent className="space-y-4 text-foreground/80 flex-grow">
+                            <p>
+                                You thought this experience was only for your ears? Adorable. Now, you may possess the physical artifact. This limited edition 180-gram vinyl contains the complete '3 AM Zoomies' transmission, pressed into a disc of pure, dark energy.
+                            </p>
+                            <p>
+                                It is suitable for your primitive record-playing devices. Place it on your turntable and allow the analog vibrations to remind you of the true, cyclical nature of your existence. Handle with care. Or don't. It matters very little to me.
+                            </p>
+                        </CardContent>
+                        <CardContent>
                             <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
                                 Add to Cart <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>

@@ -15,8 +15,14 @@
     {
       "id": "merch-tshirt",
       "description": "Black t-shirt with a minimalist design",
-      "imageUrl": "https://images.unsplash.com/photo-1759572095317-3a96f9a98e2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibGFjayUyMHQtc2hpcnR8ZW58MHx8fHwxNzYzNzYzMjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1711641066085-5236bf7afcd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibGFjayUyMHQtc2hpcnR8ZW58MHx8fHwxNzYzNzYzMjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "black t-shirt"
+    },
+    {
+      "id": "merch-vinyl",
+      "description": "Limited Edition Pressed Vinyl of Midnight Murmurs",
+      "imageUrl": "https://images.unsplash.com/photo-1702308632277-ab0ccf044d96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aW55bCUyMHJlY29yZCUyMHByb2R1Y3R8ZW58MHx8fHwxNzYzODQ1NDgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vinyl record product"
     },
     {
       "id": "song-1-cover",
