@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Separator } from '@/components/ui/separator';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { CheckCircle2, Music, Users, Mic, Cpu } from 'lucide-react';
+import Image from 'next/image';
 
 
 function InfoBox() {
@@ -249,6 +250,30 @@ export default function OriginPage() {
                                 ))}
                             </div>
                         </div>
+
+                        <div className="my-16 not-prose">
+                            <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-6 !mt-12">Digital Presence & Community</h2>
+                             <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                                <p>
+                                    The project maintains a curated visual presence on Instagram, extending the album's aesthetic into a grid of images that reflect its themes of noir, surrealism, and feline mystique. This digital space serves as a hub for the community, a place to share art, and a visual diary for the ongoing 3AMΣ narrative.
+                                </p>
+                            </article>
+                            <div className="grid md:grid-cols-2 gap-8 mt-8">
+                                <div className="space-y-4">
+                                    <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
+                                        <Image src="/public/images/instagram-grid.png" alt="3AMΣ Instagram Page" fill className="object-cover" />
+                                    </div>
+                                    <p className="text-sm text-center text-stone-500 font-serif">The official Instagram grid for @3amzoomie.</p>
+                                </div>
+                                <div className="space-y-4">
+                                     <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
+                                        <Image src="/public/images/cellphone-screen.png" alt="3AMΣ Website on Mobile" fill className="object-contain p-8 bg-stone-200" />
+                                    </div>
+                                    <p className="text-sm text-center text-stone-500 font-serif">The mobile experience for the 3AMΣ website.</p>
+                                </div>
+                            </div>
+                        </div>
+
 
                          <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
                             <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Reception</h2>
