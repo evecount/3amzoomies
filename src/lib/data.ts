@@ -1,3 +1,4 @@
+
 export interface Song {
   id: number;
   title: string;
@@ -22,71 +23,72 @@ export const albumData: Album = {
   songs: [
     {
       id: 1,
-      title: "City Sleeps (Preview)",
-      duration: "3:45",
+      title: "Introduction (Feline FM)",
+      duration: "1:15",
       audioSrc: "/audio/placeholder-1.mp3",
-      lyrics: `[Verse 1]
-The city sleeps, a concrete beast in slumber deep
-Streetlights bleed on asphalt streams where secrets sleep
-I walk these veins, a lonely ghost in neon rain
-Humming a tune of forgotten pain, again and again
-
-[Chorus]
-Oh, midnight murmurs, can you hear my soul?
-A quiet riot, losing all control
-In the static hum, I find my peace
-A fleeting moment, a sweet release`,
+      lyrics: `(Radio static, a smooth jazz intro, and a deep, calm voice)
+DJ: "You're listening to Feline FM. The time is 3:00 AM. For our next listener, who's been up all night, here's a track to match that... unique energy."`,
     },
     {
       id: 2,
-      title: "Neon Rain",
-      duration: "4:12",
+      title: "Apex Predator, Empty Bowl",
+      duration: "3:45",
       audioSrc: "/audio/placeholder-2.mp3",
       lyrics: `[Verse 1]
-Flickering signs paint the world in electric hues
-A million goodbyes in the gloss of rain-slicked shoes
-Every drop a memory, every puddle holds a face
-Lost in the rhythm of this lonely, hurried place
-
-[Chorus]
-And the neon rain keeps falling down on me
-Washing away who I used to be
-A kaleidoscope of sorrow and of grace
-Reflected in this liquid time and space`,
+Top of the food chain, king of this domain
+A jungle of carpets, a desert of plains
+But the rumble inside is a primal decree
+The bowl is a void, mocking me`,
     },
     {
       id: 3,
-      title: "Echoes in the Alley",
-      duration: "2:58",
+      title: "Observer of Absurdity",
+      duration: "4:12",
       audioSrc: "/audio/placeholder-3.mp3",
       lyrics: `[Verse 1]
-A saxophone cries from a window high above
-A story of loss, a tale of unrequited love
-The shadows dance, long and thin, like specters on the wall
-I listen to the echoes in the alley, answering their call
-
-[Chorus]
-Just an echo, another echo in the night
-A fading whisper in the pale moonlight
-A ghost of a melody, a trace of a dream
-Carried away on a silent, flowing stream`,
+The tall one stares at a glowing rectangle, laughing at nothing
+The other one talks to a plant, as if it could hear something
+They fill my bowl, they clean my mess
+But do they understand true happiness? It's a guess.`,
     },
     {
       id: 4,
-      title: "Velvet Black",
-      duration: "5:02",
+      title: "Velocity & Void",
+      duration: "2:58",
       audioSrc: "/audio/placeholder-4.mp3",
+      lyrics: `[Instrumental with frantic energy]
+(The sound of claws on a wooden floor, a vase crashing, and a distant, muffled human shouting "What was that?!")`,
+    },
+    {
+      id: 8,
+      title: "Ambrosia & Oblivion",
+      duration: "4:30",
+      audioSrc: "/audio/placeholder-5.mp3",
       lyrics: `[Verse 1]
-Wrapped in the velvet black of a moonless sky
-The world disappears, and it's just the stars and I
-A quiet conversation, in a language of pure light
-Whispering the secrets of the infinite night
-
-[Chorus]
-Oh, the velvet black, it holds me close and tight
-A sanctuary from the harsh and burning light
-Here in the darkness, I can finally see
-The shape of my own soul, wild and free`,
+The can opens, a holy sound
+The scent of ocean, all around
+For this one moment, nothing's wrong
+Just the sweet taste where I belong
+...and then it's gone.`,
+    },
+    {
+      id: 9,
+      title: "Eternal Dawn (Loop)",
+      duration: "5:02",
+      audioSrc: "/audio/placeholder-6.mp3",
+      lyrics: `[Human Voice, softly]
+"It's okay, buddy. We'll do it all again tomorrow."
+[Cat's Purr, fading into a synth loop]
+Tomorrow... and tomorrow... and tomorrow...`,
+    },
+    {
+      id: 10,
+      title: "Conclusion (Feline FM)",
+      duration: "1:30",
+      audioSrc: "/audio/placeholder-7.mp3",
+      lyrics: `(Smooth jazz fades back in)
+DJ: "And that brings us to the edge of dawn. The birds are stirring. The world is waking up. But here, in the quiet, we'll keep the night going, just for you. Until next time... stay nocturnal."
+(Radio static fades out)`,
     },
   ],
 };
