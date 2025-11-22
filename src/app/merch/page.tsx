@@ -71,10 +71,10 @@ export default function MerchPage() {
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                          <CardContent className="p-8 aspect-square flex items-center justify-center">
                             <div className="w-full max-w-[80%] aspect-square relative group">
-                                <div className="absolute inset-0 transform -rotate-10 transition-transform group-hover:rotate-0">
+                                <div className="absolute inset-0 transition-transform group-hover:scale-105">
                                     <AlbumArtDisplay />
                                 </div>
-                                <div className="absolute inset-0 transform rotate-10 translate-x-8 -translate-y-8 transition-transform group-hover:translate-x-0 group-hover:translate-y-0 group-hover:rotate-0">
+                                <div className="absolute inset-0 transform scale-110 -rotate-12 group-hover:rotate-0 group-hover:scale-100 transition-transform duration-300">
                                     <VinylRecord />
                                 </div>
                             </div>
