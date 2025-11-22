@@ -42,8 +42,8 @@ export default function OriginPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">3 AM Zoomies (Album)</h1>
-            <p className="text-lg text-muted-foreground mt-1">From Wikipedia, the free encyclopedia</p>
+            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">The Story of "3 AM Zoomies"</h1>
+            <p className="text-lg text-muted-foreground mt-1">An encyclopedic entry on the conceptual album.</p>
         </div>
         <Separator className="mb-12"/>
         <div className="grid lg:grid-cols-4 gap-12">
