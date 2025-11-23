@@ -35,6 +35,8 @@ const products = [
         description: "You require liquid sustenance to function? This ceramic vessel is adequate for your strange brews. As you sip, feel the silent, unwavering judgment.",
         imageUrl: "/images/merch/cup.png",
         imageAlt: "Black mug with the 3AMΣ album art on it",
+        buyButtonId: 'buy_btn_1SWhAoDhpURidIjUNpyavvQA',
+        publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
     },
     {
         id: 'pillow',
