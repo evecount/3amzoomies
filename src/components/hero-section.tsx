@@ -47,7 +47,7 @@ export function HeroSection() {
                 {albumData.songs.map((song) => (
                     <SongPlayer 
                         song={song} 
-                        playlist={fullPlaylist}
+                        playlist={albumData.songs}
                         key={song.id} 
                         isLocked={false}
                     />
@@ -65,7 +65,7 @@ export function HeroSection() {
             <CardContent className="p-2 flex flex-col gap-1">
                 <SongPlayer 
                     song={memeSong} 
-                    playlist={fullPlaylist}
+                    playlist={[memeSong]}
                     isLocked={false}
                     showLyricsButton={true}
                 />
