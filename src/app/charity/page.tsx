@@ -26,6 +26,12 @@ const charities = [
         category: 'Animal Welfare'
     },
     {
+        name: 'Cat Welfare Society',
+        description: "A charity in Singapore that advocates for the welfare of community cats. Because even the Lion City's strays deserve a voice. And a full bowl.",
+        href: 'https://www.catwelfare.org/donate/',
+        category: 'Animal Welfare',
+    },
+    {
         name: 'Canada Council for the Arts',
         description: "The national arts funder. Because art, even satirical AI-driven art, doesn't just appear out of the ether. Usually. Support the humans who haven't been replaced yet.",
         href: 'https://canadacouncil.ca/initiatives/support-the-arts',
