@@ -12,9 +12,9 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <Separator className="my-12 md:my-24" />
+        <Separator className="my-12 md:my-16" />
         <ArtistInfo />
-        <Separator className="my-12 md:my-24" />
+        <Separator className="my-12 md:my-16" />
         <EndorsementsCarousel />
       </main>
       <Footer />

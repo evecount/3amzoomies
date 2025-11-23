@@ -7,7 +7,7 @@ export function ArtistInfo() {
     const artistImage = PlaceHolderImages.find(img => img.id === 'artist-photo');
 
     return (
-        <section className="container mx-auto px-4 py-12 md:py-24">
+        <section className="container mx-auto px-4 py-12 md:py-16">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                 <div className="flex flex-col items-start text-left">
                      <p className="text-primary font-headline text-lg tracking-widest uppercase">The Artist</p>

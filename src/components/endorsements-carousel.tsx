@@ -86,7 +86,7 @@ const endorsements = [
 
 export function EndorsementsCarousel() {
   return (
-    <section className="container mx-auto px-4 py-12 md:py-24">
+    <section className="container mx-auto px-4 py-12 md:py-16">
        <div className="text-center mb-12 px-4">
             <p className="text-primary font-headline text-lg tracking-widest uppercase">Critical Acclaim</p>
             <h2 className="font-headline text-5xl md:text-6xl uppercase tracking-wider">Words from the Wise</h2>

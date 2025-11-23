@@ -29,7 +29,7 @@ export default function MerchPage() {
         <>
         <div className="flex flex-col min-h-screen bg-background text-foreground">
             <Header />
-            <main className="flex-grow container mx-auto px-4 py-12 md:py-24">
+            <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
                 <div className="text-center mb-12 px-4">
                     <p className="text-primary font-headline text-lg tracking-widest uppercase">Official Gear</p>
                     <h1 className="font-headline text-5xl md:text-6xl uppercase tracking-wider">Merchandise</h1>
