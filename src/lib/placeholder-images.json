@@ -15,25 +15,25 @@
     {
       "id": "merch-tshirt",
       "description": "Black t-shirt with the 3AMΣ album art on the front, modeled by a woman with natural hair.",
-      "imageUrl": "/images/merch/3AM_tshirt.png",
+      "imageUrl": "/images/merch/tshirt.png",
       "imageHint": "t-shirt mockup"
     },
     {
       "id": "merch-cup",
       "description": "Black mug with the 3AMΣ album art on it, held by a person.",
-      "imageUrl": "/images/merch/3AM_cup.png",
+      "imageUrl": "/images/merch/cup.png",
       "imageHint": "black mug"
     },
     {
       "id": "merch-pillow-case",
       "description": "A white pillow on a bed with a pillowcase featuring the 3AMΣ album art.",
-      "imageUrl": "/images/merch/3AM_pillowcase.png",
+      "imageUrl": "/images/merch/pillow-case.png",
       "imageHint": "pillow case mockup"
     },
     {
       "id": "merch-vinyl",
       "description": "Limited Edition Pressed Vinyl of Midnight Murmurs",
-      "imageUrl": "/images/merch/3AM_vinyl.png",
+      "imageUrl": "/images/merch/vinyl.png",
       "imageHint": "vinyl record product"
     },
     {
