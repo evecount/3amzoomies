@@ -74,7 +74,7 @@ export default function MerchPage() {
                                 <div className="absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105">
                                     <AlbumArtDisplay />
                                 </div>
-                                <div className="absolute inset-0 w-full h-full transform transition-all duration-500 ease-in-out -translate-y-16 translate-x-16 group-hover:scale-110 group-hover:-rotate-12 group-hover:translate-x-20 group-hover:-translate-y-20">
+                                <div className="absolute inset-0 w-full h-full transform transition-all duration-500 ease-in-out -translate-y-24 translate-x-24 group-hover:scale-110 group-hover:-rotate-12 group-hover:translate-x-28 group-hover:-translate-y-28">
                                     <VinylRecord />
                                 </div>
                             </div>
