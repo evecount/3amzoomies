@@ -62,7 +62,7 @@
   {
     "id": "doja-kat",
     "description": "Portrait of Doja Kat",
-    "src": "/images/musicians/dojakat.png?v=2",
+    "src": "/images/musicians/dojakat.png?v=3",
     "imageHint": "glamorous cat"
   },
   {
@@ -98,7 +98,7 @@
   {
     "id": "nabi-stray-cats",
     "description": "Portrait of Nabi from STRAY CATS",
-    "src": "/images/musicians/nabistraycats.png",
+    "src": "/images/musicians/nabi.png",
     "imageHint": "k-pop cat"
   },
   {
