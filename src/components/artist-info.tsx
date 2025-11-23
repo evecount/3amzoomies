@@ -16,7 +16,7 @@ export function ArtistInfo() {
                     </h2>
                     <div className="space-y-6 text-lg text-muted-foreground max-w-prose">
                         <p>
-                            3AMΣ is the moniker of a nocturnal creator who finds inspiration in the quiet hours when the world is asleep. Blending ambient soundscapes, lo-fi beats, and soulful melodies, their music is a soundtrack for late-night drives, quiet contemplation, and the beautifully melancholic moments of life.
+                            3AMΣ is the moniker of a nocturnal creator based in Toronto, Ontario, Canada who finds inspiration in the quiet hours when the world is asleep. Blending ambient soundscapes, lo-fi beats, and soulful melodies, their music is a soundtrack for late-night drives, quiet contemplation, and the beautifully melancholic moments of life.
                         </p>
                         <p>
                             Starting as a bedroom project, 3AMΣ has evolved into a unique voice in the electronic music scene, known for crafting immersive auditory experiences that are both intimate and expansive.
