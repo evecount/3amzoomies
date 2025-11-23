@@ -344,9 +344,4 @@ export default function OriginPage() {
       <Footer />
     </div>
   );
-    
-    
-
-    
-
-
+}
