@@ -38,17 +38,19 @@ export default function MerchandisePage() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
-                        {tShirtImage && (
-                             <div className="p-0 aspect-square relative">
-                                <Image
-                                    src={tShirtImage.imageUrl}
-                                    alt={tShirtImage.description}
-                                    fill
-                                    data-ai-hint={tShirtImage.imageHint}
-                                    className="object-cover"
-                                />
-                            </div>
-                        )}
+                        <CardContent className="p-0">
+                            {tShirtImage && (
+                                <div className="relative aspect-square">
+                                    <Image
+                                        src={tShirtImage.imageUrl}
+                                        alt={tShirtImage.description}
+                                        fill
+                                        data-ai-hint={tShirtImage.imageHint}
+                                        className="object-cover"
+                                    />
+                                </div>
+                            )}
+                        </CardContent>
                         <CardHeader>
                             <CardTitle className="text-3xl uppercase">"The Observer" Official Tee</CardTitle>
                             <CardDescription className="text-xl">$29.99 USD</CardDescription>
@@ -99,17 +101,19 @@ export default function MerchandisePage() {
                     </Card>
 
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
-                        {cupImage && (
-                             <div className="p-0 aspect-square relative">
-                                <Image
-                                    src={cupImage.imageUrl}
-                                    alt={cupImage.description}
-                                    fill
-                                    data-ai-hint={cupImage.imageHint}
-                                    className="object-cover"
-                                />
-                            </div>
-                        )}
+                        <CardContent className="p-0">
+                            {cupImage && (
+                                 <div className="relative aspect-square">
+                                    <Image
+                                        src={cupImage.imageUrl}
+                                        alt={cupImage.description}
+                                        fill
+                                        data-ai-hint={cupImage.imageHint}
+                                        className="object-cover"
+                                    />
+                                </div>
+                            )}
+                        </CardContent>
                         <CardHeader>
                             <CardTitle className="text-3xl uppercase">"The Judgmental Mug"</CardTitle>
                             <CardDescription className="text-xl">$19.99 USD</CardDescription>
@@ -130,17 +134,19 @@ export default function MerchandisePage() {
                     </Card>
 
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
-                        {pillowImage && (
-                             <div className="p-0 aspect-square relative">
-                                <Image
-                                    src={pillowImage.imageUrl}
-                                    alt={pillowImage.description}
-                                    fill
-                                    data-ai-hint={pillowImage.imageHint}
-                                    className="object-cover"
-                                />
-                            </div>
-                        )}
+                        <CardContent className="p-0">
+                            {pillowImage && (
+                                 <div className="relative aspect-square">
+                                    <Image
+                                        src={pillowImage.imageUrl}
+                                        alt={pillowImage.description}
+                                        fill
+                                        data-ai-hint={pillowImage.imageHint}
+                                        className="object-cover"
+                                    />
+                                </div>
+                            )}
+                        </CardContent>
                         <CardHeader>
                             <CardTitle className="text-3xl uppercase">"The Usurped Pillow Case"</CardTitle>
                             <CardDescription className="text-xl">$24.99 USD</CardDescription>
