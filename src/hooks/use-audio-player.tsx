@@ -46,8 +46,11 @@ export function AudioProvider({ children }: AudioProviderProps) {
     const handleLoadStart = () => setIsLoading(true);
     const handleCanPlay = () => setIsLoading(false);
     const handleError = () => {
-        setIsLoading(false);
-        console.error("Error loading audio source:", audio.error);
+        // Only log an error if there's a current song attempting to play.
+        if (currentSong) { 
+            setIsLoading(false);
+            console.error("Error loading audio source:", audio.error);
+        }
     }
 
     audio.addEventListener('ended', handleEnded);
@@ -67,7 +70,7 @@ export function AudioProvider({ children }: AudioProviderProps) {
       audio.removeEventListener('error', handleError);
       audio.pause();
     };
-  }, []);
+  }, [currentSong]); // Add currentSong as a dependency
 
   const playSong = useCallback((song: Song, newPlaylist?: Song[]) => {
     const audio = audioRef.current;
