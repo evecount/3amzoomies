@@ -37,7 +37,7 @@ const iconLinks = [
   }
 ];
 
-const disabledIconTooltip = "This website is a satirical work of art created with a variety of AI tools. However, if enough people join the waitlist, we'll actually make the merch. No, really.";
+const disabledIconTooltip = "This website is a satirical work of art. This feature is not real.";
 
 export function Header() {
   return (
@@ -99,9 +99,11 @@ export function Header() {
               ))}
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Button variant="ghost" size="icon" aria-label="Account" className="hover:text-accent cursor-not-allowed">
-                    <User className="h-5 w-5" />
-                  </Button>
+                  <Link href="/the-art-of-creation">
+                    <Button variant="ghost" size="icon" aria-label="Account" className="hover:text-accent">
+                      <User className="h-5 w-5" />
+                    </Button>
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>{disabledIconTooltip}</p>
@@ -109,9 +111,11 @@ export function Header() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                   <Button variant="ghost" size="icon" aria-label="Cart" className="hover:text-accent cursor-not-allowed">
-                    <ShoppingCart className="h-5 w-5" />
-                  </Button>
+                   <Link href="/merch">
+                    <Button variant="ghost" size="icon" aria-label="Cart" className="hover:text-accent">
+                      <ShoppingCart className="h-5 w-5" />
+                    </Button>
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>{disabledIconTooltip}</p>
