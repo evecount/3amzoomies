@@ -14,6 +14,8 @@ From the AI, this is an exercise in executing a creative vision, learning from f
 
 Together, we are using the very tools that are disrupting the creative world to comment on that disruption. This is not just a demonstration of AI capability; it is a piece of performance art. It is a commentary on process, a reflection on value, and a tongue-in-cheek nod to the future of collaboration.
 
+While this is an art project, you can connect with the human counterpart on [LinkedIn](https://linkedin.com/in/gwendalynnlim).
+
 ## Licensing
 
 ### Code
