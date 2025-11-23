@@ -200,7 +200,7 @@
   {
     "id": "media-banner",
     "description": "A banner image for the media page interview.",
-    "src": "/images/banner.png",
+    "src": "/images/media-banner.png",
     "imageHint": "interview podcast"
   },
   {
