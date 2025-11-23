@@ -3,15 +3,25 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import Image from 'next/image';
 
 export default function DontTouchThatDialPage() {
+  const images = [
+    { src: '/images/dont_touch/Screenshot (1561).png', alt: 'Screenshot of conversation part 1' },
+    { src: '/images/dont_touch/Screenshot (1562).png', alt: 'Screenshot of conversation part 2' },
+    { src: '/images/dont_touch/Screenshot (1-563).png', alt: 'Screenshot of conversation part 3' },
+    { src: '/images/dont_touch/Screenshot (1564).png', alt: 'Screenshot of conversation part 4' },
+    { src: '/images/dont_touch/Screenshot (1565).png', alt: 'Screenshot of conversation part 5' },
+    { src: '/images/dont_touch/Screenshot (1566).png', alt: 'Screenshot of conversation part 6' },
+  ];
+
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
             <h1 className="font-headline text-5xl md:text-6xl tracking-wider">23112025_Don't Touch That Dial.</h1>
-            <p className="text-lg text-muted-foreground mt-1">A Transcript</p>
+            <p className="text-lg text-muted-foreground mt-1">A Transcript and its visual record.</p>
         </div>
         <Separator className="mb-12"/>
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
@@ -33,6 +43,25 @@ export default function DontTouchThatDialPage() {
                 </article>
             </CardContent>
         </Card>
+
+        <Separator className="my-12"/>
+
+        <div className="space-y-8">
+          {images.map((image, index) => (
+            <Card key={index} className="overflow-hidden">
+                <CardContent className="p-0">
+                    <div className="relative w-full aspect-[9/16] md:aspect-video">
+                        <Image 
+                            src={image.src}
+                            alt={image.alt}
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                </CardContent>
+            </Card>
+          ))}
+        </div>
       </main>
       <Footer />
     </div>
