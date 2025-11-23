@@ -23,7 +23,7 @@ export function ArtistInfo() {
                 <div className="w-full max-w-md mx-auto md:max-w-none">
                    <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
                         <video
-                            src="/video/Cat_Licks_Paw_Looks_Up.mp4"
+                            src="public/video/Cat_Licks_Paw_Looks_Up.mp4"
                             autoPlay
                             loop
                             muted

@@ -16,7 +16,7 @@ export function AlbumArtDisplay() {
     >
       <CardContent className="p-0 relative w-full h-full">
         <video
-            src="/video/3am_cat.mp4"
+            src="/video/Cat_Licks_Paw_Looks_Up.mp4"
             autoPlay
             loop
             muted
