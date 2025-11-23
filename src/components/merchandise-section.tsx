@@ -1,8 +1,7 @@
 
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { ShoppingCart } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { VinylRecord } from '@/components/vinyl-record';
 import { AlbumArtDisplay } from '@/components/album-art-display';
 import { StripeBuyButton } from '@/components/stripe-buy-button';
@@ -50,8 +49,8 @@ export function MerchandiseSection() {
     return (
         <section id="merchandise" className="container mx-auto px-4 py-12 md:py-16">
             <div className="text-center mb-12 px-4">
-                <p className="text-primary tracking-widest uppercase">Official Gear</p>
-                <h1 className="text-5xl md:text-6xl uppercase tracking-wider">Merchandise</h1>
+                <p className="text-primary tracking-widest uppercase font-semibold">Official Gear</p>
+                <h2 className="text-5xl md:text-6xl uppercase tracking-wider font-bold">Merchandise</h2>
                 <p className="text-lg text-muted-foreground mt-2">Approved by the Apex Predator.</p>
             </div>
 
@@ -61,8 +60,8 @@ export function MerchandiseSection() {
                     return (
                     <Card key={product.id} className="bg-card/50 overflow-hidden flex flex-col">
                         {product.isVinyl ? (
-                                <CardContent className="p-8 aspect-square flex items-center justify-center">
-                                <div className="w-full max-w-[60%] aspect-square relative group">
+                                <CardContent className="p-4 md:p-6 aspect-square flex items-center justify-center">
+                                <div className="w-full max-w-[70%] aspect-square relative group">
                                     <div className="absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105">
                                         <AlbumArtDisplay />
                                     </div>
@@ -83,21 +82,21 @@ export function MerchandiseSection() {
                                 )}
                             </div>
                         )}
-                        <CardHeader>
-                            <CardTitle className="text-3xl uppercase">{product.title}</CardTitle>
-                            <CardDescription className="text-xl">{product.price}</CardDescription>
+                        <CardHeader className="p-4">
+                            <CardTitle className="text-xl uppercase">{product.title}</CardTitle>
+                            <CardDescription className="text-lg">{product.price}</CardDescription>
                         </CardHeader>
-                        <CardContent className="space-y-4 text-foreground/80 flex-grow">
+                        <CardContent className="p-4 pt-0 space-y-4 text-sm text-foreground/80 flex-grow">
                             <p>{product.description}</p>
                         </CardContent>
-                        <CardContent className="flex justify-center items-center">
+                        <CardFooter className="p-4 pt-0">
                             {product.buyButtonId && product.publishableKey && (
                                     <StripeBuyButton
                                     buyButtonId={product.buyButtonId}
                                     publishableKey={product.publishableKey}
                                 />
                             )}
-                        </CardContent>
+                        </CardFooter>
                     </Card>
                 )})}
             </div>
