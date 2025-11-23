@@ -24,7 +24,7 @@ export default function MediaPage() {
         
         <div>
             {bannerImage && (
-                <div className="relative w-full aspect-video rounded-lg overflow-hidden flex items-center justify-center bg-muted/20 text-muted-foreground mb-8">
+                <div className="relative w-full aspect-video rounded-lg overflow-hidden flex items-center justify-center bg-muted/20 text-muted-foreground mb-4">
                     <Image 
                         src={bannerImage.src}
                         alt={bannerImage.description}
@@ -77,11 +77,11 @@ export default function MediaPage() {
                         <strong>3AMΣ:</strong> My pleasure.
                     </p>
                 </article>
-                <aside className="lg:col-span-1 h-fit">
+                <aside className="lg:col-span-1 h-fit sticky top-24">
                     {gwenImage && (
                         <div className="space-y-6">
                             <div className="max-w-[280px] mx-auto">
-                                <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
+                                <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20 bg-muted/20 flex items-center justify-center text-muted-foreground text-center p-4">
                                     <Image
                                         src={gwenImage.src}
                                         alt={gwenImage.description}
