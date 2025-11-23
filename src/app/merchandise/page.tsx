@@ -27,6 +27,8 @@ const products = [
         price: '$210.00 SGD',
         description: "You thought this experience was only for your ears? Now, you may possess the physical artifact. This limited edition 180-gram vinyl contains the complete transmission.",
         isVinyl: true,
+        buyButtonId: 'buy_btn_1SWhBtDhpURidIjUyW0n1ZAm',
+        publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
     },
     {
         id: 'mug',
