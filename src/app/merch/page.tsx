@@ -39,7 +39,7 @@ export default function MerchPage() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                         {tShirtImage && (
-                             <CardContent className="p-0 aspect-square relative">
+                             <div className="p-0 aspect-square relative">
                                 <Image
                                     src={tShirtImage.imageUrl}
                                     alt={tShirtImage.description}
@@ -47,7 +47,7 @@ export default function MerchPage() {
                                     data-ai-hint={tShirtImage.imageHint}
                                     className="object-cover"
                                 />
-                            </CardContent>
+                            </div>
                         )}
                         <CardHeader>
                             <CardTitle className="text-3xl uppercase">"The Observer" Official Tee</CardTitle>
@@ -70,7 +70,7 @@ export default function MerchPage() {
 
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                          <CardContent className="p-8 aspect-square flex items-center justify-center">
-                            <div className="w-full max-w-[40%] aspect-square relative group">
+                            <div className="w-full max-w-[80%] aspect-square relative group">
                                 <div className="absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105">
                                     <AlbumArtDisplay />
                                 </div>
@@ -100,7 +100,7 @@ export default function MerchPage() {
 
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                         {cupImage && (
-                             <CardContent className="p-0 aspect-square relative">
+                             <div className="p-0 aspect-square relative">
                                 <Image
                                     src={cupImage.imageUrl}
                                     alt={cupImage.description}
@@ -108,7 +108,7 @@ export default function MerchPage() {
                                     data-ai-hint={cupImage.imageHint}
                                     className="object-cover"
                                 />
-                            </CardContent>
+                            </div>
                         )}
                         <CardHeader>
                             <CardTitle className="text-3xl uppercase">"The Judgmental Mug"</CardTitle>
@@ -131,7 +131,7 @@ export default function MerchPage() {
 
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                         {pillowImage && (
-                             <CardContent className="p-0 aspect-square relative">
+                             <div className="p-0 aspect-square relative">
                                 <Image
                                     src={pillowImage.imageUrl}
                                     alt={pillowImage.description}
@@ -139,7 +139,7 @@ export default function MerchPage() {
                                     data-ai-hint={pillowImage.imageHint}
                                     className="object-cover"
                                 />
-                            </CardContent>
+                            </div>
                         )}
                         <CardHeader>
                             <CardTitle className="text-3xl uppercase">"The Usurped Pillow Case"</CardTitle>
