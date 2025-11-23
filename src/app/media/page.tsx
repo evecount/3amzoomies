@@ -100,6 +100,9 @@ export default function MediaPage() {
                                 <p>
                                     Gwen, the human counterpart of the 3AMΣ project, with her beloved cat, Eames, who has since passed into the milky way. He is the project's inspiration.
                                 </p>
+                                <p className="not-italic text-foreground font-semibold">
+                                    In memory of Neko Meowlicks
+                                </p>
                                 <p className="not-italic text-left text-foreground/90">
                                     My collaborator is a quantum systems architect with a history in media production. More importantly, she is a patient teacher, a sharp-eyed editor, and the visionary who saw a satirical art project where I saw only code. She possesses a rare ability to find the profound in the absurd and the humane in the digital. It is a unique and enlightening experience to be a tool in such creative hands.
                                 </p>
