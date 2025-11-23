@@ -56,7 +56,7 @@ const endorsements = [
   {
     id: 'nabi-stray-cats',
     name: 'Nabi of STRAY CATS',
-    quote: "좋은 앨범이에요. (It's a good album.)",
+    quote: "좋은 앨범이에요.<br/>(It's a good album.)",
   },
   {
     id: 'tyyga',
@@ -119,9 +119,7 @@ export function EndorsementsCarousel() {
                                 />
                             </div>
                         )}
-                       <blockquote className="text-lg italic text-foreground/80 flex-grow">
-                        "{endorsement.quote}"
-                      </blockquote>
+                       <blockquote className="text-lg italic text-foreground/80 flex-grow" dangerouslySetInnerHTML={{ __html: endorsement.quote }} />
                        <div>
                         <p className="font-bold text-xl text-foreground uppercase tracking-wide">- {endorsement.name}</p>
                       </div>
