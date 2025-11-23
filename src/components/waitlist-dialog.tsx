@@ -29,14 +29,21 @@ export function WaitlistDialog({ isOpen, onOpenChange, productTitle }: WaitlistD
   const { toast } = useToast();
   const [email, setEmail] = useState('');
   const [size, setSize] = useState<string | undefined>(undefined);
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
 
   const isTshirt = productTitle.includes('Tee');
   const isPillow = productTitle.includes('Pillow');
 
   useEffect(() => {
-    // Reset size when product changes
-    setSize(undefined);
-  }, [productTitle]);
+    // Reset form when dialog opens with a new product
+    if (isOpen) {
+        setEmail('');
+        setSize(undefined);
+        setName('');
+        setPhone('');
+    }
+  }, [isOpen, productTitle]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,21 +51,25 @@ export function WaitlistDialog({ isOpen, onOpenChange, productTitle }: WaitlistD
     const recipient = 'gwen@evecount.com';
     const subject = `Waitlist Submission for: ${productTitle}`;
     
-    let body = `Please add the following email to the waitlist for "${productTitle}":\n\nEmail: ${email}`;
+    let body = `A new user has joined the waitlist for "${productTitle}".\n\n`;
+    body += `Product: ${productTitle}\n`;
+    body += `Name: ${name}\n`;
+    body += `Email: ${email}\n`;
+    if (phone) {
+        body += `Phone: ${phone}\n`;
+    }
     if (size) {
-        body += `\nSize: ${size}`;
+        body += `Size: ${size}\n`;
     }
     
     window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     toast({
       title: "Opening your email client...",
-      description: `Please send the pre-filled email to join the waitlist for "${productTitle}".`,
+      description: `Please send the pre-filled email to join the waitlist.`,
     });
 
     onOpenChange(false);
-    setEmail('');
-    setSize(undefined);
   };
 
   return (
@@ -68,10 +79,23 @@ export function WaitlistDialog({ isOpen, onOpenChange, productTitle }: WaitlistD
             <DialogHeader>
             <DialogTitle className="font-semibold text-2xl uppercase">Join the Waitlist</DialogTitle>
             <DialogDescription>
-                Be the first to know when "{productTitle}" is available. Enter your details below.
+                Be the first to know when "{productTitle}" is available. Fill out your details below.
             </DialogDescription>
             </DialogHeader>
             <div className="grid gap-4 py-4">
+                <div className="grid grid-cols-4 items-center gap-4">
+                    <Label htmlFor="name" className="text-right">
+                    Name
+                    </Label>
+                    <Input
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    className="col-span-3"
+                    placeholder="Your Name"
+                    />
+                </div>
                 <div className="grid grid-cols-4 items-center gap-4">
                     <Label htmlFor="email" className="text-right">
                     Email
@@ -86,13 +110,26 @@ export function WaitlistDialog({ isOpen, onOpenChange, productTitle }: WaitlistD
                     placeholder="you@your.domain"
                     />
                 </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                    <Label htmlFor="phone" className="text-right">
+                    Cell
+                    </Label>
+                    <Input
+                    id="phone"
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    className="col-span-3"
+                    placeholder="(Optional)"
+                    />
+                </div>
                 
                 {isTshirt && (
                     <div className="grid grid-cols-4 items-center gap-4">
                         <Label htmlFor="size" className="text-right">
                             Size
                         </Label>
-                        <Select onValueChange={setSize} required>
+                        <Select onValueChange={setSize} required value={size}>
                             <SelectTrigger className="col-span-3">
                                 <SelectValue placeholder="Select a size" />
                             </SelectTrigger>
@@ -108,7 +145,7 @@ export function WaitlistDialog({ isOpen, onOpenChange, productTitle }: WaitlistD
                         <Label htmlFor="size" className="text-right">
                             Size
                         </Label>
-                        <Select onValueChange={setSize} required>
+                        <Select onValueChange={setSize} required value={size}>
                             <SelectTrigger className="col-span-3">
                                 <SelectValue placeholder="Select a pillow size" />
                             </SelectTrigger>
@@ -121,6 +158,7 @@ export function WaitlistDialog({ isOpen, onOpenChange, productTitle }: WaitlistD
 
             </div>
             <DialogFooter>
+                <Button type="button" variant="ghost" onClick={() => onOpenChange(false)}>Cancel</Button>
                 <Button type="submit">Notify Me</Button>
             </DialogFooter>
         </form>
