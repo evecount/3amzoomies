@@ -17,9 +17,12 @@ export function Footer() {
             <Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link>
         </div>
       </div>
-      <div className="container pb-8 text-center px-4">
+      <div className="container pb-8 text-center px-4 space-y-4">
           <p className="text-base text-foreground/80">
             This website is a satirical work of art created with a variety of AI tools. However, if enough people join the waitlist, we'll actually make the merch. No, really. We might even just send you the high-res image if you're nice so you can make your own shirt.
+          </p>
+          <p className="text-sm text-muted-foreground italic">
+            No humans were harmed in the making of this production. They were only slightly peeved.
           </p>
       </div>
     </footer>
