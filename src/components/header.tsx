@@ -17,7 +17,6 @@ const navLinks = [
   { href: '/merch', label: 'MERCH' },
   { href: '/film', label: 'FILM' },
   { href: '/origin', label: 'ABOUT' },
-  { href: '/the-art-of-creation', label: 'THE ART OF CREATION' },
   { href: '/media', label: 'MEDIA' },
   { href: '/charity', label: 'CHARITY' },
 ];
@@ -106,7 +105,7 @@ export function Header() {
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>{disabledIconTooltip}</p>
+                  <p>The Art of Creation</p>
                 </TooltipContent>
               </Tooltip>
               <Tooltip>
@@ -118,7 +117,7 @@ export function Header() {
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>{disabledIconTooltip}</p>
+                  <p>Merchandise</p>
                 </TooltipContent>
               </Tooltip>
             </nav>
