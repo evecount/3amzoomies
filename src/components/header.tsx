@@ -47,7 +47,7 @@ export function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="font-bold sm:inline-block font-headline text-lg uppercase">3AMΣ</span>
           </Link>
-          <nav className="flex items-center gap-6 text-sm">
+          <nav className="flex items-center gap-6 text-sm font-sans">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -72,7 +72,7 @@ export function Header() {
               <Link href="/" className="mb-8 flex items-center">
                  <span className="font-bold font-headline text-lg uppercase">3AMΣ</span>
               </Link>
-              <nav className="flex flex-col gap-6 text-lg font-medium">
+              <nav className="flex flex-col gap-6 text-lg font-medium font-sans">
                 {navLinks.map((link) => (
                   <Link
                     key={link.label}
