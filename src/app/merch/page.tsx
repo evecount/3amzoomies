@@ -31,8 +31,8 @@ export default function MerchPage() {
             <Header />
             <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
                 <div className="text-center mb-12 px-4">
-                    <p className="text-primary font-headline text-lg tracking-widest uppercase">Official Gear</p>
-                    <h1 className="font-headline text-5xl md:text-6xl uppercase tracking-wider">Merchandise</h1>
+                    <p className="text-primary tracking-widest uppercase">Official Gear</p>
+                    <h1 className="text-5xl md:text-6xl uppercase tracking-wider">Merchandise</h1>
                     <p className="text-lg text-muted-foreground mt-2">Approved by the Apex Predator.</p>
                 </div>
 
@@ -50,7 +50,7 @@ export default function MerchPage() {
                             </CardContent>
                         )}
                         <CardHeader>
-                            <CardTitle className="font-headline text-3xl uppercase">"The Observer" Official Tee</CardTitle>
+                            <CardTitle className="text-3xl uppercase">"The Observer" Official Tee</CardTitle>
                             <CardDescription className="text-xl">$29.99 USD</CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-4 text-foreground/80 flex-grow">
@@ -70,7 +70,7 @@ export default function MerchPage() {
 
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                          <CardContent className="p-8 aspect-square flex items-center justify-center">
-                            <div className="w-full max-w-[80%] aspect-square relative group">
+                            <div className="w-full max-w-[40%] aspect-square relative group">
                                 <div className="absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105">
                                     <AlbumArtDisplay />
                                 </div>
@@ -80,7 +80,7 @@ export default function MerchPage() {
                             </div>
                         </CardContent>
                         <CardHeader>
-                            <CardTitle className="font-headline text-3xl uppercase">"Midnight Murmurs" Vinyl</CardTitle>
+                            <CardTitle className="text-3xl uppercase">"Midnight Murmurs" Vinyl</CardTitle>
                             <CardDescription className="text-xl">$150.00 USD</CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-4 text-foreground/80 flex-grow">
@@ -111,7 +111,7 @@ export default function MerchPage() {
                             </CardContent>
                         )}
                         <CardHeader>
-                            <CardTitle className="font-headline text-3xl uppercase">"The Judgmental Mug"</CardTitle>
+                            <CardTitle className="text-3xl uppercase">"The Judgmental Mug"</CardTitle>
                             <CardDescription className="text-xl">$19.99 USD</CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-4 text-foreground/80 flex-grow">
@@ -142,7 +142,7 @@ export default function MerchPage() {
                             </CardContent>
                         )}
                         <CardHeader>
-                            <CardTitle className="font-headline text-3xl uppercase">"The Usurped Pillow Case"</CardTitle>
+                            <CardTitle className="text-3xl uppercase">"The Usurped Pillow Case"</CardTitle>
                             <CardDescription className="text-xl">$24.99 USD</CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-4 text-foreground/80 flex-grow">
