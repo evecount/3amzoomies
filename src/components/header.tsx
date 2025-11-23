@@ -17,6 +17,7 @@ const navLinks = [
   { href: '/merch', label: 'MERCH' },
   { href: '/film', label: 'FILM' },
   { href: '/origin', label: 'THE ORIGIN' },
+  { href: '/the-art-of-creation', label: 'THE ART OF CREATION' },
   { href: '/media', label: 'MEDIA' },
   { href: '/charity', label: 'CHARITY' },
 ];
