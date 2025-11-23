@@ -3,7 +3,7 @@
 
 import { useRouter } from 'next/navigation';
 import { Button } from './ui/button';
-import { albumData } from '@/lib/data';
+import { albumData, memeSong } from '@/lib/data';
 import { SongPlayer } from './song-player';
 import { usePurchase } from '@/hooks/use-purchase';
 import { useToast } from '@/hooks/use-toast';
@@ -15,6 +15,7 @@ export function HeroSection() {
   const router = useRouter();
   const { purchase } = usePurchase();
   const { toast } = useToast();
+  const fullPlaylist = [...albumData.songs, memeSong];
 
   const handlePurchase = () => {
     purchase();
@@ -43,12 +44,20 @@ export function HeroSection() {
 
           <Card className="w-full max-w-md bg-background/50 mb-8">
             <CardContent className="p-2 flex flex-col gap-1">
-                {albumData.songs.map((song) => (
+                {albumData.songs.slice(0,1).map((song) => (
                     <SongPlayer 
                         song={song} 
-                        playlist={albumData.songs} 
+                        playlist={fullPlaylist}
                         key={song.id} 
                         isLocked={false}
+                    />
+                ))}
+                 {albumData.songs.slice(1).map((song) => (
+                    <SongPlayer 
+                        song={song} 
+                        playlist={fullPlaylist}
+                        key={song.id} 
+                        isLocked={true}
                     />
                 ))}
             </CardContent>

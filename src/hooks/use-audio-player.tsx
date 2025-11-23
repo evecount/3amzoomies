@@ -1,3 +1,4 @@
+
 'use client';
 
 import { createContext, useContext, useState, useRef, useCallback, useEffect } from 'react';
@@ -44,12 +45,18 @@ export function AudioProvider({ children }: AudioProviderProps) {
     const handlePause = () => setIsPlaying(false);
     const handleLoadStart = () => setIsLoading(true);
     const handleCanPlay = () => setIsLoading(false);
+    const handleError = () => {
+        setIsLoading(false);
+        console.error("Error loading audio source:", audio.error);
+    }
 
     audio.addEventListener('ended', handleEnded);
     audio.addEventListener('play', handlePlay);
     audio.addEventListener('pause', handlePause);
     audio.addEventListener('loadstart', handleLoadStart);
     audio.addEventListener('canplay', handleCanPlay);
+    audio.addEventListener('error', handleError);
+
 
     return () => {
       audio.removeEventListener('ended', handleEnded);
@@ -57,6 +64,7 @@ export function AudioProvider({ children }: AudioProviderProps) {
       audio.removeEventListener('pause', handlePause);
       audio.removeEventListener('loadstart', handleLoadStart);
       audio.removeEventListener('canplay', handleCanPlay);
+      audio.removeEventListener('error', handleError);
       audio.pause();
     };
   }, []);
@@ -70,10 +78,15 @@ export function AudioProvider({ children }: AudioProviderProps) {
     }
     
     if (currentSong?.id === song.id) {
-        audio.play();
+        if (audio.paused) {
+            audio.play().catch(e => console.error("Error playing audio:", e));
+        } else {
+            audio.pause();
+        }
     } else {
         setCurrentSong(song);
         audio.src = song.audioSrc;
+        audio.load();
         audio.play().catch(e => console.error("Error playing audio:", e));
     }
   }, [currentSong]);
@@ -89,10 +102,10 @@ export function AudioProvider({ children }: AudioProviderProps) {
     if (playlist.length === 0) return;
     const currentIndex = playlist.findIndex(s => s.id === currentSong?.id);
     if (currentIndex > -1 && currentIndex < playlist.length - 1) {
-      playSong(playlist[currentIndex + 1]);
+      playSong(playlist[currentIndex + 1], playlist);
     } else {
-        // End of playlist
-        setIsPlaying(false);
+        // Loop to start
+        playSong(playlist[0], playlist);
     }
   }, [playlist, currentSong, playSong]);
 
@@ -100,7 +113,10 @@ export function AudioProvider({ children }: AudioProviderProps) {
     if (playlist.length === 0) return;
     const currentIndex = playlist.findIndex(s => s.id === currentSong?.id);
     if (currentIndex > 0) {
-      playSong(playlist[currentIndex - 1]);
+      playSong(playlist[currentIndex - 1], playlist);
+    } else {
+        // Go to end of playlist
+        playSong(playlist[playlist.length-1], playlist);
     }
   }, [playlist, currentSong, playSong]);
 

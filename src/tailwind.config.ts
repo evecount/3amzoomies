@@ -11,10 +11,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['sans-serif'],
+        body: ['Alegreya', 'serif'],
+        headline: ['Belleza', 'sans-serif'],
         code: ['monospace'],
-        serif: ['Lora', 'serif'],
+        serif: ['Alegreya', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
