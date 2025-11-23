@@ -25,14 +25,19 @@ export function ArtistInfo() {
                 </div>
                 <div className="w-full max-w-md mx-auto md:max-w-none">
                    {artistImage && (
-                    <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
-                        <Image
-                            src={artistImage.imageUrl}
-                            alt={artistImage.description}
-                            data-ai-hint={artistImage.imageHint}
-                            fill
-                            className="object-cover w-full h-full"
-                        />
+                    <div className="space-y-4">
+                        <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
+                            <Image
+                                src={artistImage.imageUrl}
+                                alt={artistImage.description}
+                                data-ai-hint={artistImage.imageHint}
+                                fill
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
+                        <p className="text-sm text-center text-muted-foreground font-serif italic">
+                            Eames is his original cat name. EAMZ is the colloquial "fat-thumbs" term, but when there's time, the 'Z' is replaced to form 3AMΣ.
+                        </p>
                     </div>
                    )}
                 </div>
