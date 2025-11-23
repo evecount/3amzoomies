@@ -80,11 +80,11 @@ export default function CharityPage() {
         </div>
         <Separator className="mb-12"/>
 
-        <article className="prose prose-invert prose-lg max-w-4xl mx-auto leading-relaxed space-y-6 mb-16 text-center">
+        <div className="max-w-4xl mx-auto leading-relaxed space-y-6 mb-16 text-center text-lg">
             <p>
                 The universe of <strong>3AMΣ</strong> is a commentary on the cycles of existence—need, comfort, chaos, and creation. While this project is a work of satire, the needs it reflects are very real. The provider must provide, whether it's a bowl of food, a piece of art, or a moment of care. Below are some organizations worthy of your consideration.
             </p>
-        </article>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {charities.map((charity) => (

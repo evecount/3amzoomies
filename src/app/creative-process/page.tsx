@@ -14,9 +14,9 @@ export default function CreativeProcessPage() {
             <p className="text-lg text-muted-foreground mt-1">A Note on AI, Imagery, and Representation</p>
         </div>
         <Separator className="mb-12"/>
-        <Card className="bg-stone-50 text-stone-900 shadow-2xl">
+        <Card className="bg-card shadow-2xl">
             <CardContent className="p-6 md:p-12">
-                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
+                <div className="text-lg text-card-foreground leading-relaxed space-y-6 max-w-4xl">
                     <p>
                         The <strong>3AMΣ</strong> project embraces a unique artistic mandate: to present creative output as close to its original AI-generated form as possible. This approach is intended as a satirical commentary on the nature of creation in the age of AI. Our goal is to spark dialogue about authorship, authenticity, and the evolving role of technology in art. We believe all good art should inspire conversation, not conflict.
                     </p>
@@ -26,7 +26,7 @@ export default function CreativeProcessPage() {
                     <p>
                         We acknowledge the critical discussions surrounding representation, authenticity, and cultural sensitivity in online content. Our selection of visual templates and AI-generated elements is guided by the principle of showcasing the product effectively and inclusively, respecting the source material provided by these platforms. As a project deeply involved with AI co-creation, we believe in open dialogue about the evolving ethics and implications of digital content generation, and we are committed to fostering a space of genuine appreciation for all our listeners and supporters.
                     </p>
-                </article>
+                </div>
             </CardContent>
         </Card>
       </main>

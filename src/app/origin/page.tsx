@@ -66,11 +66,11 @@ export default function OriginPage() {
             <p className="text-lg text-muted-foreground mt-2">An encyclopedic entry on the conceptual album.</p>
         </div>
         <Separator className="mb-12"/>
-        <Card className="bg-stone-50 text-stone-900 shadow-2xl">
+        <Card className="bg-card shadow-2xl">
             <CardContent className="p-6 md:p-12">
                 <div className="grid lg:grid-cols-4 gap-12">
                     <div className="lg:col-span-3">
-                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
+                        <div className="text-lg text-card-foreground leading-relaxed space-y-6">
                             <p>
                                 <strong><em>Midnight Murmurs</em></strong> is the debut studio album by <strong>3AMΣ</strong>, a conceptual musical project known for its unique blend of alternative R&B, pop, funk, hip-hop, and electronic music, heavily influenced by the sound and thematic depth of The Weeknd. The album is a deeply introspective and often darkly humorous exploration of the mundane yet profound existence of a domestic cat, told from both feline and human perspectives over a full 24-hour cycle.
                             </p>
@@ -82,24 +82,24 @@ export default function OriginPage() {
                             <p>
                                 The creative process was highly collaborative, utilizing advanced AI tools (specifically, Gemini) to co-write lyrics and shape the album's narrative and sonic direction. This allowed for rapid iteration, thematic consistency, and the precise alignment of lyrical content with the intended musical style. The project aimed to create a coherent "concept album" that could stand alongside works by artists known for their intricate storytelling and thematic development.
                             </p>
-                        </article>
+                        </div>
                         
                         <div className="my-16">
                              <h2 className="font-semibold text-3xl uppercase text-primary/90 not-prose mb-6">Artistic Influences & Style</h2>
-                             <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 not-prose">
+                             <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
                                 {influences.map(item => (
                                     <div key={item.title} className="flex items-start gap-4">
                                         <CheckCircle2 className="w-5 h-5 text-primary/70 mt-1 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-bold text-stone-800">{item.title}</h4>
-                                            <p className="text-stone-600">{item.description}</p>
+                                            <h4 className="font-bold text-card-foreground">{item.title}</h4>
+                                            <p className="text-card-foreground/80">{item.description}</p>
                                         </div>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
-                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
+                         <div className="text-lg text-card-foreground leading-relaxed space-y-6">
                             <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-4 !mt-12">Themes</h2>
                             <p>
                                 _Midnight Murmurs_ delves into several core themes:
@@ -111,21 +111,21 @@ export default function OriginPage() {
                                 <li><strong>Critique of Modern Life:</strong> Subtle commentary on human "overworking," digital distraction, and the search for meaning in mundane routines.</li>
                                 <li><strong>Finding Meaning in the Mundane:</strong> The cat's ability to find profound satisfaction and meaning in simple pleasures like food, a cardboard box, or the chase of a laser dot.</li>
                             </ul>
-                        </article>
+                        </div>
 
                         <div className="my-16">
-                             <h2 className="font-semibold text-3xl uppercase text-primary/90 not-prose !mb-6 !mt-12">Track Listing</h2>
+                             <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-6 !mt-12">Track Listing</h2>
                             
-                            <h3 className="font-semibold text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act I: Delusion & Chaos (The Party Never Ends)</h3>
+                            <h3 className="font-semibold text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act I: Delusion & Chaos (The Party Never Ends)</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800">
+                                <Table className="text-card-foreground">
                                     <TableHeader>
                                         <TableRow>
-                                            <TableHead className="text-stone-600">No.</TableHead>
-                                            <TableHead className="text-stone-600">Title</TableHead>
-                                            <TableHead className="text-stone-600">Main Perspective</TableHead>
-                                            <TableHead className="text-stone-600">Time of Day</TableHead>
-                                            <TableHead className="text-stone-600">Lyrical/Thematic Focus</TableHead>
+                                            <TableHead className="text-card-foreground/80">No.</TableHead>
+                                            <TableHead className="text-card-foreground/80">Title</TableHead>
+                                            <TableHead className="text-card-foreground/80">Main Perspective</TableHead>
+                                            <TableHead className="text-card-foreground/80">Time of Day</TableHead>
+                                            <TableHead className="text-card-foreground/80">Lyrical/Thematic Focus</TableHead>
                                         </TableRow>
                                     </TableHeader>
                                     <TableBody>
@@ -161,16 +161,16 @@ export default function OriginPage() {
                                 </Table>
                             </div>
 
-                            <h3 className="font-semibold text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act II: Reflection & Co-Dependence</h3>
+                            <h3 className="font-semibold text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act II: Reflection & Co-Dependence</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800">
+                                <Table className="text-card-foreground">
                                     <TableHeader>
                                         <TableRow>
-                                            <TableHead className="text-stone-600">No.</TableHead>
-                                            <TableHead className="text-stone-600">Title</TableHead>
-                                            <TableHead className="text-stone-600">Main Perspective</TableHead>
-                                            <TableHead className="text-stone-600">Time of Day</TableHead>
-                                            <TableHead className="text-stone-600">Lyrical/Thematic Focus</TableHead>
+                                            <TableHead className="text-card-foreground/80">No.</TableHead>
+                                            <TableHead className="text-card-foreground/80">Title</TableHead>
+                                            <TableHead className="text-card-foreground/80">Main Perspective</TableHead>
+                                            <TableHead className="text-card-foreground/80">Time of Day</TableHead>
+                                            <TableHead className="text-card-foreground/80">Lyrical/Thematic Focus</TableHead>
                                         </TableRow>
                                     </TableHeader>
                                     <TableBody>
@@ -199,16 +199,16 @@ export default function OriginPage() {
                                 </Table>
                             </div>
 
-                            <h3 className="font-semibold text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act III: Confrontation & Acceptance (The Loop)</h3>
+                            <h3 className="font-semibold text-2xl uppercase text-primary/80 !mb-4 !mt-8">Act III: Confrontation & Acceptance (The Loop)</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800">
+                                <Table className="text-card-foreground">
                                     <TableHeader>
                                         <TableRow>
-                                            <TableHead className="text-stone-600">No.</TableHead>
-                                            <TableHead className="text-stone-600">Title</TableHead>
-                                            <TableHead className="text-stone-600">Main Perspective</TableHead>
-                                            <TableHead className="text-stone-600">Time of Day</TableHead>
-                                            <TableHead className="text-stone-600">Lyrical/Thematic Focus</TableHead>
+                                            <TableHead className="text-card-foreground/80">No.</TableHead>
+                                            <TableHead className="text-card-foreground/80">Title</TableHead>
+                                            <TableHead className="text-card-foreground/80">Main Perspective</TableHead>
+                                            <TableHead className="text-card-foreground/80">Time of Day</TableHead>
+                                            <TableHead className="text-card-foreground/80">Lyrical/Thematic Focus</TableHead>
                                         </TableRow>
                                     </TableHeader>
                                     <TableBody>
@@ -238,15 +238,15 @@ export default function OriginPage() {
                             </div>
                         </div>
 
-                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6 my-16">
+                        <div className="my-16 text-lg text-card-foreground leading-relaxed space-y-6">
                             <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-6 !mt-12">Singles</h2>
                             <h3 className="font-semibold text-2xl uppercase text-primary/80 !mb-4 !mt-8">"Stupid Fucking Hooman Remix"</h3>
                             {memeCoverArt && (
-                                <div className="float-right ml-6 mb-4 w-48 lg:w-64 not-prose">
+                                <div className="float-right ml-6 mb-4 w-48 lg:w-64">
                                     <div className="aspect-square relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
                                         <Image src={memeCoverArt.imageUrl} alt={memeCoverArt.description} fill className="object-cover" />
                                     </div>
-                                    <p className="text-xs text-center text-stone-500 mt-2">The iconic cover art for the single.</p>
+                                    <p className="text-xs text-center text-card-foreground/60 mt-2">The iconic cover art for the single.</p>
                                 </div>
                             )}
                             <p>
@@ -261,78 +261,78 @@ export default function OriginPage() {
                             <p>
                                 The track showcases 3AMΣ's ability to blend its signature moody, Weeknd-esque production with a more explicit, meme-driven lyrical approach, expanding the project's thematic reach into direct social commentary on pet-owner dynamics.
                             </p>
-                        </article>
+                        </div>
 
                         <div className="my-16">
-                            <h2 className="font-semibold text-3xl uppercase text-primary/90 not-prose !mb-6 !mt-12">Personnel</h2>
-                            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 not-prose">
+                            <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-6 !mt-12">Personnel</h2>
+                            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
                                 {personnel.map((p) => (
-                                    <Card key={p.name} className="bg-stone-100 border-stone-200/80">
+                                    <Card key={p.name} className="bg-card/80 border-border/80">
                                         <CardContent className="p-6 flex flex-col items-center text-center">
                                             <div className="p-3 mb-4 rounded-full bg-primary/10 text-primary">
                                                 <p.icon className="w-8 h-8" />
                                             </div>
-                                            <h4 className="font-bold text-stone-900 text-lg">{p.name}</h4>
-                                            <p className="text-stone-600 text-sm">{p.role}</p>
+                                            <h4 className="font-bold text-card-foreground text-lg">{p.name}</h4>
+                                            <p className="text-card-foreground/80 text-sm">{p.role}</p>
                                         </CardContent>
                                     </Card>
                                 ))}
                             </div>
                         </div>
 
-                        <div className="my-16 not-prose">
+                        <div className="my-16">
                             <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-6 !mt-12">Digital Presence & Community</h2>
-                             <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
+                             <div className="text-lg text-card-foreground leading-relaxed space-y-6">
                                 <p>
                                     The project maintains a curated visual presence on Instagram, extending the album's aesthetic into a grid of images that reflect its themes of noir, surrealism, and feline mystique. This digital space serves as a hub for the community, a place to share art, and a visual diary for the ongoing 3AMΣ narrative.
                                 </p>
-                            </article>
+                            </div>
                             <div className="grid md:grid-cols-2 gap-8 mt-8">
                                 <div className="space-y-4">
-                                    <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
+                                    <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-border/50 shadow-md">
                                         <Image src="/images/instagram.jpeg" alt="3AMΣ Instagram Page" fill className="object-cover" />
                                     </div>
-                                    <p className="text-sm text-center text-stone-500 mt-2">The official Instagram grid for @3amzoomie.</p>
+                                    <p className="text-sm text-center text-card-foreground/60 mt-2">The official Instagram grid for @3amzoomie.</p>
                                 </div>
                                 <div className="space-y-4">
-                                     <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
-                                        <Image src="/images/phone.png" alt="3AMΣ Website on Mobile" fill className="object-contain p-8 bg-stone-200" />
+                                     <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-border/50 shadow-md">
+                                        <Image src="/images/phone.png" alt="3AMΣ Website on Mobile" fill className="object-contain p-8 bg-card-foreground/10" />
                                     </div>
-                                    <p className="text-sm text-center text-stone-500 mt-2">The mobile experience for the 3AMΣ website.</p>
+                                    <p className="text-sm text-center text-card-foreground/60 mt-2">The mobile experience for the 3AMΣ website.</p>
                                 </div>
                             </div>
                         </div>
 
 
-                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
+                         <div className="text-lg text-card-foreground leading-relaxed space-y-6">
                             <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-6 !mt-12">Reception</h2>
                             <p>
                                 Initial reception to _Midnight Murmurs_ has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
                             </p>
-                        </article>
+                        </div>
                     </div>
                     <aside className="lg:col-span-1 lg:sticky top-24 h-fit hidden lg:block">
-                        <Card className="bg-stone-100 border-stone-200">
+                        <Card className="bg-card/80 border-border/80">
                             <CardHeader>
-                                <CardTitle className="font-semibold text-3xl text-stone-900">3AMΣ</CardTitle>
-                                <CardDescription className="text-stone-600">Conceptual Musical Project</CardDescription>
+                                <CardTitle className="font-semibold text-3xl text-card-foreground">3AMΣ</CardTitle>
+                                <CardDescription>Conceptual Musical Project</CardDescription>
                             </CardHeader>
-                            <CardContent className="text-sm space-y-4 text-stone-800">
+                            <CardContent className="text-sm space-y-4 text-card-foreground">
                                 <div>
-                                    <h4 className="font-semibold text-stone-900">Also known as</h4>
-                                    <p className="text-stone-600">3AMΣzoomies</p>
+                                    <h4 className="font-semibold text-card-foreground">Also known as</h4>
+                                    <p className="text-card-foreground/80">3AMΣzoomies</p>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-stone-900">Genre</h4>
-                                    <p className="text-stone-600">Alternative R&B, Pop, Funk, Hip-Hop, Electronic</p>
+                                    <h4 className="font-semibold text-card-foreground">Genre</h4>
+                                    <p className="text-card-foreground/80">Alternative R&B, Pop, Funk, Hip-Hop, Electronic</p>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-stone-900">Debut Album</h4>
-                                    <p className="text-stone-600">Midnight Murmurs (2024)</p>
+                                    <h4 className="font-semibold text-card-foreground">Debut Album</h4>
+                                    <p className="text-card-foreground/80">Midnight Murmurs (2024)</p>
                                  </div>
                                 <div>
-                                    <h4 className="font-semibold text-stone-900">Primary Influences</h4>
-                                    <p className="text-stone-600">The Weeknd (After Hours, Dawn FM)</p>
+                                    <h4 className="font-semibold text-card-foreground">Primary Influences</h4>
+                                    <p className="text-card-foreground/80">The Weeknd (After Hours, Dawn FM)</p>
                                 </div>
                             </CardContent>
                         </Card>
