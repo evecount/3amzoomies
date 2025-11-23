@@ -88,7 +88,7 @@ export const albumData: Album = {
       id: 2,
       title: "Apex Predator, Empty Bowl",
       duration: "3:45",
-      audioSrc: "/audio/TRACK2_Apex_Predator_Empty_Bowl.mp3",
+      audioSrc: "/audio/TRACK2_Apex_Predator_Empty_Bowl.wav",
       lyrics: `(Music begins with a dark, pulsing synth bassline, a sharp, clean drum beat, and a shimmering, slightly distorted synth pad)
 (Verse 1) Sunrise paints the glass again, a cold, dull glow The silent hour broken, where does the meaning go? They call it life, I call it wait and see For the human's clumsy dance, performing just for me The warmth of sun, a fading, golden prize Reflected in these empty, emerald eyes No bills to pay, no future to design Just the morning hunger gnawing, a singular divine
 (Pre-Chorus) They call me "pet," a name I can't abide Beneath this velvet fur, a monster hides A simple mind, they whisper, but they don't know the cost In this gilded cage, how much of me is lost?
