@@ -34,8 +34,8 @@ export function HeroSection() {
         </div>
 
         <div className="flex flex-col items-start text-left">
-          <p className="text-primary font-headline text-lg tracking-widest uppercase">Debut Album</p>
-          <h1 className="font-headline text-5xl md:text-7xl font-bold mt-2 mb-6 leading-tight uppercase">
+          <p className="text-primary font-semibold text-lg tracking-widest uppercase">Debut Album</p>
+          <h1 className="text-5xl md:text-7xl font-bold mt-2 mb-6 leading-tight uppercase">
             {albumData.title}
           </h1>
           <p className="text-lg text-muted-foreground max-w-prose mb-8">
@@ -57,7 +57,7 @@ export function HeroSection() {
 
           <Card className="w-full max-w-md bg-card/50 border-accent/50 mb-8">
             <CardHeader>
-                <CardTitle className="font-headline text-xl uppercase text-accent">Viral Breakout Single</CardTitle>
+                <CardTitle className="font-semibold text-xl uppercase text-accent">Viral Breakout Single</CardTitle>
                 <CardDescription>
                     The official rebuttal to the internet classic "I'm a Stupid Cat" by Mike Polk Jr.
                 </CardDescription>

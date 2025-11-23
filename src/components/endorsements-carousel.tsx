@@ -88,8 +88,8 @@ export function EndorsementsCarousel() {
   return (
     <section className="container mx-auto px-4 py-12 md:py-16">
        <div className="text-center mb-12 px-4">
-            <p className="text-primary font-headline text-lg tracking-widest uppercase">Critical Acclaim</p>
-            <h2 className="font-headline text-5xl md:text-6xl uppercase tracking-wider">Words from the Wise</h2>
+            <p className="text-primary font-semibold text-lg tracking-widest uppercase">Critical Acclaim</p>
+            <h2 className="font-semibold text-5xl md:text-6xl uppercase tracking-wider">Words from the Wise</h2>
             <p className="text-lg text-muted-foreground mt-2">Don't just take our word for it.</p>
         </div>
       <Carousel
@@ -109,7 +109,7 @@ export function EndorsementsCarousel() {
                         "{endorsement.quote}"
                       </blockquote>
                        <div>
-                        <p className="font-bold font-headline text-xl text-foreground uppercase tracking-wide">- {endorsement.name}</p>
+                        <p className="font-bold text-xl text-foreground uppercase tracking-wide">- {endorsement.name}</p>
                       </div>
                     </CardContent>
                   </Card>

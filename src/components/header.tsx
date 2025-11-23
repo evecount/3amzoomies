@@ -45,9 +45,9 @@ export function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center px-4">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold sm:inline-block font-headline text-lg uppercase">3AMΣ</span>
+            <span className="font-bold sm:inline-block text-lg uppercase">3AMΣ</span>
           </Link>
-          <nav className="flex items-center gap-6 text-sm font-sans">
+          <nav className="flex items-center gap-6 text-sm">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -70,9 +70,9 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <Link href="/" className="mb-8 flex items-center">
-                 <span className="font-bold font-headline text-lg uppercase">3AMΣ</span>
+                 <span className="font-bold text-lg uppercase">3AMΣ</span>
               </Link>
-              <nav className="flex flex-col gap-6 text-lg font-medium font-sans">
+              <nav className="flex flex-col gap-6 text-lg font-medium">
                 {navLinks.map((link) => (
                   <Link
                     key={link.label}

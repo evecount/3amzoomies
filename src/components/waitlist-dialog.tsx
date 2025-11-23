@@ -66,7 +66,7 @@ export function WaitlistDialog({ isOpen, onOpenChange, productTitle }: WaitlistD
       <DialogContent className="sm:max-w-[425px]">
         <form onSubmit={handleSubmit}>
             <DialogHeader>
-            <DialogTitle className="font-headline text-2xl uppercase">Join the Waitlist</DialogTitle>
+            <DialogTitle className="font-semibold text-2xl uppercase">Join the Waitlist</DialogTitle>
             <DialogDescription>
                 Be the first to know when "{productTitle}" is available. Enter your details below.
             </DialogDescription>

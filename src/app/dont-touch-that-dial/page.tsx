@@ -1,5 +1,4 @@
 
-
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -23,7 +22,7 @@ export default function DontTouchThatDialPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">23112025_Don't Touch That Dial.</h1>
+            <h1 className="text-5xl md:text-6xl font-semibold tracking-wider">23112025_Don't Touch That Dial.</h1>
             <p className="text-lg text-muted-foreground mt-1">A Transcript and its visual record.</p>
         </div>
         <Separator className="mb-12"/>
@@ -100,5 +99,3 @@ export default function DontTouchThatDialPage() {
     </div>
   );
 }
-
-    

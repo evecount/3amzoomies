@@ -10,8 +10,8 @@ export function ArtistInfo() {
         <section className="container mx-auto px-4 py-12 md:py-16">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                 <div className="flex flex-col items-start text-left">
-                     <p className="text-primary font-headline text-lg tracking-widest uppercase">The Artist</p>
-                    <h2 className="font-headline text-5xl md:text-6xl font-bold mt-2 mb-6 uppercase">
+                     <p className="text-primary font-semibold text-lg tracking-widest uppercase">The Artist</p>
+                    <h2 className="text-5xl md:text-6xl font-bold mt-2 mb-6 uppercase">
                         <Link href="/origin" className="hover:text-primary transition-colors">3AMΣ</Link>
                     </h2>
                     <div className="space-y-6 text-lg text-muted-foreground max-w-prose">

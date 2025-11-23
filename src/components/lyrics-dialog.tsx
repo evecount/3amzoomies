@@ -1,3 +1,4 @@
+
 import {
   Dialog,
   DialogContent,
@@ -19,7 +20,7 @@ export function LyricsDialog({ isOpen, onOpenChange, title, lyrics }: LyricsDial
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[625px]">
         <DialogHeader>
-          <DialogTitle className="font-headline text-3xl uppercase">{title}</DialogTitle>
+          <DialogTitle className="font-semibold text-3xl uppercase">{title}</DialogTitle>
           <DialogDescription>Lyrics</DialogDescription>
         </DialogHeader>
         <ScrollArea className="max-h-[60vh] pr-6">

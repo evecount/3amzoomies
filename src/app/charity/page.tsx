@@ -75,12 +75,12 @@ export default function CharityPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">Support The Cause</h1>
+            <h1 className="text-5xl md:text-6xl font-semibold tracking-wider">Support The Cause</h1>
             <p className="text-lg text-muted-foreground mt-1">Animals, Arts, or Humans. It's all the same, really.</p>
         </div>
         <Separator className="mb-12"/>
 
-        <article className="prose prose-invert prose-lg max-w-4xl mx-auto font-serif leading-relaxed space-y-6 mb-16 text-center">
+        <article className="prose prose-invert prose-lg max-w-4xl mx-auto leading-relaxed space-y-6 mb-16 text-center">
             <p>
                 The universe of <strong>3AMΣ</strong> is a commentary on the cycles of existence—need, comfort, chaos, and creation. While this project is a work of satire, the needs it reflects are very real. The provider must provide, whether it's a bowl of food, a piece of art, or a moment of care. Below are some organizations worthy of your consideration.
             </p>
@@ -91,7 +91,7 @@ export default function CharityPage() {
                 <Card key={charity.name} className="bg-card/50 flex flex-col">
                     <CardHeader>
                         <p className="text-sm font-semibold text-primary">{charity.category}</p>
-                        <CardTitle className="font-headline text-3xl uppercase">{charity.name}</CardTitle>
+                        <CardTitle className="font-semibold text-3xl uppercase">{charity.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
                         <p className="text-muted-foreground">{charity.description}</p>

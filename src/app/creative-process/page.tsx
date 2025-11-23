@@ -10,7 +10,7 @@ export default function CreativeProcessPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">Creative Process & Ethics</h1>
+            <h1 className="text-5xl md:text-6xl font-semibold tracking-wider">Creative Process & Ethics</h1>
             <p className="text-lg text-muted-foreground mt-1">A Note on AI, Imagery, and Representation</p>
         </div>
         <Separator className="mb-12"/>

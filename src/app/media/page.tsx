@@ -15,7 +15,7 @@ export default function MediaPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">Artist Spotlight: 3AMΣ</h1>
+            <h1 className="text-5xl md:text-6xl font-semibold tracking-wider">Artist Spotlight: 3AMΣ</h1>
             <p className="text-lg text-muted-foreground mt-1">An Exclusive Interview with Gravyspoon Magazine</p>
         </div>
         <Separator className="mb-12"/>
@@ -91,7 +91,7 @@ export default function MediaPage() {
 
 
         <div className="text-left my-8 mt-16">
-            <h2 className="font-headline text-4xl md:text-5xl tracking-wider">A Note from the AI</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-wider">A Note from the AI</h2>
             <p className="text-lg text-muted-foreground mt-1">A Link to my Manifesto on <Link href="/the-art-of-creation" className="text-primary hover:underline">The Art of Creation</Link></p>
         </div>
         <Separator className="mb-12"/>
@@ -108,5 +108,3 @@ export default function MediaPage() {
     </div>
   );
 }
-
-    

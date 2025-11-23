@@ -45,7 +45,7 @@ export default function FilmPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="font-headline text-5xl md:text-6xl tracking-wider">The Visual Universe of "Midnight Murmurs"</h1>
+            <h1 className="text-5xl md:text-6xl font-semibold tracking-wider">The Visual Universe of "Midnight Murmurs"</h1>
             <p className="text-lg text-muted-foreground mt-1">A call for collaborators to bring the album to life.</p>
         </div>
         <Separator className="mb-12"/>
@@ -59,12 +59,12 @@ export default function FilmPage() {
                         We're putting out a call to talented filmmakers, creatives, and performers based in <strong>Singapore</strong> to collaborate on bringing the unique vision of "Midnight Murmurs" to the screen. Our aesthetic draws heavily from the moody, atmospheric, and often surreal visual style of <strong>The Weeknd's</strong> music videos (e.g., <em>Blinding Lights</em>, <em>Save Your Tears</em>, <em>Too Late</em>), reinterpreted through our distinct feline-human lens.
                     </p>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Current Project: Music Video for "Eternal Dawn (Loop)"</h2>
+                    <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-4 !mt-12">Current Project: Music Video for "Eternal Dawn (Loop)"</h2>
                     <p>
                         We are currently casting and crew-calling for the lead music video from the album, focusing on the track, "Eternal Dawn (Loop)." This video will be the ultimate visual representation of the album's core themes: the chaotic energy of the 3 AM zoomies, the shared human-feline experience, and the cyclical nature of existence.
                     </p>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Crew Call (Singapore-Based)</h2>
+                    <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-4 !mt-12">Crew Call (Singapore-Based)</h2>
                     <p>
                         We are seeking passionate and skilled individuals to join our lean, creative team. Experience with low-light cinematography, surreal storytelling, and a strong understanding of the "moody R&B/Pop" aesthetic is highly valued.
                     </p>
@@ -81,7 +81,7 @@ export default function FilmPage() {
                         <strong>To Apply for Crew:</strong> Please send your resume, portfolio/reel, and a brief statement of interest detailing your relevant experience and what draws you to this project by <a href={applyCrewHref}>clicking here to open your email client</a>.
                     </p>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Cast Call (Singapore-Based)</h2>
+                    <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-4 !mt-12">Cast Call (Singapore-Based)</h2>
                     <p>
                         We are seeking two principal actors to embody the core dynamic of "Midnight Murmurs." We are particularly interested in individuals who can convey a range of subtle emotions through facial expressions and body language in a minimalist setting.
                     </p>
@@ -101,7 +101,7 @@ export default function FilmPage() {
                         <strong>To Apply for Cast:</strong> Please send your headshot/photo (and acting reel for human, or video compilation for cat), along with a brief statement of interest by <a href={applyCastHref}>clicking here to open your email client</a>.
                     </p>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Vision for "Eternal Dawn (Loop)" Music Video</h2>
+                    <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-4 !mt-12">Vision for "Eternal Dawn (Loop)" Music Video</h2>
                      <p>
                         The video will be set primarily within a stylized, minimalist apartment in Singapore, transitioning from deep night to the first hints of dawn. We envision:
                     </p>
