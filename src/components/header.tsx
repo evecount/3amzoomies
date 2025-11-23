@@ -35,7 +35,7 @@ const iconLinks = [
   }
 ];
 
-const disabledIconTooltip = "This website is a satirical work of art. However, if enough people join the waitlist, we'll actually make the merch. No, really.";
+const disabledIconTooltip = "This website is a satirical work of art created with a variety of AI tools. However, if enough people join the waitlist, we'll actually make the merch. No, really.";
 
 export function Header() {
   return (
