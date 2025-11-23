@@ -8,7 +8,7 @@ import { SongPlayer } from './song-player';
 import { usePurchase } from '@/hooks/use-purchase';
 import { useToast } from '@/hooks/use-toast';
 import { ArrowRight } from 'lucide-react';
-import { Card, CardContent } from './ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { AlbumArtDisplay } from './album-art-display';
 
 export function HeroSection() {
@@ -55,7 +55,13 @@ export function HeroSection() {
             </CardContent>
           </Card>
 
-          <Card className="w-full max-w-md bg-background/50 mb-8">
+          <Card className="w-full max-w-md bg-card/50 border-accent/50 mb-8">
+            <CardHeader>
+                <CardTitle className="font-headline text-xl uppercase text-accent">Viral Breakout Single</CardTitle>
+                <CardDescription>
+                    The official rebuttal to the internet classic "I'm a Stupid Cat" by Mike Polk Jr.
+                </CardDescription>
+            </CardHeader>
             <CardContent className="p-2 flex flex-col gap-1">
                 <SongPlayer 
                     song={memeSong} 
