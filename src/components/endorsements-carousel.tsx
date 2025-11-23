@@ -28,8 +28,8 @@ const endorsements = [
     quote: "Honestly, I've never felt so seen. This album gets the struggle. The craving for 'Ambrosia & Oblivion,' the existential dread... it's all there. Pure art.",
   },
   {
-    id: 'doja-cat',
-    name: 'Doja Cat',
+    id: 'doja-kat',
+    name: 'Doja Kat',
     quote: "As a fellow feline artist, I have to say, 3AMΣ is speaking truths we've been silent about for too long. This isn't just music; it's a movement. A-meow-zing.",
   },
   {
