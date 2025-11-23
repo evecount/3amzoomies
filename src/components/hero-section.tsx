@@ -44,7 +44,7 @@ export function HeroSection() {
 
           <Card className="w-full max-w-md bg-background/50 mb-8">
             <CardContent className="p-2 flex flex-col gap-1">
-                {albumData.songs.slice(0,1).map((song) => (
+                {albumData.songs.map((song) => (
                     <SongPlayer 
                         song={song} 
                         playlist={fullPlaylist}
@@ -52,20 +52,9 @@ export function HeroSection() {
                         isLocked={false}
                     />
                 ))}
-                 {albumData.songs.slice(1).map((song) => (
-                    <SongPlayer 
-                        song={song} 
-                        playlist={fullPlaylist}
-                        key={song.id} 
-                        isLocked={true}
-                    />
-                ))}
             </CardContent>
           </Card>
 
-          <Button onClick={handlePurchase} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground uppercase">
-            Buy Full Album <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
         </div>
       </div>
     </section>
