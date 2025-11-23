@@ -43,6 +43,30 @@
       "imageHint": "angry cat streetwear"
     },
     {
+      "id": "justin-beefer",
+      "description": "Portrait of Justin Beefer",
+      "imageUrl": "https://images.unsplash.com/photo-1753109820220-b8c7ae18f6bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3AlMjBzdGFyJTIwY2F0fGVufDB8fHx8MTc2MzkwMDQ0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pop star cat"
+    },
+    {
+      "id": "cat-harlow",
+      "description": "Portrait of Cat Harlow",
+      "imageUrl": "https://images.unsplash.com/photo-1626869030965-d30c540a631e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyYXBwZXIlMjBjYXQlMjBnbGFzc2VzfGVufDB8fHx8MTc2MzkwMDQ0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rapper cat glasses"
+    },
+    {
+      "id": "post-meowlone",
+      "description": "Portrait of Post Meowlone",
+      "imageUrl": "https://images.unsplash.com/photo-1662837323692-dda2c09a9993?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXQlMjBmYWNlJTIwdGF0dG9vc3xlbnwwfHx8fDE3NjM5MDA0NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cat face tattoos"
+    },
+    {
+      "id": "doja-cat",
+      "description": "Portrait of Doja Cat",
+      "imageUrl": "https://images.unsplash.com/photo-1672288373636-7d5d31feedc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxnbGFtb3JvdXMlMjBjYXR8ZW58MHx8fHwxNzYzOTAwNDQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "glamorous cat"
+    },
+    {
       "id": "song-1-cover",
       "description": "Cover art for Introduction (Feline FM)",
       "imageUrl": "/images/3AM_vinyl.png",
