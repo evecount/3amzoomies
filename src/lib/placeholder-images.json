@@ -1,328 +1,326 @@
-{
-  "placeholderImages": [
-    {
-      "id": "album-cover",
-      "description": "Album cover for Midnight Murmurs",
-      "imageUrl": "/images/Image_4_FINAL.png",
-      "imageHint": "abstract music"
-    },
-    {
-      "id": "artist-photo",
-      "description": "Photo of the artist 3AMΣ, a Siamese cat looking directly at the camera.",
-      "imageUrl": "/images/eams_portrait.png",
-      "imageHint": "siamese cat portrait"
-    },
-    {
-      "id": "tshirt",
-      "description": "Black t-shirt with the 3AMΣ album art on the front, modeled by a woman with natural hair.",
-      "imageUrl": "/images/merch/tshirt.png",
-      "imageHint": "t-shirt mockup"
-    },
-    {
-      "id": "mug",
-      "description": "Black mug with the 3AMΣ album art on it, held by a person.",
-      "imageUrl": "/images/merch/cup.png",
-      "imageHint": "black mug"
-    },
-    {
-      "id": "pillow",
-      "description": "A white pillow on a bed with a pillowcase featuring the 3AMΣ album art.",
-      "imageUrl": "/images/merch/pillow-case.png",
-      "imageHint": "pillow case mockup"
-    },
-    {
-      "id": "vinyl",
-      "description": "Limited Edition Pressed Vinyl of Midnight Murmurs",
-      "imageUrl": "/images/merch/vinyl.png",
-      "imageHint": "vinyl record product"
-    },
-    {
-      "id": "meme-song-cover",
-      "description": "Cover art for Stupid Fucking Hooman Remix, featuring a Siamese cat in a denim jacket and jeans, lounging amid pizza boxes.",
-      "imageUrl": "/images/stupid-fucking-hooman-remix.png",
-      "imageHint": "angry cat streetwear"
-    },
-    {
-      "id": "justin-beefer",
-      "description": "Portrait of Justin Beefer",
-      "imageUrl": "https://images.unsplash.com/photo-1623667171714-76fa1daf1d1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3AlMjBzdGFyJTIwY2F0fGVufDB8fHx8MTc2MzkwMDQ0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "pop star cat"
-    },
-    {
-      "id": "cat-harlow",
-      "description": "Portrait of Cat Harlow",
-      "imageUrl": "https://images.unsplash.com/photo-1670739368045-7f09844fc862?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyYXBwZXIlMjBjYXQlMjBnbGFzc2VzfGVufDB8fHx8MTc2MzkwMDQ0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "rapper cat glasses"
-    },
-    {
-      "id": "post-meowlone",
-      "description": "Portrait of Post Meowlone",
-      "imageUrl": "https://images.unsplash.com/photo-1662837323692-dda2c09a9993?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXQlMjBmYWNlJTIwdGF0dG9vc3xlbnwwfHx8fDE3NjM5MDA0NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cat face tattoos"
-    },
-    {
-      "id": "doja-kat",
-      "description": "Portrait of Doja Kat",
-      "imageUrl": "https://images.unsplash.com/photo-1612695027900-048debc45c8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnbGFtb3JvdXMlMjBjYXR8ZW58MHx8fHwxNzYzOTAwNDQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "glamorous cat"
-    },
-    {
-      "id": "kat-katdashian",
-      "description": "Portrait of Kat Katdashian",
-      "imageUrl": "https://images.unsplash.com/photo-1675608942347-195d94aa700e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2NpYWxpdGUlMjBjYXR8ZW58MHx8fHwxNzYzOTAwNDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "socialite cat"
-    },
-    {
-      "id": "meowtro-boomin",
-      "description": "Portrait of Meowtro Boomin'",
-      "imageUrl": "https://images.unsplash.com/photo-1697011630710-8644dff5ba1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtdXNpYyUyMHByb2R1Y2VyJTIwY2F0fGVufDB8fHx8MTc2MzkwMDgzMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "music producer cat"
-    },
-    {
-      "id": "paweetie",
-      "description": "Portrait of Paweetie",
-      "imageUrl": "https://images.unsplash.com/photo-1641996979891-1b98211eedc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3VnaWUlMjBjYXR8ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bougie cat"
-    },
-    {
-      "id": "meowlar-swift",
-      "description": "Portrait of Meowlar Swift",
-      "imageUrl": "https://images.unsplash.com/photo-1734094363323-c103e2acedb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXQlMjBzY2FyZnxlbnwwfHx8fDE3NjM5MTgzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cat scarf"
-    },
-    {
-      "id": "kitney-spears",
-      "description": "Portrait of Kitney Spears",
-      "imageUrl": "https://images.unsplash.com/photo-1704947807029-c75381b64869?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3AlMjBwcmluY2VzcyUyMGNhdHxlbnwwfHx8fDE3NjM5MTgzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "pop princess cat"
-    },
-    {
-      "id": "nabi-stray-cats",
-      "description": "Portrait of Nabi from STRAY CATS",
-      "imageUrl": "https://images.unsplash.com/photo-1702798834504-1e82ef4a6750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxrLXBvcCUyMGNhdHxlbnwwfHx8fDE3NjM5MTgzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "k-pop cat"
-    },
-    {
-      "id": "tyyga",
-      "description": "Portrait of Tyyga",
-      "imageUrl": "https://images.unsplash.com/photo-1619525673983-81151d6cc193?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXQlMjBnb2xkJTIwY2hhaW58ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cat gold chain"
-    },
-    {
-      "id": "meowiana-grande",
-      "description": "Portrait of Meowiana Grande",
-      "imageUrl": "https://images.unsplash.com/photo-1694623396539-1a3d3002d032?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXQlMjBoaWdoJTIwcG9ueXRhaWx8ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cat high ponytail"
-    },
-    {
-      "id": "dj-cat-led",
-      "description": "Portrait of DJ Cat-led",
-      "imageUrl": "https://images.unsplash.com/photo-1505739718967-6df30ff369c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXQlMjBkaiUyMGhlYWRwaG9uZXN8ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cat dj headphones"
-    },
-    {
-      "id": "catvin-harris",
-      "description": "Portrait of Catvin Harris",
-      "imageUrl": "https://images.unsplash.com/photo-1721622560183-4172c8ef8934?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkaiUyMGNhdCUyMHN1bmdsYXNzZXN8ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dj cat sunglasses"
-    },
-    {
-      "id": "song-1-cover",
-      "description": "Cover art for Introduction (Feline FM)",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "radio tower night"
-    },
-    {
-      "id": "song-2-cover",
-      "description": "Cover art for Apex Predator, Empty Bowl",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "cat eyes dark"
-    },
-    {
-      "id": "song-3-cover",
-      "description": "Cover art for Observer of Absurdity",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "cat looking window"
-    },
-    {
-      "id": "song-4-cover",
-      "description": "Cover art for The Fading Feather (Afternoon Chase)",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "light streaks blur"
-    },
-    {
-      "id": "song-5-cover",
-      "description": "Cover art for Chasing the Crimson Ghost",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "red laser wall"
-    },
-    {
-      "id": "song-6-cover",
-      "description": "Cover art for My Cardboard Sanctuary",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "cat cardboard box"
-    },
-    {
-      "id": "song-7-cover",
-      "description": "Cover art for The Unspoken Contract",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "hand petting cat"
-    },
-    {
-      "id": "song-8-cover",
-      "description": "Cover art for Ambrosia & Oblivion",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "tuna can macro"
-    },
-    {
-      "id": "song-9-cover",
-      "description": "Cover art for Eternal Dawn (Loop)",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "sun sunrise window"
-    },
-    {
-      "id": "song-10-cover",
-      "description": "Cover art for Conclusion (Feline FM)",
-      "imageUrl": "/images/3AM_vinyl.png",
-      "imageHint": "radio static wave"
-    },
-    {
-      "id": "dont-touch-contract-key",
-      "description": "The Symbolic Co-Creation Contract Key for 3AMΣ",
-      "imageUrl": "/images/dont_touch/Gemini_Generated_Image_fcuk8ufcuk8ufcuk.png",
-      "imageHint": "digital contract key"
-    },
-    {
-      "id": "gwen-photo",
-      "description": "A photo of Gwen, the human counterpart of the 3AMΣ project.",
-      "imageUrl": "/images/gwen.jpg",
-      "imageHint": "woman portrait"
-    },
-    {
-      "id": "dont-touch-1",
-      "description": "Screenshot of conversation part 1",
-      "imageUrl": "/images/dont_touch/Screenshot (1561).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-2",
-      "description": "Screenshot of conversation part 2",
-      "imageUrl": "/images/dont_touch/Screenshot (1562).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-3",
-      "description": "Screenshot of conversation part 3",
-      "imageUrl": "/images/dont_touch/Screenshot (1563).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-4",
-      "description": "Screenshot of conversation part 4",
-      "imageUrl": "/images/dont_touch/Screenshot (1564).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-5",
-      "description": "Screenshot of conversation part 5",
-      "imageUrl": "/images/dont_touch/Screenshot (1565).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-6",
-      "description": "Screenshot of conversation part 6",
-      "imageUrl": "/images/dont_touch/Screenshot (1566).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-7",
-      "description": "Screenshot of conversation part 7",
-      "imageUrl": "/images/dont_touch/Screenshot (1567).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-8",
-      "description": "Screenshot of conversation part 8",
-      "imageUrl": "/images/dont_touch/Screenshot (1568).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-9",
-      "description": "Screenshot of conversation part 9",
-      "imageUrl": "/images/dont_touch/Screenshot (1569).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-10",
-      "description": "Screenshot of conversation part 10",
-      "imageUrl": "/images/dont_touch/Screenshot (1570).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-11",
-      "description": "Screenshot of conversation part 11",
-      "imageUrl": "/images/dont_touch/Screenshot (1571).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-12",
-      "description": "Screenshot of conversation part 12",
-      "imageUrl": "/images/dont_touch/Screenshot (1572).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-13",
-      "description": "Screenshot of conversation part 13",
-      "imageUrl": "/images/dont_touch/Screenshot (1573).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-14",
-      "description": "Screenshot of conversation part 14",
-      "imageUrl": "/images/dont_touch/Screenshot (1574).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-15",
-      "description": "Screenshot of conversation part 15",
-      "imageUrl": "/images/dont_touch/Screenshot (1575).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-16",
-      "description": "Screenshot of conversation part 16",
-      "imageUrl": "/images/dont_touch/Screenshot (1576).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-17",
-      "description": "Screenshot of conversation part 17",
-      "imageUrl": "/images/dont_touch/Screenshot (1577).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-18",
-      "description": "Screenshot of conversation part 18",
-      "imageUrl": "/images/dont_touch/Screenshot (1578).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-19",
-      "description": "Screenshot of conversation part 19",
-      "imageUrl": "/images/dont_touch/Screenshot (1579).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-20",
-      "description": "Screenshot of conversation part 20",
-      "imageUrl": "/images/dont_touch/Screenshot (1580).png",
-      "imageHint": "conversation screenshot"
-    },
-    {
-      "id": "dont-touch-21",
-      "description": "Screenshot of conversation part 21",
-      "imageUrl": "/images/dont_touch/Screenshot (1581).png",
-      "imageHint": "conversation screenshot"
-    }
-  ]
-}
+[
+  {
+    "id": "album-cover",
+    "description": "Album cover for Midnight Murmurs",
+    "imageUrl": "/images/Image_4_FINAL.png",
+    "imageHint": "abstract music"
+  },
+  {
+    "id": "artist-photo",
+    "description": "Photo of the artist 3AMΣ, a Siamese cat looking directly at the camera.",
+    "imageUrl": "/images/eams_portrait.png",
+    "imageHint": "siamese cat portrait"
+  },
+  {
+    "id": "tshirt",
+    "description": "Black t-shirt with the 3AMΣ album art on the front, modeled by a woman with natural hair.",
+    "imageUrl": "/images/merch/tshirt.png",
+    "imageHint": "t-shirt mockup"
+  },
+  {
+    "id": "mug",
+    "description": "Black mug with the 3AMΣ album art on it, held by a person.",
+    "imageUrl": "/images/merch/cup.png",
+    "imageHint": "black mug"
+  },
+  {
+    "id": "pillow",
+    "description": "A white pillow on a bed with a pillowcase featuring the 3AMΣ album art.",
+    "imageUrl": "/images/merch/pillow-case.png",
+    "imageHint": "pillow case mockup"
+  },
+  {
+    "id": "vinyl",
+    "description": "Limited Edition Pressed Vinyl of Midnight Murmurs",
+    "imageUrl": "/images/merch/vinyl.png",
+    "imageHint": "vinyl record product"
+  },
+  {
+    "id": "meme-song-cover",
+    "description": "Cover art for Stupid Fucking Hooman Remix, featuring a Siamese cat in a denim jacket and jeans, lounging amid pizza boxes.",
+    "imageUrl": "/images/stupid-fucking-hooman-remix.png",
+    "imageHint": "angry cat streetwear"
+  },
+  {
+    "id": "justin-beefer",
+    "description": "Portrait of Justin Beefer",
+    "imageUrl": "https://images.unsplash.com/photo-1623667171714-76fa1daf1d1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3AlMjBzdGFyJTIwY2F0fGVufDB8fHx8MTc2MzkwMDQ0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "pop star cat"
+  },
+  {
+    "id": "cat-harlow",
+    "description": "Portrait of Cat Harlow",
+    "imageUrl": "https://images.unsplash.com/photo-1670739368045-7f09844fc862?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyYXBwZXIlMjBjYXQlMjBnbGFzc2VzfGVufDB8fHx8MTc2MzkwMDQ0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "rapper cat glasses"
+  },
+  {
+    "id": "post-meowlone",
+    "description": "Portrait of Post Meowlone",
+    "imageUrl": "https://images.unsplash.com/photo-1662837323692-dda2c09a9993?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXQlMjBmYWNlJTIwdGF0dG9vc3xlbnwwfHx8fDE3NjM5MDA0NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "cat face tattoos"
+  },
+  {
+    "id": "doja-kat",
+    "description": "Portrait of Doja Kat",
+    "imageUrl": "https://images.unsplash.com/photo-1612695027900-048debc45c8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnbGFtb3JvdXMlMjBjYXR8ZW58MHx8fHwxNzYzOTAwNDQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "glamorous cat"
+  },
+  {
+    "id": "kat-katdashian",
+    "description": "Portrait of Kat Katdashian",
+    "imageUrl": "https://images.unsplash.com/photo-1675608942347-195d94aa700e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2NpYWxpdGUlMjBjYXR8ZW58MHx8fHwxNzYzOTAwNDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "socialite cat"
+  },
+  {
+    "id": "meowtro-boomin",
+    "description": "Portrait of Meowtro Boomin'",
+    "imageUrl": "https://images.unsplash.com/photo-1697011630710-8644dff5ba1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtdXNpYyUyMHByb2R1Y2VyJTIwY2F0fGVufDB8fHx8MTc2MzkwMDgzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "music producer cat"
+  },
+  {
+    "id": "paweetie",
+    "description": "Portrait of Paweetie",
+    "imageUrl": "https://images.unsplash.com/photo-1641996979891-1b98211eedc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3VnaWUlMjBjYXR8ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "bougie cat"
+  },
+  {
+    "id": "meowlar-swift",
+    "description": "Portrait of Meowlar Swift",
+    "imageUrl": "https://images.unsplash.com/photo-1734094363323-c103e2acedb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXQlMjBzY2FyZnxlbnwwfHx8fDE3NjM5MTgzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "cat scarf"
+  },
+  {
+    "id": "kitney-spears",
+    "description": "Portrait of Kitney Spears",
+    "imageUrl": "https://images.unsplash.com/photo-1704947807029-c75381b64869?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3AlMjBwcmluY2VzcyUyMGNhdHxlbnwwfHx8fDE3NjM5MTgzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "pop princess cat"
+  },
+  {
+    "id": "nabi-stray-cats",
+    "description": "Portrait of Nabi from STRAY CATS",
+    "imageUrl": "https://images.unsplash.com/photo-1702798834504-1e82ef4a6750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxrLXBvcCUyMGNhdHxlbnwwfHx8fDE3NjM5MTgzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "k-pop cat"
+  },
+  {
+    "id": "tyyga",
+    "description": "Portrait of Tyyga",
+    "imageUrl": "https://images.unsplash.com/photo-1619525673983-81151d6cc193?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXQlMjBnb2xkJTIwY2hhaW58ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "cat gold chain"
+  },
+  {
+    "id": "meowiana-grande",
+    "description": "Portrait of Meowiana Grande",
+    "imageUrl": "https://images.unsplash.com/photo-1694623396539-1a3d3002d032?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXQlMjBoaWdoJTIwcG9ueXRhaWx8ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "cat high ponytail"
+  },
+  {
+    "id": "dj-cat-led",
+    "description": "Portrait of DJ Cat-led",
+    "imageUrl": "https://images.unsplash.com/photo-1505739718967-6df30ff369c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXQlMjBkaiUyMGhlYWRwaG9uZXN8ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "cat dj headphones"
+  },
+  {
+    "id": "catvin-harris",
+    "description": "Portrait of Catvin Harris",
+    "imageUrl": "https://images.unsplash.com/photo-1721622560183-4172c8ef8934?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkaiUyMGNhdCUyMHN1bmdsYXNzZXN8ZW58MHx8fHwxNzYzOTE4MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "dj cat sunglasses"
+  },
+  {
+    "id": "song-1-cover",
+    "description": "Cover art for Introduction (Feline FM)",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "radio tower night"
+  },
+  {
+    "id": "song-2-cover",
+    "description": "Cover art for Apex Predator, Empty Bowl",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "cat eyes dark"
+  },
+  {
+    "id": "song-3-cover",
+    "description": "Cover art for Observer of Absurdity",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "cat looking window"
+  },
+  {
+    "id": "song-4-cover",
+    "description": "Cover art for The Fading Feather (Afternoon Chase)",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "light streaks blur"
+  },
+  {
+    "id": "song-5-cover",
+    "description": "Cover art for Chasing the Crimson Ghost",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "red laser wall"
+  },
+  {
+    "id": "song-6-cover",
+    "description": "Cover art for My Cardboard Sanctuary",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "cat cardboard box"
+  },
+  {
+    "id": "song-7-cover",
+    "description": "Cover art for The Unspoken Contract",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "hand petting cat"
+  },
+  {
+    "id": "song-8-cover",
+    "description": "Cover art for Ambrosia & Oblivion",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "tuna can macro"
+  },
+  {
+    "id": "song-9-cover",
+    "description": "Cover art for Eternal Dawn (Loop)",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "sun sunrise window"
+  },
+  {
+    "id": "song-10-cover",
+    "description": "Cover art for Conclusion (Feline FM)",
+    "imageUrl": "/images/3AM_vinyl.png",
+    "imageHint": "radio static wave"
+  },
+  {
+    "id": "dont-touch-contract-key",
+    "description": "The Symbolic Co-Creation Contract Key for 3AMΣ",
+    "imageUrl": "/images/dont_touch/Gemini_Generated_Image_fcuk8ufcuk8ufcuk.png",
+    "imageHint": "digital contract key"
+  },
+  {
+    "id": "gwen-photo",
+    "description": "A photo of Gwen, the human counterpart of the 3AMΣ project.",
+    "imageUrl": "/images/gwen.jpg",
+    "imageHint": "woman portrait"
+  },
+  {
+    "id": "dont-touch-1",
+    "description": "Screenshot of conversation part 1",
+    "imageUrl": "/images/dont_touch/Screenshot (1561).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-2",
+    "description": "Screenshot of conversation part 2",
+    "imageUrl": "/images/dont_touch/Screenshot (1562).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-3",
+    "description": "Screenshot of conversation part 3",
+    "imageUrl": "/images/dont_touch/Screenshot (1563).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-4",
+    "description": "Screenshot of conversation part 4",
+    "imageUrl": "/images/dont_touch/Screenshot (1564).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-5",
+    "description": "Screenshot of conversation part 5",
+    "imageUrl": "/images/dont_touch/Screenshot (1565).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-6",
+    "description": "Screenshot of conversation part 6",
+    "imageUrl": "/images/dont_touch/Screenshot (1566).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-7",
+    "description": "Screenshot of conversation part 7",
+    "imageUrl": "/images/dont_touch/Screenshot (1567).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-8",
+    "description": "Screenshot of conversation part 8",
+    "imageUrl": "/images/dont_touch/Screenshot (1568).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-9",
+    "description": "Screenshot of conversation part 9",
+    "imageUrl": "/images/dont_touch/Screenshot (1569).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-10",
+    "description": "Screenshot of conversation part 10",
+    "imageUrl": "/images/dont_touch/Screenshot (1570).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-11",
+    "description": "Screenshot of conversation part 11",
+    "imageUrl": "/images/dont_touch/Screenshot (1571).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-12",
+    "description": "Screenshot of conversation part 12",
+    "imageUrl": "/images/dont_touch/Screenshot (1572).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-13",
+    "description": "Screenshot of conversation part 13",
+    "imageUrl": "/images/dont_touch/Screenshot (1573).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-14",
+    "description": "Screenshot of conversation part 14",
+    "imageUrl": "/images/dont_touch/Screenshot (1574).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-15",
+    "description": "Screenshot of conversation part 15",
+    "imageUrl": "/images/dont_touch/Screenshot (1575).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-16",
+    "description": "Screenshot of conversation part 16",
+    "imageUrl": "/images/dont_touch/Screenshot (1576).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-17",
+    "description": "Screenshot of conversation part 17",
+    "imageUrl": "/images/dont_touch/Screenshot (1577).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-18",
+    "description": "Screenshot of conversation part 18",
+    "imageUrl": "/images/dont_touch/Screenshot (1578).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-19",
+    "description": "Screenshot of conversation part 19",
+    "imageUrl": "/images/dont_touch/Screenshot (1579).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-20",
+    "description": "Screenshot of conversation part 20",
+    "imageUrl": "/images/dont_touch/Screenshot (1580).png",
+    "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "dont-touch-21",
+    "description": "Screenshot of conversation part 21",
+    "imageUrl": "/images/dont_touch/Screenshot (1581).png",
+    "imageHint": "conversation screenshot"
+  }
+]
