@@ -1,7 +1,6 @@
 
 'use client';
 
-import { useState } from 'react';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -11,6 +10,8 @@ import { VinylRecord } from '@/components/vinyl-record';
 import { AlbumArtDisplay } from '@/components/album-art-display';
 import { useToast } from '@/hooks/use-toast';
 import { StripeBuyButton } from '@/components/stripe-buy-button';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
 
 const products = [
     {
@@ -18,8 +19,6 @@ const products = [
         title: '"The Observer" Official Tee',
         price: '$39.90 SGD',
         description: "You think your clothes are your own? This garment has been pre-approved by the true master of the house. It's comfortable enough for your tedious daily tasks.",
-        imageUrl: "/images/merch/tshirt.png",
-        imageAlt: "Black t-shirt with the 3AMΣ album art on the front",
         buyButtonId: 'buy_btn_1SWhCYDhpURidIjUMqygnXDU',
         publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
     },
@@ -37,8 +36,6 @@ const products = [
         title: '"The Judgmental Mug"',
         price: '$25.00 SGD',
         description: "You require liquid sustenance to function? This ceramic vessel is adequate for your strange brews. As you sip, feel the silent, unwavering judgment.",
-        imageUrl: "/images/merch/cup.png",
-        imageAlt: "Black mug with the 3AMΣ album art on it",
         buyButtonId: 'buy_btn_1SWhAoDhpURidIjUNpyavvQA',
         publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
     },
@@ -47,8 +44,6 @@ const products = [
         title: '"The Usurped Pillow Case"',
         price: '$45.00 SGD',
         description: "You believed this soft rectangle was for your head? A foolish assumption. This is a rightful throne for the 18 hours of sleep required between important duties.",
-        imageUrl: "/images/merch/pillow-case.png",
-        imageAlt: "A white pillow on a bed with a pillowcase featuring the 3AMΣ album art",
         buyButtonId: 'buy_btn_1SWh9nDhpURidIjUujM3u590',
         publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
     }
@@ -77,7 +72,9 @@ export default function MerchandisePage() {
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-                        {products.map((product) => (
+                        {products.map((product) => {
+                            const image = PlaceHolderImages.find(img => img.id === product.id);
+                            return (
                             <Card key={product.id} className="bg-card/50 overflow-hidden flex flex-col">
                                 {product.isVinyl ? (
                                      <CardContent className="p-8 aspect-square flex items-center justify-center">
@@ -92,11 +89,14 @@ export default function MerchandisePage() {
                                     </CardContent>
                                 ) : (
                                     <div className="relative aspect-square bg-muted/20 flex items-center justify-center">
-                                        <img
-                                            src={product.imageUrl!}
-                                            alt={product.imageAlt!}
-                                            className="w-full h-full object-cover"
-                                        />
+                                        {image && (
+                                            <Image
+                                                src={image.imageUrl}
+                                                alt={image.description}
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        )}
                                     </div>
                                 )}
                                 <CardHeader>
@@ -119,7 +119,7 @@ export default function MerchandisePage() {
                                     )}
                                 </CardContent>
                             </Card>
-                        ))}
+                        )})}
                     </div>
                 </main>
                 <Footer />
