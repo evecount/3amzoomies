@@ -9,36 +9,6 @@ import Image from 'next/image';
 import { memeSong } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-
-function InfoBox() {
-    return (
-        <Card className="bg-card/50 border-border/70">
-            <CardHeader>
-                <CardTitle className="font-semibold text-3xl">3AMΣ</CardTitle>
-                <CardDescription>Conceptual Musical Project</CardDescription>
-            </CardHeader>
-            <CardContent className="text-sm space-y-4">
-                <div>
-                    <h4 className="font-semibold text-foreground">Also known as</h4>
-                    <p className="text-muted-foreground">3AMΣzoomies</p>
-                </div>
-                <div>
-                    <h4 className="font-semibold text-foreground">Genre</h4>
-                    <p className="text-muted-foreground">Alternative R&B, Pop, Funk, Hip-Hop, Electronic</p>
-                </div>
-                <div>
-                    <h4 className="font-semibold text-foreground">Debut Album</h4>
-                    <p className="text-muted-foreground">Midnight Murmurs (2024)</p>
-                </div>
-                 <div>
-                    <h4 className="font-semibold text-foreground">Primary Influences</h4>
-                    <p className="text-muted-foreground">The Weeknd (After Hours, Dawn FM)</p>
-                </div>
-            </CardContent>
-        </Card>
-    );
-}
-
 const influences = [
     { title: "Vocal Style", description: "Male vocals in a light lyric tenor range, with prominent use of falsetto." },
     { title: "Genre Fusion", description: "A seamless blend of alternative R&B, Pop, Funk, Hip-Hop, and Electronic music." },
@@ -303,7 +273,7 @@ export default function OriginPage() {
                             Initial reception to <em>Midnight Murmurs</em> has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
                         </p>
                     </article>
-                    <aside className="lg:col-span-1 lg:sticky top-24 h-fit hidden lg:block">
+                    <aside className="lg:col-span-1 lg:sticky top-24 h-fit">
                         <Card className="bg-card/80 border-border/80">
                             <CardHeader>
                                 <CardTitle className="font-semibold text-3xl text-card-foreground">3AMΣ</CardTitle>
