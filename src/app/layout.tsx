@@ -6,7 +6,7 @@ import { AudioProvider } from '@/hooks/use-audio-player';
 
 export const metadata: Metadata = {
   title: '3AMΣ',
-  description: 'Official website for the artist 3AMΣ (3 AM Zoomies)',
+  description: 'Official website for the artist 3AMΣ (3AMΣzoomies)',
 };
 
 export default function RootLayout({

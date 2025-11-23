@@ -20,7 +20,7 @@ function InfoBox() {
             <CardContent className="text-sm space-y-4">
                 <div>
                     <h4 className="font-semibold text-foreground">Also known as</h4>
-                    <p className="text-muted-foreground">3 AM Zoomies</p>
+                    <p className="text-muted-foreground">3AMΣzoomies</p>
                 </div>
                 <div>
                     <h4 className="font-semibold text-foreground">Genre</h4>
@@ -77,7 +77,7 @@ export default function OriginPage() {
 
                             <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Background and Development</h2>
                             <p>
-                                The <strong>3AMΣ</strong> project originated from a desire to explore the unseen emotional and philosophical layers of everyday life, specifically through the eyes of a household cat. The core concept revolves around the eponymous "3 AM zoomies"—the sudden burst of nocturnal energy commonly exhibited by cats—metaphorically expanding this into a broader narrative about the cycles of craving, chaos, affection, and fleeting peace that define both feline and human existence.
+                                The <strong>3AMΣ</strong> project originated from a desire to explore the unseen emotional and philosophical layers of everyday life, specifically through the eyes of a household cat. The core concept revolves around the eponymous "3AMΣzoomies"—the sudden burst of nocturnal energy commonly exhibited by cats—metaphorically expanding this into a broader narrative about the cycles of craving, chaos, affection, and fleeting peace that define both feline and human existence.
                             </p>
                             <p>
                                 The creative process was highly collaborative, utilizing advanced AI tools (specifically, Gemini) to co-write lyrics and shape the album's narrative and sonic direction. This allowed for rapid iteration, thematic consistency, and the precise alignment of lyrical content with the intended musical style. The project aimed to create a coherent "concept album" that could stand alongside works by artists known for their intricate storytelling and thematic development.
@@ -320,7 +320,7 @@ export default function OriginPage() {
                             <CardContent className="text-sm space-y-4 text-stone-800 font-serif">
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Also known as</h4>
-                                    <p className="text-stone-600">3 AM Zoomies</p>
+                                    <p className="text-stone-600">3AMΣzoomies</p>
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Genre</h4>
@@ -329,7 +329,7 @@ export default function OriginPage() {
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Debut Album</h4>
                                     <p className="text-stone-600">Midnight Murmurs (2024)</p>
-                                </div>
+                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Primary Influences</h4>
                                     <p className="text-stone-600">The Weeknd (After Hours, Dawn FM)</p>
@@ -348,4 +348,5 @@ export default function OriginPage() {
     
 
     
+
 

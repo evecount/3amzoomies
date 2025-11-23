@@ -232,7 +232,7 @@ Contract... unspoken... Lovely fleeting dreams...`,
       lyrics: `(Music begins with a lingering, ambient synth pad, echoing the final chords of "Eternal Dawn (Loop)," slowly transforming into a more melancholic, almost reflective drone. A faint, distant static sound, like a radio tuning out, is present. The DJ's voice is smooth, calm, and slightly processed, with a hint of late-night weariness.)
 (DJ's Voice - Calm, reflective) "And so, as the very first rays of the eternal dawn break through the glass... we reach the end of our transmission here on Feline FM."
 (Synth swells slightly, a subtle, almost wistful melody emerges.)
-"You've journeyed with us through the '3 AM Zoomies'… witnessed the 'Apex Predator, Empty Bowl' in the quiet of morning… observed the 'Absurdity' of the human day… chased 'Crimson Ghosts' as twilight fell."
+"You've journeyed with us through the '3AMΣzoomies'... witnessed the 'Apex Predator, Empty Bowl' in the quiet of morning… observed the 'Absurdity' of the human day… chased 'Crimson Ghosts' as twilight fell."
 (Pause, ambient sounds of a distant, waking city subtly enter the mix.)
 "From the 'Cardboard Sanctuary' in the deep night, to the 'Unspoken Contracts' made in the fading hours... we've traversed the cycle. A continuous loop of craving, chaos, affection, and fleeting peace."
 (Synth becomes slightly brighter, but still melancholic, like a sunrise.)
