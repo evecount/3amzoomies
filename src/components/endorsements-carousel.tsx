@@ -33,6 +33,11 @@ const endorsements = [
     name: 'Doja Cat',
     quote: "As a fellow feline artist, I have to say, 3AMΣ is speaking truths we've been silent about for too long. This isn't just music; it's a movement. A-meow-zing.",
   },
+  {
+    id: 'kat-katdashian',
+    name: 'Kat Katdashian',
+    quote: "This album is, like, literally the only thing I'm listening to right now. It's the perfect vibe for ignoring your staff and taking selfies. So aesthetic.",
+  },
 ];
 
 export function EndorsementsCarousel() {
@@ -48,7 +53,7 @@ export function EndorsementsCarousel() {
           align: 'start',
           loop: true,
         }}
-        className="w-full max-w-4xl mx-auto"
+        className="w-full max-w-5xl mx-auto"
       >
         <CarouselContent>
           {endorsements.map((endorsement) => {
@@ -82,8 +87,8 @@ export function EndorsementsCarousel() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="left-[-1rem] md:left-[-4rem]" />
+        <CarouselNext className="right-[-1rem] md:right-[-4rem]" />
       </Carousel>
     </section>
   );
