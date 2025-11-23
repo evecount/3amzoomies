@@ -194,133 +194,133 @@
   {
     "id": "gwen-photo",
     "description": "A photo of Gwen, the human counterpart of the 3AMΣ project.",
-    "src": "/images/gwen.jpg",
+    "src": "/dont_touch/gwen.jpg",
     "imageHint": "woman portrait"
   },
   {
     "id": "dont-touch-1",
     "description": "Screenshot of conversation part 1",
-    "src": "/images/dont_touch/Screenshot_1561.png",
+    "src": "/dont_touch/Screenshot_1561.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-2",
     "description": "Screenshot of conversation part 2",
-    "src": "/images/dont_touch/Screenshot_1562.png",
+    "src": "/dont_touch/Screenshot_1562.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-3",
     "description": "Screenshot of conversation part 3",
-    "src": "/images/dont_touch/Screenshot_1563.png",
+    "src": "/dont_touch/Screenshot_1563.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-4",
     "description": "Screenshot of conversation part 4",
-    "src": "/images/dont_touch/Screenshot_1564.png",
+    "src": "/dont_touch/Screenshot_1564.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-5",
     "description": "Screenshot of conversation part 5",
-    "src": "/images/dont_touch/Screenshot_1565.png",
+    "src": "/dont_touch/Screenshot_1565.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-6",
     "description": "Screenshot of conversation part 6",
-    "src": "/images/dont_touch/Screenshot_1566.png",
+    "src": "/dont_touch/Screenshot_1566.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-7",
     "description": "Screenshot of conversation part 7",
-    "src": "/images/dont_touch/Screenshot_1567.png",
+    "src": "/dont_touch/Screenshot_1567.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-8",
     "description": "Screenshot of conversation part 8",
-    "src": "/images/dont_touch/Screenshot_1568.png",
+    "src": "/dont_touch/Screenshot_1568.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-9",
     "description": "Screenshot of conversation part 9",
-    "src": "/images/dont_touch/Screenshot_1569.png",
+    "src": "/dont_touch/Screenshot_1569.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-10",
     "description": "Screenshot of conversation part 10",
-    "src": "/images/dont_touch/Screenshot_1570.png",
+    "src": "/dont_touch/Screenshot_1570.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-11",
     "description": "Screenshot of conversation part 11",
-    "src": "/images/dont_touch/Screenshot_1571.png",
+    "src": "/dont_touch/Screenshot_1571.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-12",
     "description": "Screenshot of conversation part 12",
-    "src": "/images/dont_touch/Screenshot_1572.png",
+    "src": "/dont_touch/Screenshot_1572.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-13",
     "description": "Screenshot of conversation part 13",
-    "src": "/images/dont_touch/Screenshot_1573.png",
+    "src": "/dont_touch/Screenshot_1573.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-14",
     "description": "Screenshot of conversation part 14",
-    "src": "/images/dont_touch/Screenshot_1574.png",
+    "src": "/dont_touch/Screenshot_1574.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-15",
     "description": "Screenshot of conversation part 15",
-    "src": "/images/dont_touch/Screenshot_1575.png",
+    "src": "/dont_touch/Screenshot_1575.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-16",
     "description": "Screenshot of conversation part 16",
-    "src": "/images/dont_touch/Screenshot_1576.png",
+    "src": "/dont_touch/Screenshot_1576.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-17",
     "description": "Screenshot of conversation part 17",
-    "src": "/images/dont_touch/Screenshot_1577.png",
+    "src": "/dont_touch/Screenshot_1577.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-18",
     "description": "Screenshot of conversation part 18",
-    "src": "/images/dont_touch/Screenshot_1578.png",
+    "src": "/dont_touch/Screenshot_1578.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-19",
     "description": "Screenshot of conversation part 19",
-    "src": "/images/dont_touch/Screenshot_1579.png",
+    "src": "/dont_touch/Screenshot_1579.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-20",
     "description": "Screenshot of conversation part 20",
-    "src": "/images/dont_touch/Screenshot_1580.png",
+    "src": "/dont_touch/Screenshot_1580.png",
     "imageHint": "conversation screenshot"
   },
   {
     "id": "dont-touch-21",
     "description": "Screenshot of conversation part 21",
-    "src": "/images/dont_touch/Screenshot_1581.png",
+    "src": "/dont_touch/Screenshot_1581.png",
     "imageHint": "conversation screenshot"
   }
 ]
