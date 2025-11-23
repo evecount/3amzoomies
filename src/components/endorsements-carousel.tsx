@@ -16,17 +16,17 @@ const endorsements = [
   {
     id: 'justin-beefer',
     name: 'Justin Beefer',
-    quote: "This album is the purr-fect soundtrack for... well, anything. 3AMΣ is a genius. It's my new go-to for when I'm just kitten around.",
+    quote: "This album is the purr-fect soundtrack for... well, anything. 'Eternal Dawn (Loop)' has been on repeat! It's my new go-to for when I'm just kitten around.",
   },
   {
     id: 'cat-harlow',
     name: 'Cat Harlow',
-    quote: "The beats are sick, the lyrics are deep. 'Midnight Murmurs' is that next-level vibe. It's got that B.C.E. - Big Cat Energy.",
+    quote: "The beats are sick, the lyrics are deep. 'Apex Predator, Empty Bowl' speaks to my soul. It's got that B.C.E. - Big Cat Energy.",
   },
   {
     id: 'post-meowlone',
     name: 'Post Meowlone',
-    quote: "Honestly, I've never felt so seen. This album gets the struggle. The constant demand for snacks, the existential dread... it's all there. Pure art.",
+    quote: "Honestly, I've never felt so seen. This album gets the struggle. The craving for 'Ambrosia & Oblivion,' the existential dread... it's all there. Pure art.",
   },
   {
     id: 'doja-cat',
@@ -36,7 +36,7 @@ const endorsements = [
   {
     id: 'kat-katdashian',
     name: 'Kat Katdashian',
-    quote: "This album is, like, literally the only thing I'm listening to right now. It's the perfect vibe for ignoring your staff and taking selfies. So aesthetic.",
+    quote: "This album is, like, literally the only thing I'm listening to right now. 'My Cardboard Sanctuary' is the perfect vibe for ignoring your staff and taking selfies. So aesthetic.",
   },
 ];
 
@@ -56,36 +56,22 @@ export function EndorsementsCarousel() {
         className="w-full max-w-5xl mx-auto"
       >
         <CarouselContent>
-          {endorsements.map((endorsement) => {
-            const artistImage = PlaceHolderImages.find((img) => img.id === endorsement.id);
-            return (
+          {endorsements.map((endorsement) => (
               <CarouselItem key={endorsement.id} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
                   <Card className="flex flex-col h-full bg-card/50">
-                    <CardContent className="flex flex-col items-center justify-center p-6 gap-6 text-center flex-grow">
-                      {artistImage && (
-                        <div className="w-32 h-32 relative rounded-full overflow-hidden border-2 border-primary/30">
-                          <Image
-                            src={artistImage.imageUrl}
-                            alt={`Portrait of ${endorsement.name}`}
-                            fill
-                            data-ai-hint={artistImage.imageHint}
-                            className="object-cover"
-                          />
-                        </div>
-                      )}
+                    <CardContent className="flex flex-col items-center justify-center p-8 gap-6 text-center flex-grow">
                        <blockquote className="text-lg font-serif italic text-foreground/80 flex-grow">
                         "{endorsement.quote}"
                       </blockquote>
                        <div>
-                        <p className="font-bold font-headline text-xl text-foreground uppercase">{endorsement.name}</p>
+                        <p className="font-bold font-headline text-xl text-foreground uppercase tracking-wide">- {endorsement.name}</p>
                       </div>
                     </CardContent>
                   </Card>
                 </div>
               </CarouselItem>
-            );
-          })}
+          ))}
         </CarouselContent>
         <CarouselPrevious className="left-[-1rem] md:left-[-4rem]" />
         <CarouselNext className="right-[-1rem] md:right-[-4rem]" />
