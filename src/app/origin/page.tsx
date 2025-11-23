@@ -70,7 +70,7 @@ export default function OriginPage() {
             <CardContent className="p-6 md:p-12">
                 <div className="grid lg:grid-cols-4 gap-12">
                     <div className="lg:col-span-3">
-                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                             <p>
                                 <strong><em>Midnight Murmurs</em></strong> is the debut studio album by <strong>3AMΣ</strong>, a conceptual musical project known for its unique blend of alternative R&B, pop, funk, hip-hop, and electronic music, heavily influenced by the sound and thematic depth of The Weeknd. The album is a deeply introspective and often darkly humorous exploration of the mundane yet profound existence of a domestic cat, told from both feline and human perspectives over a full 24-hour cycle.
                             </p>
@@ -86,7 +86,7 @@ export default function OriginPage() {
                         
                         <div className="my-16">
                              <h2 className="font-headline text-3xl uppercase text-primary/90 not-prose mb-6">Artistic Influences & Style</h2>
-                             <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 not-prose font-serif">
+                             <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 not-prose">
                                 {influences.map(item => (
                                     <div key={item.title} className="flex items-start gap-4">
                                         <CheckCircle2 className="w-5 h-5 text-primary/70 mt-1 flex-shrink-0" />
@@ -99,7 +99,7 @@ export default function OriginPage() {
                             </div>
                         </div>
 
-                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                             <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">Themes</h2>
                             <p>
                                 _Midnight Murmurs_ delves into several core themes:
@@ -118,7 +118,7 @@ export default function OriginPage() {
                             
                             <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act I: Delusion & Chaos (The Party Never Ends)</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800 font-serif">
+                                <Table className="not-prose text-stone-800">
                                     <TableHeader>
                                         <TableRow>
                                             <TableHead className="text-stone-600">No.</TableHead>
@@ -163,7 +163,7 @@ export default function OriginPage() {
 
                             <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act II: Reflection & Co-Dependence</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800 font-serif">
+                                <Table className="not-prose text-stone-800">
                                     <TableHeader>
                                         <TableRow>
                                             <TableHead className="text-stone-600">No.</TableHead>
@@ -201,7 +201,7 @@ export default function OriginPage() {
 
                             <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8 not-prose">Act III: Confrontation & Acceptance (The Loop)</h3>
                             <div className="overflow-x-auto">
-                                <Table className="not-prose text-stone-800 font-serif">
+                                <Table className="not-prose text-stone-800">
                                     <TableHeader>
                                         <TableRow>
                                             <TableHead className="text-stone-600">No.</TableHead>
@@ -238,7 +238,7 @@ export default function OriginPage() {
                             </div>
                         </div>
 
-                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6 my-16">
+                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6 my-16">
                             <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-6 !mt-12">Singles</h2>
                             <h3 className="font-headline text-2xl uppercase text-primary/80 !mb-4 !mt-8">"Stupid Fucking Hooman Remix"</h3>
                             {memeCoverArt && (
@@ -246,7 +246,7 @@ export default function OriginPage() {
                                     <div className="aspect-square relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
                                         <Image src={memeCoverArt.imageUrl} alt={memeCoverArt.description} fill className="object-cover" />
                                     </div>
-                                    <p className="text-xs text-center text-stone-500 font-serif mt-2">The iconic cover art for the single.</p>
+                                    <p className="text-xs text-center text-stone-500 mt-2">The iconic cover art for the single.</p>
                                 </div>
                             )}
                             <p>
@@ -282,7 +282,7 @@ export default function OriginPage() {
 
                         <div className="my-16 not-prose">
                             <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-6 !mt-12">Digital Presence & Community</h2>
-                             <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                             <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                                 <p>
                                     The project maintains a curated visual presence on Instagram, extending the album's aesthetic into a grid of images that reflect its themes of noir, surrealism, and feline mystique. This digital space serves as a hub for the community, a place to share art, and a visual diary for the ongoing 3AMΣ narrative.
                                 </p>
@@ -292,19 +292,19 @@ export default function OriginPage() {
                                     <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
                                         <Image src="/images/instagram.jpeg" alt="3AMΣ Instagram Page" fill className="object-cover" />
                                     </div>
-                                    <p className="text-sm text-center text-stone-500 font-serif">The official Instagram grid for @3amzoomie.</p>
+                                    <p className="text-sm text-center text-stone-500 mt-2">The official Instagram grid for @3amzoomie.</p>
                                 </div>
                                 <div className="space-y-4">
                                      <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
                                         <Image src="/images/phone.png" alt="3AMΣ Website on Mobile" fill className="object-contain p-8 bg-stone-200" />
                                     </div>
-                                    <p className="text-sm text-center text-stone-500 font-serif">The mobile experience for the 3AMΣ website.</p>
+                                    <p className="text-sm text-center text-stone-500 mt-2">The mobile experience for the 3AMΣ website.</p>
                                 </div>
                             </div>
                         </div>
 
 
-                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                             <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-6 !mt-12">Reception</h2>
                             <p>
                                 Initial reception to _Midnight Murmurs_ has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
@@ -317,7 +317,7 @@ export default function OriginPage() {
                                 <CardTitle className="font-headline text-3xl text-stone-900">3AMΣ</CardTitle>
                                 <CardDescription className="text-stone-600">Conceptual Musical Project</CardDescription>
                             </CardHeader>
-                            <CardContent className="text-sm space-y-4 text-stone-800 font-serif">
+                            <CardContent className="text-sm space-y-4 text-stone-800">
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Also known as</h4>
                                     <p className="text-stone-600">3AMΣzoomies</p>
