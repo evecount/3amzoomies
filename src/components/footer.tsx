@@ -13,7 +13,7 @@ export function Footer() {
         <div className="flex items-center gap-4">
             <Link href="/creative-process" className="text-sm text-muted-foreground hover:text-foreground">Ethics</Link>
             <Link href="/dont-touch-that-dial" className="text-sm text-muted-foreground hover:text-foreground">23112025</Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-foreground">Privacy Policy</Link>
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link>
         </div>
       </div>
