@@ -36,7 +36,7 @@ export default function OriginPage() {
             <p className="text-lg text-muted-foreground mt-2">An encyclopedic entry on the conceptual album.</p>
         </div>
         <Separator className="mb-12"/>
-        <div className="grid lg:grid-cols-4 gap-12">
+        <div className="grid lg:grid-cols-4 gap-12 items-start">
             <div className="lg:col-span-3">
                 <Card className="bg-card shadow-2xl">
                     <CardContent className="p-6 md:p-12">
@@ -308,5 +308,4 @@ export default function OriginPage() {
       <Footer />
     </div>
   );
-
-    
+}
