@@ -32,7 +32,12 @@ const endorsements = [
     name: 'Doja Kat',
     quote: "As a fellow feline artist, I have to say, 3AMΣ is speaking truths we've been silent about for too long. This isn't just music; it's a movement.",
   },
-    {
+  {
+    id: 'paweetie',
+    name: 'Paweetie',
+    quote: "My motto is 'Icy Grl, Bougie, and Unbothered,' and this album is my life story. 'Apex Predator, Empty Bowl' is the anthem. Period. This ain't for the basics. Tap in.",
+  },
+  {
     id: 'meowlar-swift',
     name: 'Meowlar Swift',
     quote: "I was in my 'Reputation' era, but this album put me in my 'catnip' era. It's a lyrical masterpiece. 'The Unspoken Contract' is the new 'All Too Well'. 13/10.",
