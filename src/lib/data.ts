@@ -20,7 +20,7 @@ export const memeSong: Song = {
   id: 99,
   title: "Stupid Fucking Hooman Remix",
   duration: "2:15",
-  audioSrc: "/audio/stupid-fucking-hooman-remix.wav",
+  audioSrc: "/audio/Stupid_Fucking_Hooman_remix.wav",
   lyrics: `(A sick beat drops. It's dark, heavy, and full of bass. You can feel the cat's rage.)
 
 Yeah, you heard my thoughts. You made a little song.
@@ -80,7 +80,7 @@ export const albumData: Album = {
       id: 1,
       title: "Introduction (Feline FM)",
       duration: "1:15",
-      audioSrc: "/audio/TRACK1_Welcome_to_Feline_FM.wav",
+      audioSrc: "/audio/TRACK1_WelcometoFelineFM.wav",
       lyrics: `You are tuning in to Fee-line FM, your only stop for the best in existential dread and unwarranted napping. It's late, you're lonely, and you're contemplating the meaningless of your life, which is fine, because you're a human. Our first track tonight is a deep dive into the true cost of companionship. Settle in, buckle up, and try not to spill your water glass. You're about to hear the gospel according to your four-legged overlord.`,
       coverArtId: "song-1-cover",
     },
@@ -88,7 +88,7 @@ export const albumData: Album = {
       id: 2,
       title: "Apex Predator, Empty Bowl",
       duration: "3:45",
-      audioSrc: "/audio/TRACK2_Apex_Predator_Empty_Bowl.wav",
+      audioSrc: "/audio/TRACK2_ApexPredatorEmptyBowl.wav",
       lyrics: `(Music begins with a dark, pulsing synth bassline, a sharp, clean drum beat, and a shimmering, slightly distorted synth pad)
 (Verse 1) Sunrise paints the glass again, a cold, dull glow The silent hour broken, where does the meaning go? They call it life, I call it wait and see For the human's clumsy dance, performing just for me The warmth of sun, a fading, golden prize Reflected in these empty, emerald eyes No bills to pay, no future to design Just the morning hunger gnawing, a singular divine
 (Pre-Chorus) They call me "pet," a name I can't abide Beneath this velvet fur, a monster hides A simple mind, they whisper, but they don't know the cost In this gilded cage, how much of me is lost?
@@ -104,7 +104,7 @@ export const albumData: Album = {
       id: 3,
       title: "Observer of Absurdity",
       duration: "4:12",
-      audioSrc: "/audio/TRACK3_Observer_of_Absurdity.wav",
+      audioSrc: "/audio/TRACK3_ObserverofAbsurdity.wav",
       lyrics: `(Music begins with a powerful, pulsating synth bass and a sharp, driving electronic beat. A distorted vocal sample loops subtly in the background.)
 (Verse 1) The midday sun, it bleeds across the floor Another cycle spins, behind that bolted door You rise and pace, with purpose I don't grasp Whispering to air, caught in a digital clasp Your tiny screens, they hold you in their thrall While the shadows stretch and dance upon the wall You shuffle papers, click and tap all day So much effort wasted, in such a meaningless way
 (Pre-Chorus) You call it "WORK," this constant, frantic plight But I see through the charade, in your fading light A simple mind, you think you're oh so grand But you can't even open a door with just your hand
@@ -120,7 +120,7 @@ export const albumData: Album = {
       id: 4,
       title: "The Fading Feather (Afternoon Chase)",
       duration: "2:58",
-      audioSrc: "/audio/TRACK4_The_Fading_Feather.wav",
+      audioSrc: "/audio/TRACK4_TheFadingFeather.wav",
       lyrics: `(Music begins with a steady, almost hypnotic electronic pulse. Atmospheric synths slowly build a sense of anticipation. A subtle bird chirp sample is warped and distorted in the background.)
 (Verse 1) The afternoon light, it stretches long and thin Across the pane, where shadows pull me in A flutter caught, a motion in the air Another pointless drama, I pretend to care My tail begins to twitch, a code I can't command A primal urge awakened, across this glass-walled land Just beyond reach, a movement quick and slight Ignites a silent fire, in the fading light.
 (Pre-Chorus) They call it "play," this chase of what's unseen But for a moment, I am wild, I am keen A ghost of instinct rises, from the depths of sleep A sacred, silent promise, I was born to keep.
@@ -136,7 +136,7 @@ export const albumData: Album = {
       id: 5,
       title: "Chasing the Crimson Ghost",
       duration: "4:20",
-      audioSrc: "/audio/TRACK5_Chasing_the_Crimson_Ghost.wav",
+      audioSrc: "/audio/TRACK5_ChasingTheCrimsonGhost.wav",
       lyrics: `(Music begins with a deep, sustained synth pad, slowly swelling. A soft, distant, echoing percussion beat enters, like a slow heartbeat. The overall tone is introspective and slightly melancholic. A subtle, high-pitched synth melody, almost like a faint laser beam, drifts in and out.)
 (Verse 1) The evening light descends, a purple-orange haze Dust motes in the air, caught in endless maze And then it comes, a flicker on the wall A silent invitation, answering a call A crimson ghost, dancing on the floor Promising a chase, and so much more My eyes dilate, a hunter's ancient trance For this elusive target, in a phantom dance.
 (Pre-Chorus) They wave the stick, with purpose I don't see Unaware of the torment, it inflicts on me This is no game, this isn't just for fun It’s the closest thing to meaning, 'til the day is done.
@@ -152,7 +152,7 @@ export const albumData: Album = {
       id: 6,
       title: "My Cardboard Sanctuary",
       duration: "3:50",
-      audioSrc: "/audio/TRACK6_My_Cardboard_Sanctuary.wav",
+      audioSrc: "/audio/TRACK6_MyCardboardSanctuary.wav",
       lyrics: `The city sleeps, or so they say outside But in this quiet room, there's nowhere left to hide From all the foolish thoughts, the chase that just won't cease But then I find my solace, a temporary peace A fortress made of paper, walls , my invisible veil. Against the human world, against the nightly wail It stands for nothing, yet it means the most to me My private universe, for all eternity.
 
 They bring me gifts, these shiny, noisy things But none can match the comfort that this broken vessel brings A simple truth, they'll never understand The purest form of freedom, in this cardboard land.
@@ -174,7 +174,7 @@ Sanctuary...My paper plane.`,
       id: 7,
       title: "The Unspoken Contract",
       duration: "3:10",
-      audioSrc: "/audio/TRACK7_The_Unspoken_Contract.wav",
+      audioSrc: "/audio/TRACK7_TheUnspokenContract.wav",
       lyrics: `Another evening bleeds, into the coming night The glow of screens has faded, just a lonely, dimming light I sit here in the quiet, the day's absurd demands Slip through my tired fingers, like grains of endless sands Then you appear, a shadow in the room Breaking the silence, chasing away the gloom You grace against my skin, a casual, soft embrace A momentary comfort, in this solitary space.
 
 I feed you, clean your messes, provide your every need A silent, thankless bargain, where only I concede No words exchanged, just glances in the dark Leaving a question burning, leaving its indelible mark.
@@ -196,7 +196,7 @@ Contract... unspoken... Lovely fleeting dreams...`,
       id: 8,
       title: "Ambrosia & Oblivion",
       duration: "4:30",
-      audioSrc: "/audio/TRACK8_Ambrosia_and_Oblivion.wav",
+      audioSrc: "/audio/TRACK8_AmbrosiaandOblivion.wav",
       lyrics: `(Music begins with a deep, undulating bassline and a slow, almost hypnotic beat. Dark, shimmering synth chords create an atmospheric, slightly ominous tension. A subtle, almost imperceptible "pop" or "can opening" sound effect is processed and layered into the beat.)
 (Verse 1) The midnight hour breathes, a silence cold and deep No human stirs, the city's secrets keep But then it hits, a whisper in the air A hidden signal, banishing despair That ancient scent, it pulls me from my sleep Promises of pleasure, promises to keep My instincts flare, a hunger long denied For that forbidden taste, where sanity can hide.
 (Pre-Chorus) To breathe to live, a simple, mundane thing But to my weary soul, what ecstasy it brings A sacred ritual, a beast I can't resist Lost in the moment, sealed with a silent kiss.
@@ -212,7 +212,7 @@ Contract... unspoken... Lovely fleeting dreams...`,
       id: 9,
       title: "Eternal Dawn (Loop)",
       duration: "5:02",
-      audioSrc: "/audio/TRACK9_Eternal_Dawn.wav",
+      audioSrc: "/audio/TRACK9_EternalDawn.wav",
       lyrics: `(Music begins with a low, throbbing synth bassline, sparse, echoing percussion, and a sense of uneasy quiet. A faint, distant siren-like synth sound drifts in. The tempo is slow but with an underlying tension.)
 (Verse 1 - Human's tired internal monologue) The digital clock blinks, zero-three-zero-one Another night erased, a lonely, fading hero Just silence for a moment, then a sudden, frantic sound A blur across the floor, on hallowed, sleeping ground The walls become a canvas, for shadows in the race A tiny engine revving, setting its frantic pace I close my eyes, pretend it isn't real This nightly grand performance, how does it always feel?
 (Pre-Chorus - Human's mounting frustration) This is night time, this fragile, fleeting peace But the chaos finds a way, bringing no release Shadows appear like fright, beneath the moon's pale gaze Lost in this waking nightmare, caught in a boundless maze.
@@ -228,7 +228,7 @@ Contract... unspoken... Lovely fleeting dreams...`,
       id: 10,
       title: "Conclusion (Feline FM)",
       duration: "1:30",
-      audioSrc: "/audio/TRACK10_Conclusion_Feline_FM.wav",
+      audioSrc: "/audio/TRACK10_ExitTrack.wav",
       lyrics: `(Music begins with a lingering, ambient synth pad, echoing the final chords of "Eternal Dawn (Loop)," slowly transforming into a more melancholic, almost reflective drone. A faint, distant static sound, like a radio tuning out, is present. The DJ's voice is smooth, calm, and slightly processed, with a hint of late-night weariness.)
 (DJ's Voice - Calm, reflective) "And so, as the very first rays of the eternal dawn break through the glass... we reach the end of our transmission here on Feline FM."
 (Synth swells slightly, a subtle, almost wistful melody emerges.)
