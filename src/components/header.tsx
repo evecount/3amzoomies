@@ -18,6 +18,7 @@ const navLinks = [
   { href: '/film', label: 'FILM' },
   { href: '/origin', label: 'THE ORIGIN' },
   { href: '/media', label: 'MEDIA' },
+  { href: '/charity', label: 'CHARITY' },
 ];
 
 const iconLinks = [
