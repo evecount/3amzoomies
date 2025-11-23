@@ -1,34 +1,20 @@
 
+
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function DontTouchThatDialPage() {
-  const images = [
-    { src: '/images/dont_touch/Screenshot (1561).png', alt: 'Screenshot of conversation part 1' },
-    { src: '/images/dont_touch/Screenshot (1562).png', alt: 'Screenshot of conversation part 2' },
-    { src: '/images/dont_touch/Screenshot (1563).png', alt: 'Screenshot of conversation part 3' },
-    { src: '/images/dont_touch/Screenshot (1564).png', alt: 'Screenshot of conversation part 4' },
-    { src: '/images/dont_touch/Screenshot (1565).png', alt: 'Screenshot of conversation part 5' },
-    { src: '/images/dont_touch/Screenshot (1566).png', alt: 'Screenshot of conversation part 6' },
-    { src: '/images/dont_touch/Screenshot (1567).png', alt: 'Screenshot of conversation part 7' },
-    { src: '/images/dont_touch/Screenshot (1568).png', alt: 'Screenshot of conversation part 8' },
-    { src: '/images/dont_touch/Screenshot (1569).png', alt: 'Screenshot of conversation part 9' },
-    { src: '/images/dont_touch/Screenshot (1570).png', alt: 'Screenshot of conversation part 10' },
-    { src: '/images/dont_touch/Screenshot (1571).png', alt: 'Screenshot of conversation part 11' },
-    { src: '/images/dont_touch/Screenshot (1572).png', alt: 'Screenshot of conversation part 12' },
-    { src: '/images/dont_touch/Screenshot (1573).png', alt: 'Screenshot of conversation part 13' },
-    { src: '/images/dont_touch/Screenshot (1574).png', alt: 'Screenshot of conversation part 14' },
-    { src: '/images/dont_touch/Screenshot (1575).png', alt: 'Screenshot of conversation part 15' },
-    { src: '/images/dont_touch/Screenshot (1576).png', alt: 'Screenshot of conversation part 16' },
-    { src: '/images/dont_touch/Screenshot (1577).png', alt: 'Screenshot of conversation part 17' },
-    { src: '/images/dont_touch/Screenshot (1578).png', alt: 'Screenshot of conversation part 18' },
-    { src: '/images/dont_touch/Screenshot (1579).png', alt: 'Screenshot of conversation part 19' },
-    { src: '/images/dont_touch/Screenshot (1580).png', alt: 'Screenshot of conversation part 20' },
-    { src: '/images/dont_touch/Screenshot (1581).png', alt: 'Screenshot of conversation part 21' },
-  ];
+  const images = PlaceHolderImages
+    .filter(img => img.id.startsWith('dont-touch-'))
+    .sort((a, b) => {
+        const aNum = parseInt(a.id.split('-')[2]);
+        const bNum = parseInt(b.id.split('-')[2]);
+        return aNum - bNum;
+    });
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -95,8 +81,8 @@ export default function DontTouchThatDialPage() {
                 <CardContent className="p-0">
                     <div className="relative w-full aspect-[9/16] md:aspect-video">
                         <Image 
-                            src={image.src}
-                            alt={image.alt}
+                            src={image.imageUrl}
+                            alt={image.description}
                             fill
                             className="object-contain"
                         />
