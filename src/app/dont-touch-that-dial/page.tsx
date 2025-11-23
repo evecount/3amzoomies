@@ -68,7 +68,7 @@ export default function DontTouchThatDialPage() {
                     </p>
                     <div className="my-4 relative w-full aspect-video">
                         <Image 
-                            src="/images/dont_touch/Gemini_Generated_Image_fcuk8ufcuk8ufcuk.png"
+                            src="/images/dont_touch/Gemini_Generated_Image_-_Dont_Touch_the_Dial_23112025.png"
                             alt="The Symbolic Co-Creation Contract Key for 3AMΣ"
                             fill
                             className="object-contain"
