@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const endorsements = [
   {
@@ -100,11 +101,24 @@ export function EndorsementsCarousel() {
         className="w-full max-w-5xl mx-auto"
       >
         <CarouselContent>
-          {endorsements.map((endorsement) => (
+          {endorsements.map((endorsement) => {
+              const image = PlaceHolderImages.find(img => img.id === endorsement.id);
+              return (
               <CarouselItem key={endorsement.id} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
                   <Card className="flex flex-col h-full bg-card/50">
                     <CardContent className="flex flex-col items-center justify-center p-8 gap-6 text-center flex-grow">
+                        {image && (
+                           <div className="w-32 h-32 relative rounded-full overflow-hidden border-2 border-primary/20 shadow-lg">
+                                <Image
+                                    src={image.imageUrl}
+                                    alt={image.description}
+                                    data-ai-hint={image.imageHint}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        )}
                        <blockquote className="text-lg italic text-foreground/80 flex-grow">
                         "{endorsement.quote}"
                       </blockquote>
@@ -115,7 +129,8 @@ export function EndorsementsCarousel() {
                   </Card>
                 </div>
               </CarouselItem>
-          ))}
+              )
+          })}
         </CarouselContent>
         <CarouselPrevious className="left-[-1rem] md:left-[-4rem]" />
         <CarouselNext className="right-[-1rem] md:right-[-4rem]" />
@@ -123,3 +138,5 @@ export function EndorsementsCarousel() {
     </section>
   );
 }
+
+    
