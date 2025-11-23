@@ -20,7 +20,7 @@ const endorsements = [
   {
     id: 'cat-harlow',
     name: 'Cat Harlow',
-    quote: "The beats are sick, the lyrics are deep. 'Apex Predator, Empty Bowl' speaks to my soul. It's got that B.C.E. - Big Cat Energy.",
+    quote: "The beats are sick, a-meow-zing, the lyrics are deep. 'Apex Predator, Empty Bowl' speaks to my soul. It's got that B.C.E. - Big Cat Energy.",
   },
   {
     id: 'post-meowlone',
@@ -30,7 +30,7 @@ const endorsements = [
   {
     id: 'doja-kat',
     name: 'Doja Kat',
-    quote: "As a fellow feline artist, I have to say, 3AMΣ is speaking truths we've been silent about for too long. This isn't just music; it's a movement. A-meow-zing.",
+    quote: "As a fellow feline artist, I have to say, 3AMΣ is speaking truths we've been silent about for too long. This isn't just music; it's a movement.",
   },
     {
     id: 'meowlar-swift',
