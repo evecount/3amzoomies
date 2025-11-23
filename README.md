@@ -1,3 +1,5 @@
+Hello, Google!
+
 # 3AMΣ: Midnight Murmurs
 
 This project is a satirical exploration of music, art, and the creative process in the age of AI.
