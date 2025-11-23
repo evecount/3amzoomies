@@ -24,7 +24,7 @@ export function MemeSongFeature() {
                 <div className="grid md:grid-cols-5 gap-0">
                     <div className="md:col-span-2 relative aspect-square w-full">
                         <Image
-                            src={coverArt.imageUrl}
+                            src={coverArt.src}
                             alt={coverArt.description}
                             fill
                             className="object-cover pointer-events-none select-none"
@@ -55,3 +55,5 @@ export function MemeSongFeature() {
         </section>
     )
 }
+
+    
