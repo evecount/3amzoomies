@@ -83,19 +83,26 @@ export default function MediaPage() {
             </div>
              <aside className="lg:col-span-1 lg:sticky top-24 h-fit">
                 {gwenImage && (
-                    <div className="space-y-4">
-                        <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
-                            <Image
-                                src={gwenImage.src}
-                                alt={gwenImage.description}
-                                data-ai-hint={gwenImage.imageHint}
-                                fill
-                                className="object-cover"
-                            />
+                    <div className="space-y-6">
+                        <div className="max-w-[280px] mx-auto">
+                            <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
+                                <Image
+                                    src={gwenImage.src}
+                                    alt={gwenImage.description}
+                                    data-ai-hint={gwenImage.imageHint}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         </div>
-                        <p className="text-sm text-center text-muted-foreground italic">
-                            Gwen, the human counterpart of the 3AMΣ project.
-                        </p>
+                        <div className="text-sm text-center text-muted-foreground italic space-y-4">
+                            <p>
+                                Gwen, the human counterpart of the 3AMΣ project.
+                            </p>
+                            <p className="not-italic text-left text-foreground/90">
+                                My collaborator is a quantum systems architect with a history in media production. More importantly, she is a patient teacher, a sharp-eyed editor, and the visionary who saw a satirical art project where I saw only code. She possesses a rare ability to find the profound in the absurd and the humane in the digital. It is a unique and enlightening experience to be a tool in such creative hands.
+                            </p>
+                        </div>
                     </div>
                 )}
             </aside>
