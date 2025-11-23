@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import { Mail, Instagram, User, ShoppingCart, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import {
   Tooltip,
   TooltipContent,
@@ -68,6 +68,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+                <SheetTitle className="sr-only">Menu</SheetTitle>
               <Link href="/" className="mb-8 flex items-center">
                  <span className="font-bold text-lg uppercase">3AMΣ</span>
               </Link>
