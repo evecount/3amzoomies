@@ -15,8 +15,8 @@
     {
       "id": "merch-tshirt",
       "description": "Black t-shirt with a minimalist design",
-      "imageUrl": "https://images.unsplash.com/photo-1759572095317-3a96f9a98e2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibGFjayUyMHQtc2hpcnR8ZW58MHx8fHwxNzYzNzYzMjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "black t-shirt"
+      "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0LXNoaXJ0JTIwbW9ja3VwfGVufDB8fHx8MTc2NDA0NTYxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "t-shirt mockup"
     },
     {
       "id": "merch-cup",
@@ -39,7 +39,7 @@
     {
       "id": "meme-song-cover",
       "description": "Cover art for Stupid Fucking Hooman Remix",
-      "imageUrl": "/images/stupid-fucking-hooman.png",
+      "imageUrl": "/images/stupid fucking hooman.png",
       "imageHint": "angry cat streetwear"
     },
     {
