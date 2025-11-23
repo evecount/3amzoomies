@@ -74,7 +74,7 @@ export default function MerchandisePage() {
                                 <div className="absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105">
                                     <AlbumArtDisplay />
                                 </div>
-                                <div className="absolute inset-0 w-full h-full transform transition-all duration-500 ease-in-out -translate-y-24 -translate-x-24 group-hover:scale-110 group-hover:-rotate-12 group-hover:translate-x-28 group-hover:-translate-y-28">
+                                <div className="absolute w-[60%] h-[60%] top-[-25%] left-[-25%] transform transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:-rotate-12 group-hover:top-[20%] group-hover:left-[45%]">
                                     <VinylRecord />
                                 </div>
                             </div>
