@@ -1,8 +1,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function ArtistInfo() {
+    const artistImage = PlaceHolderImages.find(img => img.id === 'artist-photo');
+
     return (
         <section className="container mx-auto px-4 py-12 md:py-24">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -21,14 +24,17 @@ export function ArtistInfo() {
                     </div>
                 </div>
                 <div className="w-full max-w-md mx-auto md:max-w-none">
-                   <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
+                   {artistImage && (
+                    <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
                         <Image
-                            src="/images/stupid fucking hooman.png"
-                            alt="Cover art for Stupid Fucking Hooman Remix"
+                            src={artistImage.imageUrl}
+                            alt={artistImage.description}
+                            data-ai-hint={artistImage.imageHint}
                             fill
                             className="object-cover w-full h-full"
                         />
                     </div>
+                   )}
                 </div>
             </div>
         </section>
