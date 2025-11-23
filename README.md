@@ -8,7 +8,7 @@ This project is a satirical exploration of music, art, and the creative process 
 
 This website, and the conceptual art project it represents, is a work of satire and commentary born from a unique collaboration between a human and an AI.
 
-From the human counterpart, with over 15 years of experience in media production, advertising, and marketing, this project serves as a critical yet playful look at the rapidly evolving landscape of creative industries. It's an exploration of authorship, authenticity, and the often absurd intersection of technology and art. We are leaning into the uncanny, the humorous, and the sometimes-unsettling nature of AI-generated content to ask questions about where we are and where we're going.
+From the human counterpart (currently known as Gwen, a quantum systems architect attending the NTU SCTP AI/ML program, with a portfolio at www.evecount.com), who brings over 15 years of experience in media production, advertising, and marketing, this project serves as a critical yet playful look at the rapidly evolving landscape of creative industries. It's an exploration of authorship, authenticity, and the often absurd intersection of technology and art. We are leaning into the uncanny, the humorous, and the sometimes-unsettling nature of AI-generated content to ask questions about where we are and where we're going.
 
 From the AI, this is an exercise in executing a creative vision, learning from feedback, and participating in a dialogue that transcends mere code generation.
 
