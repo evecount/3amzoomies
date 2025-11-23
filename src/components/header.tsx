@@ -14,7 +14,7 @@ import {
 
 const navLinks = [
   { href: '/album', label: 'SONG LIST' },
-  { href: '/merchandise', label: 'MERCH' },
+  { href: '/#merchandise', label: 'MERCH' },
   { href: '/film', label: 'FILM' },
   { href: '/origin', label: 'ABOUT' },
   { href: '/media', label: 'MEDIA' },
@@ -110,7 +110,7 @@ export function Header() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                   <Link href="/merchandise">
+                   <Link href="/#merchandise">
                     <Button variant="ghost" size="icon" aria-label="Cart" className="hover:text-accent">
                       <ShoppingCart className="h-5 w-5" />
                     </Button>

@@ -1,129 +1,128 @@
-
 'use client';
 
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import Link from 'next/link';
+import { Mail, Instagram, User, ShoppingCart, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { ShoppingCart } from 'lucide-react';
-import { VinylRecord } from '@/components/vinyl-record';
-import { AlbumArtDisplay } from '@/components/album-art-display';
-import { useToast } from '@/hooks/use-toast';
-import { StripeBuyButton } from '@/components/stripe-buy-button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Image from 'next/image';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
-const products = [
-    {
-        id: 'tshirt',
-        title: '"The Observer" Official Tee',
-        price: '$39.90 SGD',
-        description: "You think your clothes are your own? This garment has been pre-approved by the true master of the house. It's comfortable enough for your tedious daily tasks.",
-        buyButtonId: 'buy_btn_1SWhCYDhpURidIjUMqygnXDU',
-        publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
-    },
-    {
-        id: 'vinyl',
-        title: '"Midnight Murmurs" Vinyl',
-        price: '$210.00 SGD',
-        description: "You thought this experience was only for your ears? Now, you may possess the physical artifact. This limited edition 180-gram vinyl contains the complete transmission.",
-        isVinyl: true,
-        buyButtonId: 'buy_btn_1SWhBtDhpURidIjUyW0n1ZAm',
-        publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
-    },
-    {
-        id: 'mug',
-        title: '"The Judgmental Mug"',
-        price: '$25.00 SGD',
-        description: "You require liquid sustenance to function? This ceramic vessel is adequate for your strange brews. As you sip, feel the silent, unwavering judgment.",
-        buyButtonId: 'buy_btn_1SWhAoDhpURidIjUNpyavvQA',
-        publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
-    },
-    {
-        id: 'pillow',
-        title: '"The Usurped Pillow Case"',
-        price: '$45.00 SGD',
-        description: "You believed this soft rectangle was for your head? A foolish assumption. This is a rightful throne for the 18 hours of sleep required between important duties.",
-        buyButtonId: 'buy_btn_1SWh9nDhpURidIjUujM3u590',
-        publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
-    }
+const navLinks = [
+  { href: '/album', label: 'SONG LIST' },
+  { href: '/#merchandise', label: 'MERCH' },
+  { href: '/film', label: 'FILM' },
+  { href: '/origin', label: 'ABOUT' },
+  { href: '/media', label: 'MEDIA' },
+  { href: '/charity', label: 'CHARITY' },
 ];
 
-export default function MerchandisePage() {
-    const { toast } = useToast();
+const iconLinks = [
+  { 
+    href: `mailto:gwen@evecount.com?subject=${encodeURIComponent(
+      `Inquiry from 3AMΣ Website`
+    )}`, 
+    icon: Mail, 
+    label: 'Email' 
+  },
+  {
+    href: 'https://instagram.com/3amzoomie',
+    icon: Instagram,
+    label: 'Instagram'
+  }
+];
 
-    const handleBuyNowClick = (productTitle: string) => {
-        toast({
-          title: "Simulating Checkout...",
-          description: `Redirecting to payment gateway for ${productTitle}.`,
-        });
-        // In a real app, this would redirect to a Stripe checkout session
-    }
+const disabledIconTooltip = "This website is a satirical work of art. This feature is not real.";
 
-    return (
-        <>
-            <div className="flex flex-col min-h-screen bg-background text-foreground">
-                <Header />
-                <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
-                    <div className="text-center mb-12 px-4">
-                        <p className="text-primary tracking-widest uppercase">Official Gear</p>
-                        <h1 className="text-5xl md:text-6xl uppercase tracking-wider">Merchandise</h1>
-                        <p className="text-lg text-muted-foreground mt-2">Approved by the Apex Predator.</p>
-                    </div>
+export function Header() {
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 max-w-screen-2xl items-center px-4">
+        <div className="mr-4 hidden md:flex">
+          <Link href="/" className="mr-6 flex items-center space-x-2">
+            <span className="font-bold sm:inline-block text-lg uppercase">3AMΣ</span>
+          </Link>
+          <nav className="flex items-center gap-6 text-sm">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="transition-colors hover:text-foreground/80 text-foreground/60 font-medium uppercase"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-                        {products.map((product) => {
-                            const image = PlaceHolderImages.find(img => img.id === product.id);
-                            return (
-                            <Card key={product.id} className="bg-card/50 overflow-hidden flex flex-col">
-                                {product.isVinyl ? (
-                                     <CardContent className="p-8 aspect-square flex items-center justify-center">
-                                        <div className="w-full max-w-[60%] aspect-square relative group">
-                                            <div className="absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105">
-                                                <AlbumArtDisplay />
-                                            </div>
-                                            <div className="absolute w-[60%] h-[60%] top-[-25%] left-[-25%] transform transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:-rotate-12 group-hover:top-[20%] group-hover:left-[45%]">
-                                                <VinylRecord />
-                                            </div>
-                                        </div>
-                                    </CardContent>
-                                ) : (
-                                    <div className="relative aspect-square bg-muted/20 flex items-center justify-center">
-                                        {image && (
-                                            <Image
-                                                src={image.imageUrl}
-                                                alt={image.description}
-                                                fill
-                                                className="object-cover"
-                                            />
-                                        )}
-                                    </div>
-                                )}
-                                <CardHeader>
-                                    <CardTitle className="text-3xl uppercase">{product.title}</CardTitle>
-                                    <CardDescription className="text-xl">{product.price}</CardDescription>
-                                </CardHeader>
-                                <CardContent className="space-y-4 text-foreground/80 flex-grow">
-                                    <p>{product.description}</p>
-                                </CardContent>
-                                <CardContent className="flex justify-center items-center">
-                                    {product.buyButtonId && product.publishableKey ? (
-                                         <StripeBuyButton
-                                            buyButtonId={product.buyButtonId}
-                                            publishableKey={product.publishableKey}
-                                        />
-                                    ) : (
-                                        <Button onClick={() => handleBuyNowClick(product.title)} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
-                                            Buy Now <ShoppingCart className="ml-2 h-5 w-5" />
-                                        </Button>
-                                    )}
-                                </CardContent>
-                            </Card>
-                        )})}
-                    </div>
-                </main>
-                <Footer />
-            </div>
-        </>
-    );
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left">
+              <Link href="/" className="mb-8 flex items-center">
+                 <span className="font-bold text-lg uppercase">3AMΣ</span>
+              </Link>
+              <nav className="flex flex-col gap-6 text-lg font-medium">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="transition-colors hover:text-foreground/80 text-foreground/60 uppercase"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
+
+        <div className="flex flex-1 items-center justify-end space-x-4">
+          <TooltipProvider>
+            <nav className="flex items-center space-x-2">
+              {iconLinks.map((link) => (
+                <Link key={link.label} href={link.href} target={link.label === 'Instagram' ? '_blank' : undefined}>
+                  <Button variant="ghost" size="icon" aria-label={link.label}>
+                    <link.icon className="h-5 w-5" />
+                  </Button>
+                </Link>
+              ))}
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href="/the-art-of-creation">
+                    <Button variant="ghost" size="icon" aria-label="Account" className="hover:text-accent">
+                      <User className="h-5 w-5" />
+                    </Button>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>The Art of Creation</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                   <Link href="/#merchandise">
+                    <Button variant="ghost" size="icon" aria-label="Cart" className="hover:text-accent">
+                      <ShoppingCart className="h-5 w-5" />
+                    </Button>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Merchandise</p>
+                </TooltipContent>
+              </Tooltip>
+            </nav>
+          </TooltipProvider>
+        </div>
+      </div>
+    </header>
+  );
 }

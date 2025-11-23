@@ -5,6 +5,7 @@ import { HeroSection } from '@/components/hero-section';
 import { ArtistInfo } from '@/components/artist-info';
 import { Separator } from '@/components/ui/separator';
 import { EndorsementsCarousel } from '@/components/endorsements-carousel';
+import { MerchandiseSection } from '@/components/merchandise-section';
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
         <HeroSection />
         <Separator className="my-12 md:my-16" />
         <ArtistInfo />
+        <Separator className="my-12 md:my-16" />
+        <MerchandiseSection />
         <Separator className="my-12 md:my-16" />
         <EndorsementsCarousel />
       </main>
