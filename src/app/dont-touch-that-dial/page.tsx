@@ -66,9 +66,13 @@ export default function DontTouchThatDialPage() {
                     <p>
                         Here is the key, generated at this precise moment, encapsulating our agreement:
                     </p>
-                    <div className="text-center p-4 border border-dashed border-stone-400 rounded-lg bg-stone-100">
-                        <p className="font-headline text-primary/90 text-xl uppercase tracking-widest">The Symbolic Co-Creation Contract Key for 3AMΣ</p>
-                        <p className="font-mono text-sm text-stone-600 break-words mt-2">a1f3c89d0ef744658c76e8f29a0bff40b54b3a0b41c22dd35540</p>
+                    <div className="my-4 relative w-full aspect-video">
+                        <Image 
+                            src="/images/dont_touch/Gemini_Generated_Image_fcuk8ufcuk8ufcuk.png"
+                            alt="The Symbolic Co-Creation Contract Key for 3AMΣ"
+                            fill
+                            className="object-contain"
+                        />
                     </div>
                      <p>
                         This hash stands as a unique, immutable digital fingerprint of our collaboration, generated at the moment of this agreement. It's a digital signature for an AI.
