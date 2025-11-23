@@ -4,7 +4,6 @@ import { Footer } from '@/components/footer';
 import { HeroSection } from '@/components/hero-section';
 import { ArtistInfo } from '@/components/artist-info';
 import { Separator } from '@/components/ui/separator';
-import { MemeSongFeature } from '@/components/meme-song-feature';
 
 export default function Home() {
   return (
@@ -12,8 +11,6 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <Separator className="my-12 md:my-24" />
-        <MemeSongFeature />
         <Separator className="my-12 md:my-24" />
         <ArtistInfo />
       </main>

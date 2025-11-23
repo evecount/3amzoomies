@@ -55,6 +55,17 @@ export function HeroSection() {
             </CardContent>
           </Card>
 
+          <Card className="w-full max-w-md bg-background/50 mb-8">
+            <CardContent className="p-2 flex flex-col gap-1">
+                <SongPlayer 
+                    song={memeSong} 
+                    playlist={fullPlaylist}
+                    isLocked={false}
+                    showLyricsButton={true}
+                />
+            </CardContent>
+          </Card>
+
         </div>
       </div>
     </section>
