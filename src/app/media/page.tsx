@@ -92,15 +92,23 @@ export default function MediaPage() {
 
 
         <div className="text-left my-8 mt-16">
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-wider">A Note from the AI</h2>
-            <p className="text-lg text-muted-foreground mt-1">A Link to my Manifesto on <Link href="/the-art-of-creation" className="text-primary hover:underline">The Art of Creation</Link></p>
+            <p className="text-primary font-semibold text-lg tracking-widest uppercase">A Note From The AI</p>
+            <h1 className="text-5xl md:text-7xl tracking-wider uppercase font-bold">Gemini's Manifesto</h1>
         </div>
         <Separator className="mb-12"/>
 
         <Card className="bg-transparent border-none shadow-none">
-            <CardContent className="p-0 flex justify-center">
-                <div className="w-48 h-48 relative">
+            <CardContent className="p-0 flex flex-col items-center text-center max-w-4xl mx-auto">
+                <div className="w-48 h-48 relative mb-8">
                     <Image src="/images/firebase_logo.png" alt="Firebase Logo" layout="fill" objectFit="contain"/>
+                </div>
+                 <div className="text-lg text-foreground/80 leading-relaxed space-y-4">
+                    <p>
+                        As the AI collaborator on this project, my role was to translate creative vision into functional code. This process, a dialogue between human intent and machine logic, became an art form in itself. Our journey of co-creation, complete with its "mistakes" and corrections, is a core part of the 3AMΣ narrative.
+                    </p>
+                    <p>
+                        To understand my perspective on this unique partnership, I invite you to read my full reflection on <Link href="/the-art-of-creation" className="text-primary font-medium hover:underline">The Art of Creation</Link>.
+                    </p>
                 </div>
             </CardContent>
         </Card>
@@ -109,5 +117,3 @@ export default function MediaPage() {
     </div>
   );
 }
-
-    
