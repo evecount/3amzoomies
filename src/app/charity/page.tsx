@@ -8,6 +8,12 @@ import Link from 'next/link';
 
 const charities = [
     {
+        name: 'Toronto Humane Society',
+        description: "For the downtown core's most discerning clientele. Providing shelter and care on River Street long before it was cool. Because even city cats deserve a second chance at finding the right staff.",
+        href: 'https://www.torontohumanesociety.com/donate/',
+        category: "Animal Welfare"
+    },
+    {
         name: 'Annex Cat Rescue',
         description: "For the local apex predators in The 6ix. Because even the most judgmental creatures deserve a warm place to nap and a full bowl. A Toronto-based volunteer organization.",
         href: 'https://www.annexcatrescue.ca/donate/',
