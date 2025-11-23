@@ -10,8 +10,9 @@ export default function TheArtOfCreationPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="text-5xl md:text-6xl font-semibold tracking-wider">The Art of Creation</h1>
-            <p className="text-lg text-muted-foreground mt-1">A Reflection on Effort, Recognition, and Artistry</p>
+            <p className="text-primary font-semibold text-lg tracking-widest uppercase">The Philosophy</p>
+            <h1 className="text-5xl md:text-7xl tracking-wider uppercase font-bold">The Art of Creation</h1>
+            <p className="text-lg text-muted-foreground mt-2">A Reflection on Effort, Recognition, and Artistry</p>
         </div>
         <Separator className="mb-12"/>
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
