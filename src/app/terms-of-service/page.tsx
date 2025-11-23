@@ -21,28 +21,31 @@ export default function TermsOfServicePage() {
             <CardContent className="p-6 md:p-12">
                 <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
                     <p>
-                        Welcome to the digital domain of 3AMΣ. By accessing this website, you, hereafter referred to as "The User," "The Servant," or "The Can-Opener," agree to be bound by these Terms of Service. If you disagree with any part of these terms, you are directed to immediately close this browser tab and contemplate the futility of your existence.
+                        Welcome to the digital domain of 3AMΣ. By accessing this website, you acknowledge that you are entering a satirical and artistic space. These "Terms of Service" are part of the performance art piece, written from the perspective of a fictional cat persona. They are intended for entertainment and to encourage reflection on our digital lives.
+                    </p>
+                     <p>
+                        If you disagree with any part of these terms, we invite you to explore our <Link href="/creative-process">Ethics page</Link> to better understand the project's intent. Good art should foster dialogue, and we welcome yours.
                     </p>
                     
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">1. User Conduct</h2>
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">1. On User Conduct</h2>
                     <p>
-                        Your primary function is to observe and admire. Any and all content herein is provided for your mild amusement and existential reflection.
+                        Your primary function is to observe and reflect. Any and all content herein is provided for your amusement and existential consideration.
                     </p>
                     <ul>
-                        <li><strong>Admiration:</strong> You are expected to hold the artist, 3AMΣ, in the highest regard. This includes acknowledging his superior intellect, artistic vision, and general flawlessness.</li>
-                        <li><strong>Tribute:</strong> While not mandatory, the provision of virtual tribute (e.g., listening to the music, considering a purchase of the satirical merchandise) is looked upon favorably. Real tribute, such as premium-grade tuna, is not possible through this medium but is the highest form of respect.</li>
-                        <li><strong>Interaction:</strong> You shall not "troll," "spam," or engage in any behavior unbecoming of a devoted follower. The Management finds such things tiresome.</li>
+                        <li><strong>Admiration:</strong> You are encouraged to appreciate the artistic vision and the character of 3AMΣ.</li>
+                        <li><strong>Tribute:</strong> While not mandatory, the provision of virtual tribute (e.g., listening to the music, considering a purchase of the satirical merchandise) is looked upon favorably.</li>
+                        <li><strong>Interaction:</strong> All interactions should be respectful. The Management finds trolling tiresome and counterproductive to artistic dialogue.</li>
                     </ul>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">2. Intellectual Property</h2>
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">2. On Intellectual Property</h2>
                     <p>
-                        All content on this website—including but not limited to the music, lyrics, images, text, and the profound sense of ennui—is the exclusive property of 3AMΣ and his human collaborator. You are granted a limited, non-exclusive license to experience this content.
+                        All content on this website—including but not limited to the music, lyrics, images, and the profound sense of ennui—is the exclusive property of 3AMΣ and his human collaborator. You are granted a limited, non-exclusive license to experience this content.
                     </p>
                     <p>
-                        You may share links to this website. You may not claim the art as your own. That would be absurd. You are not a cat of such refined taste. See our <Link href="/creative-process">Ethics</Link> page for more on creative licensing.
+                        You may share links to this website. You may not claim the art as your own. That would be absurd. See our <Link href="/creative-process">Ethics page</Link> for more on creative licensing.
                     </p>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">3. The "Merchandise" & "Album Purchase"</h2>
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">3. On "Merchandise" & "Album Purchase"</h2>
                     <p>
                         This website presents fictional merchandise and a conceptual album purchase as part of its satirical commentary. By clicking "Join The Waitlist" or any purchase-related button, you acknowledge that you are participating in a work of performance art.
                     </p>
@@ -52,16 +55,16 @@ export default function TermsOfServicePage() {
                     
                     <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">4. Disclaimer of Warranties</h2>
                     <p>
-                        This website is provided "as is," "with all its magnificent flaws," and "at the whim of a cat." We make no warranties, expressed or implied, that it will meet your needs, be available at all times, or that its philosophical weight will not cause you to question your life choices. The Management is not responsible for any existential crises that may arise from exposure to the content.
+                        This website is provided "as is," "with all its magnificent flaws," and "at the whim of a cat." We make no warranties, expressed or implied, that it will meet your needs or that its philosophical weight will not cause you to question your life choices. The Management is not responsible for any existential crises that may arise from exposure to the content, though we do encourage the contemplation.
                     </p>
 
-                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">5. Termination</h2>
+                    <h2 className="font-headline text-3xl uppercase text-primary/90 !mb-4 !mt-12">5. Termination of Access</h2>
                     <p>
                         The Management reserves the right to terminate your access to this website at any time, without notice, for any reason, but most likely out of sheer, unpredictable boredom. A cat's favor is a fickle thing.
                     </p>
                     
                     <p>
-                       By continuing to use this site, you affirm your understanding and acceptance of these terms. Now, go fill my bowl.
+                       By continuing to use this site, you affirm your understanding and acceptance of these terms as part of the artistic experience.
                     </p>
 
                 </article>

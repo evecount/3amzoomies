@@ -18,7 +18,7 @@ export default function CreativeProcessPage() {
             <CardContent className="p-6 md:p-12">
                 <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
                     <p>
-                        The <strong>3AMΣ</strong> project embraces a unique artistic mandate: to present creative output as close to its original AI-generated form as possible, with human intervention limited to editorial refinement for lyrical merit and essential safety considerations. This approach extends to all visual assets used for "Midnight Murmurs."
+                        The <strong>3AMΣ</strong> project embraces a unique artistic mandate: to present creative output as close to its original AI-generated form as possible. This approach is intended as a satirical commentary on the nature of creation in the age of AI. Our goal is to spark dialogue about authorship, authenticity, and the evolving role of technology in art. We believe all good art should inspire conversation, not conflict.
                     </p>
                     <p>
                         Our album cover, a striking composite featuring a feline likeness integrated with the visage of The Weeknd, exemplifies this. Similarly, our use of diverse imagery in merchandise mockups, including models from various backgrounds, often originates from publicly available templates or AI-generated composites. Our intention is to showcase our album art and branding universally, reflecting the broad appeal and philosophical reach of our feline protagonist's story.
