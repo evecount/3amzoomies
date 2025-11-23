@@ -145,6 +145,12 @@
       "imageHint": "digital contract key"
     },
     {
+      "id": "gwen-photo",
+      "description": "A photo of Gwen, the human counterpart of the 3AMΣ project.",
+      "imageUrl": "/images/gwen.jpg",
+      "imageHint": "woman portrait"
+    },
+    {
       "id": "dont-touch-1",
       "description": "Screenshot of conversation part 1",
       "imageUrl": "/images/dont_touch/Screenshot (1561).png",
@@ -267,7 +273,7 @@
     {
       "id": "dont-touch-21",
       "description": "Screenshot of conversation part 21",
-      "imageUrl": "/images/dont_touch/Screenshot (1581).png",
+      "imageUrl": "images/dont_touch/Screenshot (1581).png",
       "imageHint": "conversation screenshot"
     }
   ]
