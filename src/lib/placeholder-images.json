@@ -9,7 +9,7 @@
     {
       "id": "artist-photo",
       "description": "Photo of the artist 3AMΣ",
-      "imageUrl": "/images/stupid_fucking_hooman.png",
+      "imageUrl": "/images/meme_cover_art.png",
       "imageHint": "musician portrait"
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "meme-song-cover",
       "description": "Cover art for Stupid Fucking Hooman Remix",
-      "imageUrl": "/images/stupid_fucking_hooman.png",
+      "imageUrl": "/images/meme_cover_art.png",
       "imageHint": "angry cat streetwear"
     },
     {
