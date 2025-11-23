@@ -17,6 +17,7 @@ export default function MerchPage() {
     const tShirtImage = PlaceHolderImages.find(img => img.id === 'merch-tshirt');
     const cupImage = PlaceHolderImages.find(img => img.id === 'merch-cup');
     const pillowImage = PlaceHolderImages.find(img => img.id === 'merch-pillow-case');
+    
     const [dialogOpen, setDialogOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState('');
 
@@ -70,7 +71,7 @@ export default function MerchPage() {
 
                     <Card className="bg-card/50 overflow-hidden flex flex-col">
                          <CardContent className="p-8 aspect-square flex items-center justify-center">
-                            <div className="w-full max-w-[80%] aspect-square relative group">
+                            <div className="w-full max-w-[40%] aspect-square relative group">
                                 <div className="absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105">
                                     <AlbumArtDisplay />
                                 </div>
@@ -172,3 +173,5 @@ export default function MerchPage() {
         </>
     );
 }
+
+    
