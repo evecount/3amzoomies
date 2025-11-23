@@ -45,61 +45,61 @@
     {
       "id": "song-1-cover",
       "description": "Cover art for Introduction (Feline FM)",
-      "imageUrl": "/images/Image_4_FINAL.png",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "radio tower night"
     },
     {
       "id": "song-2-cover",
       "description": "Cover art for Apex Predator, Empty Bowl",
-      "imageUrl": "",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "cat eyes dark"
     },
     {
       "id": "song-3-cover",
       "description": "Cover art for Observer of Absurdity",
-      "imageUrl": "",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "cat looking window"
     },
     {
       "id": "song-4-cover",
       "description": "Cover art for The Fading Feather (Afternoon Chase)",
-      "imageUrl": "",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "light streaks blur"
     },
     {
       "id": "song-5-cover",
       "description": "Cover art for Chasing the Crimson Ghost",
-      "imageUrl": "",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "red laser wall"
     },
     {
       "id": "song-6-cover",
       "description": "Cover art for My Cardboard Sanctuary",
-      "imageUrl": "",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "cat cardboard box"
     },
     {
       "id": "song-7-cover",
       "description": "Cover art for The Unspoken Contract",
-      "imageUrl": "",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "hand petting cat"
     },
     {
       "id": "song-8-cover",
       "description": "Cover art for Ambrosia & Oblivion",
-      "imageUrl": "",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "tuna can macro"
     },
     {
       "id": "song-9-cover",
       "description": "Cover art for Eternal Dawn (Loop)",
-      "imageUrl": "",
+      "imageUrl": "/images/3AM_vinyl.png",
       "imageHint": "sun sunrise window"
     },
     {
       "id": "song-10-cover",
       "description": "Cover art for Conclusion (Feline FM)",
-      "imageUrl": "https://images.unsplash.com/photo-1653082658341-d18280d0c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyYWRpbyUyMHN0YXRpYyUyMHdhdmV8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1653082658341-d18280d0c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyYWRpbyUyMHN0YXRpYyUyMHdhdmV8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "radio static wave"
     }
   ]
