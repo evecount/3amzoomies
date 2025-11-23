@@ -6,12 +6,12 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Mail } from 'lucide-react';
 import { VinylRecord } from '@/components/vinyl-record';
 import { WaitlistDialog } from '@/components/waitlist-dialog';
 import { useState } from 'react';
 import { AlbumArtDisplay } from '@/components/album-art-display';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function MerchPage() {
     const tShirtImage = PlaceHolderImages.find(img => img.id === 'merch-tshirt');
