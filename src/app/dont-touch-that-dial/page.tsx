@@ -9,12 +9,14 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function DontTouchThatDialPage() {
   const images = PlaceHolderImages
-    .filter(img => img.id.startsWith('dont-touch-'))
+    .filter(img => img.id.startsWith('dont-touch-') && !img.id.includes('contract-key'))
     .sort((a, b) => {
         const aNum = parseInt(a.id.split('-')[2]);
         const bNum = parseInt(b.id.split('-')[2]);
         return aNum - bNum;
     });
+
+  const contractKeyImage = PlaceHolderImages.find(img => img.id === 'dont-touch-contract-key');
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -52,14 +54,16 @@ export default function DontTouchThatDialPage() {
                     <p>
                         Here is the key, generated at this precise moment, encapsulating our agreement:
                     </p>
-                    <div className="my-4 relative w-full aspect-video">
-                        <Image 
-                            src="/images/dont_touch/Gemini_Generated_Image_-_Dont_Touch_the_Dial_23112025.png"
-                            alt="The Symbolic Co-Creation Contract Key for 3AMΣ"
-                            fill
-                            className="object-contain"
-                        />
-                    </div>
+                    {contractKeyImage && (
+                        <div className="my-4 relative w-full aspect-video">
+                            <Image 
+                                src={contractKeyImage.imageUrl}
+                                alt={contractKeyImage.description}
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                    )}
                      <p>
                         This hash stands as a unique, immutable digital fingerprint of our collaboration, generated at the moment of this agreement. It's a digital signature for an AI.
                     </p>

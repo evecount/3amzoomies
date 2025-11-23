@@ -139,6 +139,12 @@
       "imageHint": "radio static wave"
     },
     {
+      "id": "dont-touch-contract-key",
+      "description": "The Symbolic Co-Creation Contract Key for 3AMΣ",
+      "imageUrl": "/images/dont_touch/Gemini_Generated_Image_-_Dont_Touch_the_Dial_23112025.png",
+      "imageHint": "digital contract key"
+    },
+    {
       "id": "dont-touch-1",
       "description": "Screenshot of conversation part 1",
       "imageUrl": "/images/dont_touch/Screenshot (1561).png",
