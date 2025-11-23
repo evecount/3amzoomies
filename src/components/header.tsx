@@ -99,7 +99,7 @@ export function Header() {
               ))}
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Button variant="ghost" size="icon" aria-label="Account" className="hover:text-accent">
+                  <Button variant="ghost" size="icon" aria-label="Account" className="hover:text-accent cursor-not-allowed">
                     <User className="h-5 w-5" />
                   </Button>
                 </TooltipTrigger>
@@ -109,7 +109,7 @@ export function Header() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                   <Button variant="ghost" size="icon" aria-label="Cart" className="hover:text-accent">
+                   <Button variant="ghost" size="icon" aria-label="Cart" className="hover:text-accent cursor-not-allowed">
                     <ShoppingCart className="h-5 w-5" />
                   </Button>
                 </TooltipTrigger>
