@@ -26,7 +26,7 @@ export default function MediaPage() {
                 <Card className="bg-stone-50 text-stone-900 shadow-2xl">
                     <CardContent className="p-6 md:p-12">
                         {bannerImage && (
-                            <div className="relative w-full aspect-video mb-8 rounded-lg overflow-hidden">
+                            <div className="relative w-full aspect-video mb-4 rounded-lg overflow-hidden">
                                 <Image 
                                     src={bannerImage.src}
                                     alt={bannerImage.description}
