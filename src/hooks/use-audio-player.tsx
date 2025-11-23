@@ -71,7 +71,7 @@ export function AudioProvider({ children }: AudioProviderProps) {
 
   const playSong = useCallback((song: Song, newPlaylist?: Song[]) => {
     const audio = audioRef.current;
-    if (!audio) return;
+    if (!audio || !song.audioSrc) return;
     
     if (newPlaylist) {
         setPlaylist(newPlaylist);
