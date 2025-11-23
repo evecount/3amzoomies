@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -90,7 +89,6 @@ export default function MerchandisePage() {
                                             src={product.imageUrl!}
                                             alt={product.imageAlt!}
                                             fill
-                                            data-ai-hint={product.imageHint}
                                             className="object-cover"
                                         />
                                     </div>
