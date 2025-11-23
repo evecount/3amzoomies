@@ -53,6 +53,11 @@ const endorsements = [
     quote: "This album is, like, literally the only thing I'm listening to right now. 'My Cardboard Sanctuary' is the perfect vibe for ignoring your staff and taking selfies. So aesthetic.",
   },
   {
+    id: 'nabi-stray-cats',
+    name: 'Nabi of STRAY CATS',
+    quote: "이 앨범은 정말 '대박' 분위기가 있어요. 'Eternal Dawn (Loop)'은 서울의 밤 드라이브에 완벽한 비트예요. 3AMΣ와 꼭 협업하고 싶어요! (This album has a total 'daebak' vibe. 'Eternal Dawn (Loop)' is the perfect beat for a late-night drive through Seoul. I definitely want to collaborate with 3AMΣ!)",
+  },
+  {
     id: 'meowtro-boomin',
     name: 'Meowtro Boomin\'',
     quote: "The production on this is next level. The low-end on 'Apex Predator, Empty Bowl' is insane. Seriously, has anyone shown this to Abel yet?",
