@@ -20,6 +20,8 @@ const products = [
         description: "You think your clothes are your own? This garment has been pre-approved by the true master of the house. It's comfortable enough for your tedious daily tasks.",
         imageUrl: "/images/merch/tshirt.png",
         imageAlt: "Black t-shirt with the 3AMΣ album art on the front",
+        buyButtonId: 'buy_btn_1SWhCYDhpURidIjUMqygnXDU',
+        publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
     },
     {
         id: 'vinyl',
