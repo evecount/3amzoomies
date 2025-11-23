@@ -102,7 +102,7 @@ export default function OriginPage() {
                          <div className="text-lg text-card-foreground leading-relaxed space-y-6">
                             <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-4 !mt-12">Themes</h2>
                             <p>
-                                _Midnight Murmurs_ delves into several core themes:
+                                <em>Midnight Murmurs</em> delves into several core themes:
                             </p>
                             <ul>
                                 <li><strong>Existentialism from a Feline Perspective:</strong> The cat's detached, often nihilistic view of its own existence and the human world.</li>
@@ -307,7 +307,7 @@ export default function OriginPage() {
                          <div className="text-lg text-card-foreground leading-relaxed space-y-6">
                             <h2 className="font-semibold text-3xl uppercase text-primary/90 !mb-6 !mt-12">Reception</h2>
                             <p>
-                                Initial reception to _Midnight Murmurs_ has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
+                                Initial reception to <em>Midnight Murmurs</em> has highlighted its innovative approach to concept album creation and its surprisingly profound lyrical depth. Critics have praised its seamless integration of Weeknd-esque aesthetics with a unique feline narrative, calling it "a surprisingly moving and darkly humorous meditation on life's endless loop." The album's use of AI as a collaborative partner has also been a point of critical discussion, marking it as a significant experiment in modern music production.
                             </p>
                         </div>
                     </div>
