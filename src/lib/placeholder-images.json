@@ -198,6 +198,12 @@
     "imageHint": "woman portrait"
   },
   {
+    "id": "media-banner",
+    "description": "A banner image for the media page interview.",
+    "src": "/images/bannerng.png",
+    "imageHint": "interview podcast"
+  },
+  {
     "id": "dont-touch-1",
     "description": "Screenshot of conversation part 1",
     "src": "/dont_touch/Screenshot_1561.png",

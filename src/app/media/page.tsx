@@ -9,6 +9,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function MediaPage() {
     const gwenImage = PlaceHolderImages.find(img => img.id === 'gwen-photo');
+    const bannerImage = PlaceHolderImages.find(img => img.id === 'media-banner');
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -24,6 +25,16 @@ export default function MediaPage() {
             <div className="lg:col-span-2">
                 <Card className="bg-stone-50 text-stone-900 shadow-2xl">
                     <CardContent className="p-6 md:p-12">
+                        {bannerImage && (
+                            <div className="relative w-full aspect-video mb-8 rounded-lg overflow-hidden">
+                                <Image 
+                                    src={bannerImage.src}
+                                    alt={bannerImage.description}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        )}
                         <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                             <p className="lead">
                                 <strong>Gravyspoon Magazine:</strong> Thank you for sitting down with us, 3AMΣ. "Midnight Murmurs" is making waves, not just for its unique sound but for its groundbreaking approach to AI collaboration. We want to dive into the deeper philosophy here, particularly concerning the visual elements.
