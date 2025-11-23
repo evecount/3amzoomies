@@ -10,6 +10,7 @@ import { ShoppingCart } from 'lucide-react';
 import { VinylRecord } from '@/components/vinyl-record';
 import { AlbumArtDisplay } from '@/components/album-art-display';
 import { useToast } from '@/hooks/use-toast';
+import { StripeBuyButton } from '@/components/stripe-buy-button';
 
 const products = [
     {
@@ -42,17 +43,10 @@ const products = [
         description: "You believed this soft rectangle was for your head? A foolish assumption. This is a rightful throne for the 18 hours of sleep required between important duties.",
         imageUrl: "/images/merch/pillow-case.png",
         imageAlt: "A white pillow on a bed with a pillowcase featuring the 3AMΣ album art",
+        buyButtonId: 'buy_btn_1SWh9nDhpURidIjUujM3u590',
+        publishableKey: 'pk_live_51REjckDhpURidIjU01fCpcFP3bkNegEmmyeJkZTJjcQ51mAtAvIafFfJB5d2cZy67z7PQGMGIIqay0xYLsGKLVq500CVvucVLa'
     }
 ];
-
-async function handlePurchase(productTitle: string) {
-    'use server';
-    console.log(`Initiating purchase for: ${productTitle}`);
-    // In a real application, you would create a Stripe Checkout session here
-    // and redirect the user to the Stripe checkout URL.
-    // For now, we'll just log to the server console.
-}
-
 
 export default function MerchandisePage() {
     const { toast } = useToast();
@@ -62,7 +56,7 @@ export default function MerchandisePage() {
           title: "Simulating Checkout...",
           description: `Redirecting to payment gateway for ${productTitle}.`,
         });
-        handlePurchase(productTitle);
+        // In a real app, this would redirect to a Stripe checkout session
     }
 
     return (
@@ -106,10 +100,17 @@ export default function MerchandisePage() {
                                 <CardContent className="space-y-4 text-foreground/80 flex-grow">
                                     <p>{product.description}</p>
                                 </CardContent>
-                                <CardContent>
-                                    <Button onClick={() => handleBuyNowClick(product.title)} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
-                                        Buy Now <ShoppingCart className="ml-2 h-5 w-5" />
-                                    </Button>
+                                <CardContent className="flex justify-center items-center">
+                                    {product.buyButtonId && product.publishableKey ? (
+                                         <StripeBuyButton
+                                            buyButtonId={product.buyButtonId}
+                                            publishableKey={product.publishableKey}
+                                        />
+                                    ) : (
+                                        <Button onClick={() => handleBuyNowClick(product.title)} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                            Buy Now <ShoppingCart className="ml-2 h-5 w-5" />
+                                        </Button>
+                                    )}
                                 </CardContent>
                             </Card>
                         ))}

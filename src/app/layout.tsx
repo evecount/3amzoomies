@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { AudioProvider } from '@/hooks/use-audio-player';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: '3AMΣ',
@@ -26,6 +27,7 @@ export default function RootLayout({
             {children}
         </AudioProvider>
         <Toaster />
+        <Script src="https://js.stripe.com/v3/buy-button.js" strategy="lazyOnload" />
       </body>
     </html>
   );
