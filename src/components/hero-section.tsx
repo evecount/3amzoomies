@@ -4,24 +4,13 @@
 import { useRouter } from 'next/navigation';
 import { albumData } from '@/lib/data';
 import { SongPlayer } from './song-player';
-import { usePurchase } from '@/hooks/use-purchase';
-import { useToast } from '@/hooks/use-toast';
 import { Card, CardContent } from './ui/card';
 import { AlbumArtDisplay } from './album-art-display';
+import Link from 'next/link';
+import { Button } from './ui/button';
 
 export function HeroSection() {
   const router = useRouter();
-  const { purchase } = usePurchase();
-  const { toast } = useToast();
-
-  const handlePurchase = () => {
-    purchase();
-    toast({
-      title: "Purchase Successful!",
-      description: "You now have access to the full album.",
-    });
-    router.push('/album');
-  };
 
   return (
     <section className="container mx-auto px-4 py-12 md:py-16">
@@ -41,7 +30,7 @@ export function HeroSection() {
 
           <Card className="w-full max-w-md bg-background/50 mb-8">
             <CardContent className="p-2 flex flex-col gap-1">
-                {albumData.songs.map((song) => (
+                {albumData.songs.slice(0, 3).map((song) => (
                     <SongPlayer 
                         song={song} 
                         playlist={albumData.songs}
@@ -49,6 +38,15 @@ export function HeroSection() {
                         isLocked={false}
                     />
                 ))}
+                {albumData.songs.length > 3 && (
+                    <div className="p-2">
+                       <Button asChild className="w-full">
+                            <Link href="/album">
+                                Listen to the Full Album
+                            </Link>
+                        </Button>
+                    </div>
+                )}
             </CardContent>
           </Card>
 

@@ -1,53 +1,17 @@
 
 'use client';
 
-import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { usePurchase } from '@/hooks/use-purchase';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { albumData } from '@/lib/data';
 import { SongPlayer } from '@/components/song-player';
 import { AlbumArtDisplay } from '@/components/album-art-display';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Skeleton } from '@/components/ui/skeleton';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
-function LoadingSkeleton() {
-    return (
-        <div className="flex items-center justify-center min-h-screen bg-background text-foreground">
-            <div className="space-y-4">
-                <Skeleton className="h-10 w-64" />
-                <Skeleton className="h-6 w-80" />
-                <Skeleton className="h-24 w-full" />
-            </div>
-        </div>
-    )
-}
-
 export default function AlbumPage() {
-  const { isPurchased, unpurchase } = usePurchase();
   const router = useRouter();
-
-  useEffect(() => {
-    if (isPurchased === false) {
-      router.push('/');
-    }
-  }, [isPurchased, router]);
-
-  if (isPurchased === undefined) {
-    return <LoadingSkeleton />;
-  }
-  
-  if (isPurchased === false) {
-      return null;
-  }
-
-  const handleResetPurchase = () => {
-      unpurchase();
-      router.push('/');
-  }
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -78,9 +42,6 @@ export default function AlbumPage() {
                             </AccordionItem>
                         ))}
                     </Accordion>
-                     <Button onClick={handleResetPurchase} variant="link" className="mt-8 self-center text-muted-foreground">
-                        (Test Action: Reset Purchase)
-                     </Button>
                 </CardContent>
             </Card>
         </div>
