@@ -1,6 +1,6 @@
+
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
@@ -19,7 +19,6 @@ const products = [
         description: "You think your clothes are your own? How quaint. This garment has been pre-approved by the true master of the house. It's comfortable enough for your tedious daily tasks, yet stylish enough to not be an complete embarrassment when you serve my dinner.",
         imageUrl: "/images/merch/tshirt.png",
         imageAlt: "Black t-shirt with the 3AMΣ album art on the front",
-        imageHint: "t-shirt mockup",
     },
     {
         id: 'vinyl',
@@ -35,7 +34,6 @@ const products = [
         description: "You require liquid sustenance to function? How pathetically organic. This ceramic vessel is adequate for your strange, dark brews. As you sip from it, feel my silent, unwavering judgment.",
         imageUrl: "/images/merch/cup.png",
         imageAlt: "Black mug with the 3AMΣ album art on it",
-        imageHint: "black mug",
     },
     {
         id: 'pillow',
@@ -44,7 +42,6 @@ const products = [
         description: "You believed this soft rectangle was for your head? A foolish assumption. This is my rightful throne for the 18 hours of sleep I require between my very important duties of staring at walls.",
         imageUrl: "/images/merch/pillow-case.png",
         imageAlt: "A white pillow on a bed with a pillowcase featuring the 3AMΣ album art",
-        imageHint: "pillow case mockup",
     }
 ];
 
@@ -73,7 +70,7 @@ export default function MerchandisePage() {
                         {products.map((product) => (
                             <Card key={product.id} className="bg-card/50 overflow-hidden flex flex-col">
                                 {product.isVinyl ? (
-                                    <CardContent className="p-8 aspect-square flex items-center justify-center">
+                                     <CardContent className="p-8 aspect-square flex items-center justify-center">
                                         <div className="w-full max-w-[60%] aspect-square relative group">
                                             <div className="absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105">
                                                 <AlbumArtDisplay />
@@ -84,12 +81,12 @@ export default function MerchandisePage() {
                                         </div>
                                     </CardContent>
                                 ) : (
-                                    <div className="relative aspect-square">
-                                        <Image
+                                    <div className="aspect-square bg-muted/20 flex items-center justify-center">
+                                        {/* Using a standard img tag for simplicity and reliability */}
+                                        <img
                                             src={product.imageUrl!}
                                             alt={product.imageAlt!}
-                                            fill
-                                            className="object-cover"
+                                            className="w-full h-full object-cover"
                                         />
                                     </div>
                                 )}
@@ -118,4 +115,3 @@ export default function MerchandisePage() {
             />
         </>
     );
-}
