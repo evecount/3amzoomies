@@ -21,13 +21,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+        <Script src="https://js.stripe.com/v3/buy-button.js" strategy="lazyOnload" />
       </head>
       <body className="font-sans antialiased">
         <AudioProvider>
             {children}
         </AudioProvider>
         <Toaster />
-        <Script src="https://js.stripe.com/v3/buy-button.js" strategy="lazyOnload" />
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 declare global {
   namespace JSX {
@@ -20,19 +20,6 @@ interface StripeBuyButtonProps {
 }
 
 export const StripeBuyButton: React.FC<StripeBuyButtonProps> = ({ buyButtonId, publishableKey }) => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://js.stripe.com/v3/buy-button.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Find all script tags with the same src and remove them
-      const scripts = document.querySelectorAll(`script[src="https://js.stripe.com/v3/buy-button.js"]`);
-      scripts.forEach(s => s.remove());
-    };
-  }, []);
-
   return (
     <stripe-buy-button
       buy-button-id={buyButtonId}
