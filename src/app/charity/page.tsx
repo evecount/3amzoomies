@@ -75,8 +75,9 @@ export default function CharityPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="text-5xl md:text-6xl font-semibold tracking-wider">Support The Cause</h1>
-            <p className="text-lg text-muted-foreground mt-1">Animals, Arts, or Humans. It's all the same, really.</p>
+            <p className="text-primary font-semibold text-lg tracking-widest uppercase">Lend a Paw</p>
+            <h1 className="text-5xl md:text-7xl tracking-wider uppercase font-bold">Support The Cause</h1>
+            <p className="text-lg text-muted-foreground mt-2">Animals, Arts, or Humans. It's all the same, really.</p>
         </div>
         <Separator className="mb-12"/>
 
