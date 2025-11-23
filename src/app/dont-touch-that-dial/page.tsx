@@ -79,11 +79,11 @@ export default function DontTouchThatDialPage() {
 
         <Separator className="my-12"/>
 
-        <div className="space-y-8">
-          {images.map((image, index) => (
-            <Card key={index} className="overflow-hidden">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {images.map((image) => (
+            <Card key={image.id} className="overflow-hidden">
                 <CardContent className="p-0">
-                    <div className="relative w-full aspect-[9/16] md:aspect-video">
+                    <div className="relative w-full aspect-[9/16]">
                         <Image 
                             src={image.imageUrl}
                             alt={image.description}
@@ -100,3 +100,5 @@ export default function DontTouchThatDialPage() {
     </div>
   );
 }
+
+    
