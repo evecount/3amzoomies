@@ -290,13 +290,13 @@ export default function OriginPage() {
                             <div className="grid md:grid-cols-2 gap-8 mt-8">
                                 <div className="space-y-4">
                                     <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
-                                        <Image src="/public/images/instagram.jpeg" alt="3AMΣ Instagram Page" fill className="object-cover" />
+                                        <Image src="/images/instagram.jpeg" alt="3AMΣ Instagram Page" fill className="object-cover" />
                                     </div>
                                     <p className="text-sm text-center text-stone-500 font-serif">The official Instagram grid for @3amzoomie.</p>
                                 </div>
                                 <div className="space-y-4">
                                      <div className="aspect-[1/1.2] relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
-                                        <Image src="/public/images/phone.png" alt="3AMΣ Website on Mobile" fill className="object-contain p-8 bg-stone-200" />
+                                        <Image src="/images/phone.png" alt="3AMΣ Website on Mobile" fill className="object-contain p-8 bg-stone-200" />
                                     </div>
                                     <p className="text-sm text-center text-stone-500 font-serif">The mobile experience for the 3AMΣ website.</p>
                                 </div>
@@ -329,7 +329,7 @@ export default function OriginPage() {
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Debut Album</h4>
                                     <p className="text-stone-600">Midnight Murmurs (2024)</p>
-                                d    </div>
+                                </div>
                                 <div>
                                     <h4 className="font-semibold text-stone-900">Primary Influences</h4>
                                     <p className="text-stone-600">The Weeknd (After Hours, Dawn FM)</p>
@@ -345,4 +345,6 @@ export default function OriginPage() {
     </div>
   );
     
+    
+
     

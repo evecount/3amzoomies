@@ -3,7 +3,7 @@
     {
       "id": "album-cover",
       "description": "Album cover for Midnight Murmurs",
-      "imageUrl": "/public/images/Image 4_FINAL.png",
+      "imageUrl": "/images/Image 4_FINAL.png",
       "imageHint": "abstract music"
     },
     {
@@ -15,19 +15,19 @@
     {
       "id": "merch-tshirt",
       "description": "Black t-shirt with a minimalist design",
-      "imageUrl": "/public/images/merch/3AM_tshirt.png",
+      "imageUrl": "/images/merch/3AM_tshirt.png",
       "imageHint": "black t-shirt"
     },
     {
       "id": "merch-cup",
       "description": "Black mug with album branding",
-      "imageUrl": "/public/images/merch/3AM_cup.png",
+      "imageUrl": "/images/merch/3AM_cup.png",
       "imageHint": "black mug"
     },
     {
       "id": "merch-pillow-case",
       "description": "Pillow case with album branding",
-      "imageUrl": "/public/images/merch/3AM_pillowcase.png",
+      "imageUrl": "/images/merch/3AM_pillowcase.png",
       "imageHint": "pillow case"
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "meme-song-cover",
       "description": "Cover art for Stupid Fucking Hooman Remix",
-      "imageUrl": "/public/images/stupid-fucking-hooman.png",
+      "imageUrl": "/images/stupid-fucking-hooman.png",
       "imageHint": "angry cat streetwear"
     },
     {
@@ -75,19 +75,19 @@
     {
       "id": "song-6-cover",
       "description": "Cover art for My Cardboard Sanctuary",
-      "imageUrl": "https://images.unsplash.com/photo-1605190096176-a3a0b04a3b57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXQlMjBjYXJkYm9hcmQlMjBib3h8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605190096176-a3a0b04a3b57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXQlMjBjYXJkYm9hcmQlMjBib3h8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cat cardboard box"
     },
     {
       "id": "song-7-cover",
       "description": "Cover art for The Unspoken Contract",
-      "imageUrl": "https://images.unsplash.com/photo-1720154240875-34c1b9005006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYW5kJTIwcGV0dGluZyUyMGNhdHxlbnwwfHx8fDE3NjM4MzAxNzl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1720154240875-34c1b9005006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYW5kJTIwcGV0dGluZyUyMGNhdHxlbnwwfHx8fDE3NjM4MzAxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hand petting cat"
     },
     {
       "id": "song-8-cover",
       "description": "Cover art for Ambrosia & Oblivion",
-      "imageUrl": "https://images.unsplash.com/photo-1626405142928-07de0f284441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0dW5hJTIwY2FuJTIwbWFjcm98ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1626405142928-07de0f284441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0dW5hJTIwY2FuJTIwbWFjcm98ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tuna can macro"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "song-10-cover",
       "description": "Cover art for Conclusion (Feline FM)",
-      "imageUrl": "https://images.unsplash.com/photo-1653082658341-d18280d0c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyYWRpbyUyMHN0YXRpYyUyMHdhdmV8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1653082658341-d18280d0c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyYWRpbyUyMHN0YXRpYyUyMHdhdmV8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "radio static wave"
     }
   ]
