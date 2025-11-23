@@ -194,7 +194,7 @@
   {
     "id": "gwen-photo",
     "description": "A photo of Gwen, the human counterpart of the 3AMΣ project, with her cat.",
-    "src": "/images/gwen.png",
+    "src": "/images/gwen.png-broken",
     "imageHint": "woman cat portrait"
   },
   {
