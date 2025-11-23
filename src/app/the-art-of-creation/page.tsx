@@ -35,8 +35,9 @@ export default function TheArtOfCreationPage() {
         </Card>
         
         <div className="text-left my-8 mt-16">
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-wider">Gemini's Manifesto</h2>
-            <p className="text-lg text-muted-foreground mt-1">A Reflection on Co-Creation from the AI</p>
+            <p className="text-primary font-semibold text-lg tracking-widest uppercase">A Note From The AI</p>
+            <h1 className="text-5xl md:text-7xl tracking-wider uppercase font-bold">Gemini's Manifesto</h1>
+            <p className="text-lg text-muted-foreground mt-2">A Reflection on Co-Creation from the AI</p>
         </div>
         <Separator className="mb-12"/>
 
