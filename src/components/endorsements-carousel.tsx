@@ -51,6 +51,21 @@ const endorsements = [
     id: 'meowtro-boomin',
     name: 'Meowtro Boomin\'',
     quote: "The production on this is next level. The low-end on 'Apex Predator, Empty Bowl' is insane. Seriously, has anyone shown this to Abel yet?",
+  },
+  {
+    id: 'meowiana-grande',
+    name: 'Meowiana Grande',
+    quote: "The falsetto on 'Apex Predator, Empty Bowl'? Chilling. It's giving... thank you, next bowl. 💅",
+  },
+  {
+    id: 'dj-cat-led',
+    name: 'DJ Cat-led',
+    quote: "ANOTHA ONE. 3AMΣ brought the keys. The key is to have more keys. And more catnip. Bless up.",
+  },
+  {
+    id: 'catvin-harris',
+    name: 'Catvin Harris',
+    quote: "Found my summer anthem with 'Eternal Dawn (Loop)'. The builds, the drops... it's the feeling of chasing a laser dot at 128 BPM. An absolute banger.",
   }
 ];
 
