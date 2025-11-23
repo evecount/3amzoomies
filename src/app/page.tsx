@@ -6,6 +6,7 @@ import { ArtistInfo } from '@/components/artist-info';
 import { Separator } from '@/components/ui/separator';
 import { EndorsementsCarousel } from '@/components/endorsements-carousel';
 import { MerchandiseSection } from '@/components/merchandise-section';
+import { MemeSongFeature } from '@/components/meme-song-feature';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
+        <MemeSongFeature />
         <Separator className="my-12 md:my-16" />
         <ArtistInfo />
         <Separator className="my-12 md:my-16" />

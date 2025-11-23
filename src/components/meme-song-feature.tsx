@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Card, CardContent } from './ui/card';
 import { SongPlayer } from './song-player';
-import { memeSong, type Song } from '@/lib/data';
+import { memeSong } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function MemeSongFeature() {
@@ -33,8 +33,8 @@ export function MemeSongFeature() {
                          <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-card/80 via-card/0 to-transparent"></div>
                     </div>
                     <div className="md:col-span-3 flex flex-col justify-center p-8 md:p-12">
-                        <p className="text-accent font-headline text-lg tracking-widest uppercase">Meme Breakout Single</p>
-                        <h2 className="font-headline text-4xl md:text-5xl font-bold mt-2 mb-4 leading-tight uppercase text-accent-foreground">
+                        <p className="text-accent font-semibold text-lg tracking-widest uppercase">Viral Breakout Single</p>
+                        <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4 leading-tight uppercase text-accent-foreground">
                             {memeSong.title}
                         </h2>
                         <p className="text-md text-muted-foreground max-w-prose mb-6">
@@ -44,6 +44,7 @@ export function MemeSongFeature() {
                             <CardContent className="p-2 flex flex-col gap-1">
                                 <SongPlayer 
                                     song={memeSong} 
+                                    playlist={[memeSong]}
                                     isLocked={false}
                                     showLyricsButton={true}
                                 />
@@ -55,5 +56,3 @@ export function MemeSongFeature() {
         </section>
     )
 }
-
-    

@@ -2,20 +2,17 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Button } from './ui/button';
-import { albumData, memeSong } from '@/lib/data';
+import { albumData } from '@/lib/data';
 import { SongPlayer } from './song-player';
 import { usePurchase } from '@/hooks/use-purchase';
 import { useToast } from '@/hooks/use-toast';
-import { ArrowRight } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent } from './ui/card';
 import { AlbumArtDisplay } from './album-art-display';
 
 export function HeroSection() {
   const router = useRouter();
   const { purchase } = usePurchase();
   const { toast } = useToast();
-  const fullPlaylist = [...albumData.songs, memeSong];
 
   const handlePurchase = () => {
     purchase();
@@ -52,23 +49,6 @@ export function HeroSection() {
                         isLocked={false}
                     />
                 ))}
-            </CardContent>
-          </Card>
-
-          <Card className="w-full max-w-md bg-card/50 border-accent/50 mb-8">
-            <CardHeader>
-                <CardTitle className="font-semibold text-xl uppercase text-accent">Viral Breakout Single</CardTitle>
-                <CardDescription>
-                    The official rebuttal to the internet classic "I'm a Stupid Cat" by Mike Polk Jr.
-                </CardDescription>
-            </CardHeader>
-            <CardContent className="p-2 flex flex-col gap-1">
-                <SongPlayer 
-                    song={memeSong} 
-                    playlist={[memeSong]}
-                    isLocked={false}
-                    showLyricsButton={true}
-                />
             </CardContent>
           </Card>
 
