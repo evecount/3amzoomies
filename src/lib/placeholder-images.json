@@ -8,27 +8,27 @@
     },
     {
       "id": "artist-photo",
-      "description": "Photo of the artist 3AMΣ",
+      "description": "Photo of the artist 3AMΣ, a Siamese cat looking directly at the camera.",
       "imageUrl": "/images/eams_portrait.png",
-      "imageHint": "musician portrait"
+      "imageHint": "siamese cat portrait"
     },
     {
       "id": "merch-tshirt",
-      "description": "Black t-shirt with a minimalist design",
+      "description": "Black t-shirt with the 3AMΣ album art on the front, modeled by a woman with natural hair.",
       "imageUrl": "/images/merch/3AM_tshirt.png",
       "imageHint": "t-shirt mockup"
     },
     {
       "id": "merch-cup",
-      "description": "Black mug with album branding",
+      "description": "Black mug with the 3AMΣ album art on it, held by a person.",
       "imageUrl": "/images/merch/3AM_cup.png",
       "imageHint": "black mug"
     },
     {
       "id": "merch-pillow-case",
-      "description": "Pillow case with album branding",
+      "description": "A white pillow on a bed with a pillowcase featuring the 3AMΣ album art.",
       "imageUrl": "/images/merch/3AM_pillowcase.png",
-      "imageHint": "pillow case"
+      "imageHint": "pillow case mockup"
     },
     {
       "id": "merch-vinyl",
@@ -38,7 +38,7 @@
     },
     {
       "id": "meme-song-cover",
-      "description": "Cover art for Stupid Fucking Hooman Remix",
+      "description": "Cover art for Stupid Fucking Hooman Remix, featuring a Siamese cat in a denim jacket and jeans, lounging amid pizza boxes.",
       "imageUrl": "/images/stupid-fucking-hooman-remix.png",
       "imageHint": "angry cat streetwear"
     },
@@ -71,6 +71,12 @@
       "description": "Portrait of Kat Katdashian",
       "imageUrl": "https://images.unsplash.com/photo-1738503249963-834f4f1c5810?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NpYWxpdGUlMjBjYXR8ZW58MHx8fHwxNzYzOTAwNDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "socialite cat"
+    },
+    {
+      "id": "meowtro-boomin",
+      "description": "Portrait of Meowtro Boomin'",
+      "imageUrl": "https://images.unsplash.com/photo-1697011630710-8644dff5ba1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtdXNpYyUyMHByb2R1Y2VyJTIwY2F0fGVufDB8fHx8MTc2MzkwMDgzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "music producer cat"
     },
     {
       "id": "song-1-cover",

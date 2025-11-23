@@ -10,7 +10,6 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const endorsements = [
   {
@@ -38,6 +37,11 @@ const endorsements = [
     name: 'Kat Katdashian',
     quote: "This album is, like, literally the only thing I'm listening to right now. 'My Cardboard Sanctuary' is the perfect vibe for ignoring your staff and taking selfies. So aesthetic.",
   },
+  {
+    id: 'meowtro-boomin',
+    name: 'Meowtro Boomin\'',
+    quote: "The production on this is next level. The low-end on 'Apex Predator, Empty Bowl' is insane. Seriously, has anyone shown this to Abel yet?",
+  }
 ];
 
 export function EndorsementsCarousel() {
