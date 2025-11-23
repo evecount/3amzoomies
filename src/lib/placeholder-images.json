@@ -9,13 +9,13 @@
     {
       "id": "artist-photo",
       "description": "Photo of the artist 3 AM Zoomies",
-      "imageUrl": "https://images.unsplash.com/photo-1593459866242-426f7768f3dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtdXNpY2lhbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Mzc5NDQwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/stupid_fucking_hooman.png",
       "imageHint": "musician portrait"
     },
     {
       "id": "merch-tshirt",
       "description": "Black t-shirt with a minimalist design",
-      "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0LXNoaXJ0JTIwbW9ja3VwfGVufDB8fHx8MTc2NDA0NTYxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/merch/3AM_tshirt.png",
       "imageHint": "t-shirt mockup"
     },
     {
@@ -33,19 +33,19 @@
     {
       "id": "merch-vinyl",
       "description": "Limited Edition Pressed Vinyl of Midnight Murmurs",
-      "imageUrl": "https://images.unsplash.com/photo-1702308632277-ab0ccf044d96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aW55bCUyMHJlY29yZCUyMHByb2R1Y3R8ZW58MHx8fHwxNzYzODQ1NDgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "   0",
       "imageHint": "vinyl record product"
     },
     {
       "id": "meme-song-cover",
       "description": "Cover art for Stupid Fucking Hooman Remix",
-      "imageUrl": "/images/stupid fucking hooman.png",
+      "imageUrl": "/images/stupid_fucking_hooman.png",
       "imageHint": "angry cat streetwear"
     },
     {
       "id": "song-1-cover",
       "description": "Cover art for Introduction (Feline FM)",
-      "imageUrl": "https://images.unsplash.com/photo-1762098061682-9833c71a2fdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyYWRpbyUyMHRvd2VyJTIwbmlnaHR8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/Image_4_FINAL.png",
       "imageHint": "radio tower night"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "song-4-cover",
       "description": "Cover art for The Fading Feather (Afternoon Chase)",
-      "imageUrl": "https://images.unsplash.com/photo-1646125912142-806eeeb87b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGlnaHQlMjBzdHJlYWtzJTIwYmx1cnxlbnwwfHx8fDE3NjM4MzAxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-164612142142-806eeeb87b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGlnaHQlMjBzdHJlYWtzJTIwYmx1cnxlbnwwfHx8fDE3NjM4MzAxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "light streaks blur"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "song-10-cover",
       "description": "Cover art for Conclusion (Feline FM)",
-      "imageUrl": "https://images.unsplash.com/photo-1653082658341-d18280d0c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyYWRpbyUyMHN0YXRpYyUyMHdhdmV8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1653082658341-d18280d0c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyYWRpbyUyMHN0YXRpYyUyMHdhdmV8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "radio static wave"
     }
   ]
