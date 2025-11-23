@@ -38,6 +38,11 @@ const endorsements = [
     quote: "I was in my 'Reputation' era, but this album put me in my 'catnip' era. It's a lyrical masterpiece. 'The Unspoken Contract' is the new 'All Too Well'. 13/10.",
   },
   {
+    id: 'kitney-spears',
+    name: 'Kitney Spears',
+    quote: "It's Kitney, bitch. 'Chasing the Crimson Ghost' is my anthem. It's about freedom, it's about struggle, it's about that little red dot. You better work, bitch.",
+  },
+  {
     id: 'kat-katdashian',
     name: 'Kat Katdashian',
     quote: "This album is, like, literally the only thing I'm listening to right now. 'My Cardboard Sanctuary' is the perfect vibe for ignoring your staff and taking selfies. So aesthetic.",

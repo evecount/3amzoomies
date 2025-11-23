@@ -136,7 +136,7 @@ export const albumData: Album = {
       id: 5,
       title: "Chasing the Crimson Ghost",
       duration: "4:20",
-      audioSrc: "/audio/TRACK5_Chasing_the_Cimson_Ghost.wav",
+      audioSrc: "/audio/TRACK5_Chasing_the_Crimson_Ghost.wav",
       lyrics: `(Music begins with a deep, sustained synth pad, slowly swelling. A soft, distant, echoing percussion beat enters, like a slow heartbeat. The overall tone is introspective and slightly melancholic. A subtle, high-pitched synth melody, almost like a faint laser beam, drifts in and out.)
 (Verse 1) The evening light descends, a purple-orange haze Dust motes in the air, caught in endless maze And then it comes, a flicker on the wall A silent invitation, answering a call A crimson ghost, dancing on the floor Promising a chase, and so much more My eyes dilate, a hunter's ancient trance For this elusive target, in a phantom dance.
 (Pre-Chorus) They wave the stick, with purpose I don't see Unaware of the torment, it inflicts on me This is no game, this isn't just for fun It’s the closest thing to meaning, 'til the day is done.
