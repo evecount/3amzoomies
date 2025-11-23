@@ -15,8 +15,9 @@ export default function MediaPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12 md:py-16">
         <div className="text-left mb-8">
-            <h1 className="text-5xl md:text-6xl font-semibold tracking-wider">Artist Spotlight: 3AMΣ</h1>
-            <p className="text-lg text-muted-foreground mt-1">An Exclusive Interview with Gravyspoon Magazine</p>
+            <p className="text-primary font-semibold text-lg tracking-widest uppercase">Artist Spotlight</p>
+            <h1 className="text-5xl md:text-7xl tracking-wider uppercase font-bold">3AMΣ</h1>
+            <p className="text-lg text-muted-foreground mt-2">An Exclusive Interview with Gravyspoon Magazine</p>
         </div>
         <Separator className="mb-12"/>
         <div className="grid lg:grid-cols-3 gap-12 items-start">
