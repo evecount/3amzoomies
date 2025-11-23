@@ -6,10 +6,10 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mail } from 'lucide-react';
-import { WaitlistDialog } from '@/components/waitlist-dialog';
+import { ShoppingCart } from 'lucide-react';
 import { VinylRecord } from '@/components/vinyl-record';
 import { AlbumArtDisplay } from '@/components/album-art-display';
+import { useToast } from '@/hooks/use-toast';
 
 const products = [
     {
@@ -45,14 +45,24 @@ const products = [
     }
 ];
 
+async function handlePurchase(productTitle: string) {
+    'use server';
+    console.log(`Initiating purchase for: ${productTitle}`);
+    // In a real application, you would create a Stripe Checkout session here
+    // and redirect the user to the Stripe checkout URL.
+    // For now, we'll just log to the server console.
+}
+
 
 export default function MerchandisePage() {
-    const [dialogOpen, setDialogOpen] = useState(false);
-    const [selectedProduct, setSelectedProduct] = useState('');
+    const { toast } = useToast();
 
-    const handleJoinWaitlist = (productTitle: string) => {
-        setSelectedProduct(productTitle);
-        setDialogOpen(true);
+    const handleBuyNowClick = (productTitle: string) => {
+        toast({
+          title: "Simulating Checkout...",
+          description: `Redirecting to payment gateway for ${productTitle}.`,
+        });
+        handlePurchase(productTitle);
     }
 
     return (
@@ -97,8 +107,8 @@ export default function MerchandisePage() {
                                     <p>{product.description}</p>
                                 </CardContent>
                                 <CardContent>
-                                    <Button onClick={() => handleJoinWaitlist(product.title)} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
-                                        Join The Waitlist <Mail className="ml-2 h-5 w-5" />
+                                    <Button onClick={() => handleBuyNowClick(product.title)} size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground uppercase mt-4">
+                                        Buy Now <ShoppingCart className="ml-2 h-5 w-5" />
                                     </Button>
                                 </CardContent>
                             </Card>
@@ -107,11 +117,6 @@ export default function MerchandisePage() {
                 </main>
                 <Footer />
             </div>
-            <WaitlistDialog
-                isOpen={dialogOpen}
-                onOpenChange={setDialogOpen}
-                productTitle={selectedProduct}
-            />
         </>
     );
 }
