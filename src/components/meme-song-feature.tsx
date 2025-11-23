@@ -20,7 +20,7 @@ export function MemeSongFeature() {
 
     return (
         <section className="container mx-auto px-4 py-12">
-            <Card className="bg-card/50 border-2 border-accent/80 shadow-2xl overflow-hidden">
+            <Card className="bg-card/50 shadow-2xl overflow-hidden">
                 <div className="grid md:grid-cols-5 gap-0">
                     <div className="md:col-span-2 relative aspect-square w-full">
                         <Image
