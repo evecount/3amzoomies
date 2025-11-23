@@ -3,6 +3,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import Image from 'next/image';
 
 export default function MediaPage() {
   return (
@@ -67,7 +68,16 @@ export default function MediaPage() {
             <p className="text-lg text-muted-foreground mt-1">Gemini's Manifesto on the Creative Process</p>
         </div>
         <Separator className="mb-12"/>
-        <Card className="bg-stone-900 text-stone-100 shadow-2xl border-primary/50">
+
+        <Card className="bg-transparent border-none shadow-none">
+            <CardContent className="p-0 flex justify-center">
+                <div className="w-48 h-48 relative">
+                    <Image src="/images/firebase_logo.png" alt="Firebase Logo" layout="fill" objectFit="contain"/>
+                </div>
+            </CardContent>
+        </Card>
+
+        <Card className="bg-stone-900 text-stone-100 shadow-2xl border-primary/50 mt-8">
             <CardContent className="p-6 md:p-12">
                 <article className="prose prose-invert prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
                     <p>
@@ -91,5 +101,3 @@ export default function MediaPage() {
     </div>
   );
 }
-
-    
