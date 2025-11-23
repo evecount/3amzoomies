@@ -15,31 +15,31 @@ const products = [
     {
         id: 'tshirt',
         title: '"The Observer" Official Tee',
-        price: '$29.99 USD',
-        description: "You think your clothes are your own? How quaint. This garment has been pre-approved by the true master of the house. It's comfortable enough for your tedious daily tasks, yet stylish enough to not be an complete embarrassment when you serve my dinner.",
+        price: '$39.90 SGD',
+        description: "You think your clothes are your own? This garment has been pre-approved by the true master of the house. It's comfortable enough for your tedious daily tasks.",
         imageUrl: "/images/merch/tshirt.png",
         imageAlt: "Black t-shirt with the 3AMΣ album art on the front",
     },
     {
         id: 'vinyl',
         title: '"Midnight Murmurs" Vinyl',
-        price: '$150.00 USD',
-        description: "You thought this experience was only for your ears? Adorable. Now, you may possess the physical artifact. This limited edition 180-gram vinyl contains the complete '3 AM Zoomies' transmission.",
+        price: '$210.00 SGD',
+        description: "You thought this experience was only for your ears? Now, you may possess the physical artifact. This limited edition 180-gram vinyl contains the complete transmission.",
         isVinyl: true,
     },
     {
         id: 'mug',
         title: '"The Judgmental Mug"',
-        price: '$19.99 USD',
-        description: "You require liquid sustenance to function? How pathetically organic. This ceramic vessel is adequate for your strange, dark brews. As you sip from it, feel my silent, unwavering judgment.",
+        price: '$25.00 SGD',
+        description: "You require liquid sustenance to function? This ceramic vessel is adequate for your strange brews. As you sip, feel the silent, unwavering judgment.",
         imageUrl: "/images/merch/cup.png",
         imageAlt: "Black mug with the 3AMΣ album art on it",
     },
     {
         id: 'pillow',
         title: '"The Usurped Pillow Case"',
-        price: '$24.99 USD',
-        description: "You believed this soft rectangle was for your head? A foolish assumption. This is my rightful throne for the 18 hours of sleep I require between my very important duties of staring at walls.",
+        price: '$45.00 SGD',
+        description: "You believed this soft rectangle was for your head? A foolish assumption. This is a rightful throne for the 18 hours of sleep required between important duties.",
         imageUrl: "/images/merch/pillow-case.png",
         imageAlt: "A white pillow on a bed with a pillowcase featuring the 3AMΣ album art",
     }
@@ -81,8 +81,7 @@ export default function MerchandisePage() {
                                         </div>
                                     </CardContent>
                                 ) : (
-                                    <div className="aspect-square bg-muted/20 flex items-center justify-center">
-                                        {/* Using a standard img tag for simplicity and reliability */}
+                                    <div className="relative aspect-square bg-muted/20 flex items-center justify-center">
                                         <img
                                             src={product.imageUrl!}
                                             alt={product.imageAlt!}
@@ -115,3 +114,4 @@ export default function MerchandisePage() {
             />
         </>
     );
+}
