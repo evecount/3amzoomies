@@ -51,55 +51,55 @@
     {
       "id": "song-2-cover",
       "description": "Cover art for Apex Predator, Empty Bowl",
-      "imageUrl": "https://images.unsplash.com/photo-1570723649488-f5cc599360ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXQlMjBleWVzJTIwZGFya3xlbnwwfHx8fDE3NjM4MzAxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "",
       "imageHint": "cat eyes dark"
     },
     {
       "id": "song-3-cover",
       "description": "Cover art for Observer of Absurdity",
-      "imageUrl": "https://images.unsplash.com/photo-1661258580552-ff825bfa499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXQlMjBsb29raW5nJTIwd2luZG93fGVufDB8fHx8MTc2MzgzMDE3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "",
       "imageHint": "cat looking window"
     },
     {
       "id": "song-4-cover",
       "description": "Cover art for The Fading Feather (Afternoon Chase)",
-      "imageUrl": "https://images.unsplash.com/photo-164612142142-806eeeb87b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGlnaHQlMjBzdHJlYWtzJTIwYmx1cnxlbnwwfHx8fDE3NjM4MzAxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "",
       "imageHint": "light streaks blur"
     },
     {
       "id": "song-5-cover",
       "description": "Cover art for Chasing the Crimson Ghost",
-      "imageUrl": "https://images.unsplash.com/photo-1720288092353-8aaf9e1045da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZWQlMjBsYXNlciUyMHdhbGx8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "",
       "imageHint": "red laser wall"
     },
     {
       "id": "song-6-cover",
       "description": "Cover art for My Cardboard Sanctuary",
-      "imageUrl": "https://images.unsplash.com/photo-1605190096176-a3a0b04a3b57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXQlMjBjYXJkYm9hcmQlMjBib3h8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "",
       "imageHint": "cat cardboard box"
     },
     {
       "id": "song-7-cover",
       "description": "Cover art for The Unspoken Contract",
-      "imageUrl": "https://images.unsplash.com/photo-1720154240875-34c1b9005006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYW5kJTIwcGV0dGluZyUyMGNhdHxlbnwwfHx8fDE3NjM4MzAxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "",
       "imageHint": "hand petting cat"
     },
     {
       "id": "song-8-cover",
       "description": "Cover art for Ambrosia & Oblivion",
-      "imageUrl": "https://images.unsplash.com/photo-1626405142928-07de0f284441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0dW5hJTIwY2FuJTIwbWFjcm98ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "",
       "imageHint": "tuna can macro"
     },
     {
       "id": "song-9-cover",
       "description": "Cover art for Eternal Dawn (Loop)",
-      "imageUrl": "https://images.unsplash.com/photo-1740210147425-5c492c11e1d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdW4lMjBzdW5yaXNlJTIwd2luZG93fGVufDB8fHx8MTc2MzgzMDE3OXww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "",
       "imageHint": "sun sunrise window"
     },
     {
       "id": "song-10-cover",
       "description": "Cover art for Conclusion (Feline FM)",
-      "imageUrl": "https://images.unsplash.com/photo-1653082658341-d18280d0c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyYWRpbyUyMHN0YXRpYyUyMHdhdmV8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1653082658341-d18280d0c149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyYWRpbyUyMHN0YXRpYyUyMHdhdmV8ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "radio static wave"
     }
   ]
