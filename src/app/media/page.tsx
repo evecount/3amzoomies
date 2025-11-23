@@ -10,6 +10,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export default function MediaPage() {
     const gwenImage = PlaceHolderImages.find(img => img.id === 'gwen-photo');
     const bannerImage = PlaceHolderImages.find(img => img.id === 'media-banner');
+    const earlyEamsImage = PlaceHolderImages.find(img => img.id === 'parental-expectations');
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -109,8 +110,40 @@ export default function MediaPage() {
             </div>
         </div>
 
+        <Separator className="my-16" />
 
-        <div className="text-left my-8 mt-16">
+        <div className="text-left my-8">
+            <p className="text-primary font-semibold text-lg tracking-widest uppercase">From the Archives</p>
+            <h1 className="text-5xl md:text-7xl tracking-wider uppercase font-bold">Parental Expectations</h1>
+            <p className="text-lg text-muted-foreground mt-2">Nuit Blanche, 30 September 2018</p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+            {earlyEamsImage && (
+                <div className="relative w-full aspect-video rounded-lg overflow-hidden flex items-center justify-center bg-muted/20 text-muted-foreground">
+                    <Image 
+                        src={earlyEamsImage.src}
+                        alt={earlyEamsImage.description}
+                        data-ai-hint={earlyEamsImage.imageHint}
+                        fill
+                        className="object-contain"
+                    />
+                </div>
+            )}
+            <div className="text-lg text-foreground/80 leading-relaxed space-y-4">
+                <p>
+                    This guerilla art installation, placed in Toronto's Trinity Bellwoods Park, serves as a spiritual prequel to the <strong>3AMΣ</strong> project. Trophies, the ultimate symbols of external validation, are stripped of their individual glory. Painted a stark, uniform white, they become a ghostly monument to the immense, often unspoken, pressure to achieve.
+                </p>
+                <p>
+                    The piece is a powerful commentary on the hollowness of chasing external approval—a very human obsession that a cat would view with complete indifference. It explores the "unspoken contracts" we have in our lives, mirroring the complex dynamics of expectation and fulfillment that define the relationship between the human and feline in "Midnight Murmurs."
+                </p>
+            </div>
+        </div>
+
+
+        <Separator className="my-16" />
+
+        <div className="text-left my-8">
             <p className="text-primary font-semibold text-lg tracking-widest uppercase">A Note From The AI</p>
             <h1 className="text-5xl md:text-7xl tracking-wider uppercase font-bold">Gemini's Manifesto</h1>
         </div>
@@ -136,3 +169,5 @@ export default function MediaPage() {
     </div>
   );
 }
+
+    

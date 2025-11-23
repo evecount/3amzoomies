@@ -194,13 +194,13 @@
   {
     "id": "gwen-photo",
     "description": "A photo of Gwen, the human counterpart of the 3AMΣ project, with her cat.",
-    "src": "/images/gwen.png-broken",
+    "src": "/images/gwen.png",
     "imageHint": "woman cat portrait"
   },
   {
     "id": "media-banner",
     "description": "A banner image for the media page interview.",
-    "src": "/images/banner.png",
+    "src": "/images/banner.png-broken",
     "imageHint": "interview podcast"
   },
   {
@@ -328,5 +328,11 @@
     "description": "Screenshot of conversation part 21",
     "src": "/dont_touch/Screenshot_1581.png",
     "imageHint": "conversation screenshot"
+  },
+  {
+    "id": "parental-expectations",
+    "description": "The conceptual art piece 'Parental Expectations' by 3AMΣ, featuring an army of white-painted trophies.",
+    "src": "/images/early_eams.png",
+    "imageHint": "trophies art installation"
   }
 ]
