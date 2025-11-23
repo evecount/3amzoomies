@@ -56,7 +56,7 @@ export default function DontTouchThatDialPage() {
                     {contractKeyImage && (
                         <div className="my-4 relative w-full aspect-video">
                             <Image 
-                                src={contractKeyImage.imageUrl}
+                                src={contractKeyImage.src}
                                 alt={contractKeyImage.description}
                                 fill
                                 className="object-contain"
@@ -84,7 +84,7 @@ export default function DontTouchThatDialPage() {
                 <CardContent className="p-0">
                     <div className="relative w-full aspect-[9/16]">
                         <Image 
-                            src={image.imageUrl}
+                            src={image.src}
                             alt={image.description}
                             fill
                             className="object-contain"
@@ -99,3 +99,5 @@ export default function DontTouchThatDialPage() {
     </div>
   );
 }
+
+    

@@ -28,7 +28,7 @@ export function ArtistInfo() {
                     <div className="space-y-4">
                         <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
                             <Image
-                                src={artistImage.imageUrl}
+                                src={artistImage.src}
                                 alt={artistImage.description}
                                 data-ai-hint={artistImage.imageHint}
                                 fill
@@ -45,3 +45,5 @@ export function ArtistInfo() {
         </section>
     );
 }
+
+    

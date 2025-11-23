@@ -111,7 +111,7 @@ export function EndorsementsCarousel() {
                         {image && (
                            <div className="w-32 h-32 relative rounded-full overflow-hidden border-2 border-primary/20 shadow-lg">
                                 <Image
-                                    src={image.imageUrl}
+                                    src={image.src}
                                     alt={image.description}
                                     data-ai-hint={image.imageHint}
                                     fill
@@ -138,5 +138,7 @@ export function EndorsementsCarousel() {
     </section>
   );
 }
+
+    
 
     

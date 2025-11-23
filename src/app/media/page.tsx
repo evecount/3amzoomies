@@ -74,7 +74,7 @@ export default function MediaPage() {
                     <div className="space-y-4">
                         <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl border-2 border-primary/20">
                             <Image
-                                src={gwenImage.imageUrl}
+                                src={gwenImage.src}
                                 alt={gwenImage.description}
                                 data-ai-hint={gwenImage.imageHint}
                                 fill
@@ -108,3 +108,5 @@ export default function MediaPage() {
     </div>
   );
 }
+
+    

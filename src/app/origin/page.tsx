@@ -244,7 +244,7 @@ export default function OriginPage() {
                             {memeCoverArt && (
                                 <div className="float-right ml-6 mb-4 w-48 lg:w-64">
                                     <div className="aspect-square relative rounded-lg overflow-hidden border border-stone-200 shadow-md">
-                                        <Image src={memeCoverArt.imageUrl} alt={memeCoverArt.description} fill className="object-cover" />
+                                        <Image src={memeCoverArt.src} alt={memeCoverArt.description} fill className="object-cover" />
                                     </div>
                                     <p className="text-xs text-center text-card-foreground/60 mt-2">The iconic cover art for the single.</p>
                                 </div>
@@ -345,3 +345,5 @@ export default function OriginPage() {
     </div>
   );
 }
+
+    

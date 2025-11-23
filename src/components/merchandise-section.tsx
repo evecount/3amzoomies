@@ -74,7 +74,7 @@ export function MerchandiseSection() {
                             <div className="relative aspect-square bg-muted/20 flex items-center justify-center">
                                 {image && (
                                     <Image
-                                        src={image.imageUrl}
+                                        src={image.src}
                                         alt={image.description}
                                         fill
                                         className="object-cover"
@@ -103,3 +103,5 @@ export function MerchandiseSection() {
         </section>
     );
 }
+
+    
