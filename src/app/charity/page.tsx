@@ -38,6 +38,18 @@ const charities = [
         category: "The Arts"
     },
     {
+        name: 'The Necessary Stage',
+        description: "A leading non-profit theatre company in Singapore, creating challenging, indigenous, and innovative theatre. Because some stages need more than just a cat walking across them.",
+        href: 'https://www.necessary.org/support-us',
+        category: 'The Arts',
+    },
+    {
+        name: 'The Food Bank Singapore',
+        description: "Fighting hunger and food waste in Singapore. Because an empty bowl is a tragedy, whether it's for a feline overlord or a fellow human. A direct, impactful way to provide.",
+        href: 'https://foodbank.sg/donate/',
+        category: 'Human Welfare',
+    },
+    {
         name: 'Doctors Without Borders',
         description: "Providing impartial, life-saving medical care to people caught in conflict, epidemics, disasters, or exclusion from health care. Because as it turns out, humans are animals too.",
         href: 'https://donate.doctorswithoutborders.ca/',
