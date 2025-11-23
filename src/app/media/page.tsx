@@ -31,7 +31,7 @@ export default function MediaPage() {
                                     src={bannerImage.src}
                                     alt={bannerImage.description}
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                 />
                             </div>
                         )}
