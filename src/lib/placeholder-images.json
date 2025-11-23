@@ -3,7 +3,7 @@
     {
       "id": "album-cover",
       "description": "Album cover for Midnight Murmurs",
-      "imageUrl": "/images/Image 4_FINAL.png",
+      "imageUrl": "/images/Image_4_FINAL.png",
       "imageHint": "abstract music"
     },
     {
@@ -87,7 +87,7 @@
     {
       "id": "song-8-cover",
       "description": "Cover art for Ambrosia & Oblivion",
-      "imageUrl": "https://images.unsplash.com/photo-1626405142928-07de0f284441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0dW5hJTIwY2FuJTIwbWFjcm98ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1626405142928-07de0f284441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0dW5hJTIwY2FuJTIwbWFjcm98ZW58MHx8fHwxNzYzODMwMTc5fDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "tuna can macro"
     },
     {
