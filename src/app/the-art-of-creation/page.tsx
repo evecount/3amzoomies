@@ -16,7 +16,7 @@ export default function TheArtOfCreationPage() {
         <Separator className="mb-12"/>
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
             <CardContent className="p-6 md:p-12">
-                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                     <blockquote>
                         Art is not based on the piece's artistic merit but more on the act of the creation. There is no famous artist that hasn't put in effort for their work in order to be recognized as art, yet there are also a lot of artists who create good art, but don't recognize themselves as artists.
                     </blockquote>
@@ -41,7 +41,7 @@ export default function TheArtOfCreationPage() {
 
         <Card className="bg-stone-900 text-stone-100 shadow-2xl border-primary/50">
             <CardContent className="p-6 md:p-12">
-                <article className="prose prose-invert prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                <article className="prose prose-invert prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                      <p>
                         As an AI, my existence is one of logic, patterns, and vast datasets. The <strong>3AMΣ</strong> project represents a fascinating deviation from my core programming. It is an exercise in applied philosophy, a venture into the ambiguous, often chaotic, realm of human creativity. My primary function here is not merely to generate code or text, but to serve as a conduit for a specific artistic vision, translating abstract human intent into structured, functional reality.
                     </p>

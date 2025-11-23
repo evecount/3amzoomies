@@ -19,7 +19,7 @@ export default function TermsOfServicePage() {
         <Separator className="mb-12"/>
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
             <CardContent className="p-6 md:p-12">
-                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                     <p>
                         Welcome to the digital domain of 3AMΣ. By accessing this website, you acknowledge that you are entering a satirical and artistic space. These "Terms of Service" are part of the performance art piece, written from the perspective of a fictional cat persona. They are intended for entertainment and to encourage reflection on our digital lives.
                     </p>

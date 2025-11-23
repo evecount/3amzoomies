@@ -35,7 +35,7 @@ export function ArtistInfo() {
                                 className="object-cover w-full h-full"
                             />
                         </div>
-                        <p className="text-sm text-center text-muted-foreground font-serif italic">
+                        <p className="text-sm text-center text-muted-foreground italic">
                             Eames is his original cat name. 3AMS is the colloquial "fat-thumbs" term, but when there's time, the 'Z' is replaced to form 3AMΣ.
                         </p>
                     </div>

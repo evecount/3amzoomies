@@ -23,7 +23,7 @@ export default function MediaPage() {
             <div className="lg:col-span-2">
                 <Card className="bg-stone-50 text-stone-900 shadow-2xl">
                     <CardContent className="p-6 md:p-12">
-                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                        <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                             <p className="lead">
                                 <strong>Gravyspoon Magazine:</strong> Thank you for sitting down with us, 3AMΣ. "Midnight Murmurs" is making waves, not just for its unique sound but for its groundbreaking approach to AI collaboration. We want to dive into the deeper philosophy here, particularly concerning the visual elements.
                             </p>
@@ -81,7 +81,7 @@ export default function MediaPage() {
                                 className="object-cover"
                             />
                         </div>
-                        <p className="text-sm text-center text-muted-foreground font-serif italic">
+                        <p className="text-sm text-center text-muted-foreground italic">
                             Gwen, the human counterpart of the 3AMΣ project.
                         </p>
                     </div>

@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
         <Separator className="mb-12"/>
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
             <CardContent className="p-6 md:p-12">
-                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                     <p>
                         This website, an elaborate piece of performance art dedicated to the inner world of a cat named 3AMΣ, collects and processes a minimal amount of data. Frankly, the cat is not interested in your data. He is interested in his next meal and finding the most inconvenient place to nap. However, the human counterpart in this project acknowledges the importance of your privacy.
                     </p>

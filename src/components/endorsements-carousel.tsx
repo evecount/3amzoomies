@@ -105,7 +105,7 @@ export function EndorsementsCarousel() {
                 <div className="p-1 h-full">
                   <Card className="flex flex-col h-full bg-card/50">
                     <CardContent className="flex flex-col items-center justify-center p-8 gap-6 text-center flex-grow">
-                       <blockquote className="text-lg font-serif italic text-foreground/80 flex-grow">
+                       <blockquote className="text-lg italic text-foreground/80 flex-grow">
                         "{endorsement.quote}"
                       </blockquote>
                        <div>

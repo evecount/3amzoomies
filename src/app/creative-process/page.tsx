@@ -16,7 +16,7 @@ export default function CreativeProcessPage() {
         <Separator className="mb-12"/>
         <Card className="bg-stone-50 text-stone-900 shadow-2xl">
             <CardContent className="p-6 md:p-12">
-                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 font-serif leading-relaxed space-y-6">
+                <article className="prose prose-stone prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed space-y-6">
                     <p>
                         The <strong>3AMΣ</strong> project embraces a unique artistic mandate: to present creative output as close to its original AI-generated form as possible. This approach is intended as a satirical commentary on the nature of creation in the age of AI. Our goal is to spark dialogue about authorship, authenticity, and the evolving role of technology in art. We believe all good art should inspire conversation, not conflict.
                     </p>
