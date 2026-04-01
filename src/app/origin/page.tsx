@@ -277,10 +277,10 @@ export default function OriginPage() {
                     </CardContent>
                 </Card>
             </div>
-            <aside className="lg:col-span-1 lg:sticky top-24 h-fit">
+            <aside className="lg:col-span-1 lg:sticky lg:top-24 h-fit">
                 <Card className="bg-card/80 border-border/80">
                     <CardHeader>
-                        <CardTitle className="font-semibold text-3xl text-card-foreground">3AMΣ</CardTitle>
+                        <CardTitle className="font-semibold text-3xl text-card-foreground uppercase">3AMΣ</CardTitle>
                         <CardDescription>Conceptual Musical Project</CardDescription>
                     </CardHeader>
                     <CardContent className="text-sm space-y-4 text-card-foreground">

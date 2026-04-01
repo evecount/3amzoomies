@@ -36,8 +36,6 @@ const iconLinks = [
   }
 ];
 
-const disabledIconTooltip = "This website is a satirical work of art. This feature is not real.";
-
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -68,7 +66,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
-                <SheetTitle className="sr-only">Menu</SheetTitle>
+              <SheetTitle className="sr-only">Menu</SheetTitle>
               <Link href="/" className="mb-8 flex items-center">
                  <span className="font-bold text-lg uppercase">3AMΣ</span>
               </Link>
