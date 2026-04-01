@@ -39,8 +39,8 @@ export default function OriginPage() {
         
         <div className="grid lg:grid-cols-4 gap-12 items-start">
             <div className="lg:col-span-3">
-                <Card className="bg-card shadow-2xl">
-                    <CardContent className="p-6 md:p-12">
+                <Card className="bg-card shadow-2xl border-none">
+                    <CardContent className="p-0 md:p-6">
                         <article className="prose prose-invert prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed">
                             <p>
                                 <strong><em>Midnight Murmurs</em></strong> is the debut studio album by <strong>3AMΣ</strong>, a conceptual musical project known for its unique blend of alternative R&B, pop, funk, hip-hop, and electronic music, heavily influenced by the sound and thematic depth of The Weeknd. The album is a deeply introspective and often darkly humorous exploration of the mundane yet profound existence of a domestic cat, told from both feline and human perspectives over a full 24-hour cycle.
@@ -73,7 +73,7 @@ export default function OriginPage() {
                             <p>
                                 <em>Midnight Murmurs</em> delves into several core themes:
                             </p>
-                            <ul>
+                            <ul className="list-disc pl-6 space-y-2">
                                 <li><strong>Existentialism from a Feline Perspective:</strong> The cat's detached, often nihilistic view of its own existence and the human world.</li>
                                 <li><strong>The "Unspoken Contract":</strong> The complex, often one-sided, relationship between pets and their owners.</li>
                                 <li><strong>Cycles of Life:</strong> Drawing parallels between feline and human experiences through a 24-hour narrative.</li>
@@ -85,7 +85,7 @@ export default function OriginPage() {
                                 <h2 className="font-semibold text-3xl uppercase text-primary/90 mb-6">Track Listing</h2>
                                 
                                 <h3 className="font-semibold text-2xl uppercase text-primary/80 mb-4 mt-8">Act I: Delusion & Chaos</h3>
-                                <div className="overflow-x-auto">
+                                <div className="overflow-x-auto rounded-lg border border-border">
                                     <Table className="text-card-foreground w-full">
                                         <TableHeader>
                                             <TableRow>
@@ -111,22 +111,24 @@ export default function OriginPage() {
 
                             <h2 className="text-primary/90 uppercase tracking-wide">Singles</h2>
                             <h3>"Stupid Fucking Hooman Remix"</h3>
-                            <div className="not-prose overflow-hidden">
+                            <div className="not-prose block md:flex gap-8 mb-8">
                                 {memeCoverArt && (
-                                    <div className="md:float-right md:ml-6 mb-6 w-full md:w-64">
+                                    <div className="w-full md:w-64 mb-4 md:mb-0 flex-shrink-0">
                                         <div className="aspect-square relative rounded-lg overflow-hidden border border-border shadow-md">
                                             <Image src={memeCoverArt.src} alt={memeCoverArt.description} fill className="object-cover" />
                                         </div>
-                                        <p className="text-xs text-center text-card-foreground/60 mt-2">The iconic cover art for the single.</p>
+                                        <p className="text-xs text-center text-card-foreground/60 mt-2 italic">The iconic cover art for the single.</p>
                                     </div>
                                 )}
+                                <div className="flex-grow space-y-4">
+                                    <p className="text-lg">
+                                        In 2024, 3AMΣ released "Stupid Fucking Hooman Remix," a standalone viral single. The track serves as a direct, unfiltered, and humorously aggressive rebuttal to Mike Polk Jr.'s 2011 viral hit, "I'm a Stupid Cat."
+                                    </p>
+                                    <p className="text-lg">
+                                        The track showcases 3AMΣ's ability to blend its signature moody, Weeknd-esque production with a more explicit, meme-driven lyrical approach, expanding the project's thematic reach into direct social commentary on pet-owner dynamics.
+                                    </p>
+                                </div>
                             </div>
-                            <p>
-                                In 2024, 3AMΣ released "Stupid Fucking Hooman Remix," a standalone viral single. The track serves as a direct, unfiltered, and humorously aggressive rebuttal to Mike Polk Jr.'s 2011 viral hit, "I'm a Stupid Cat."
-                            </p>
-                            <p>
-                                The track showcases 3AMΣ's ability to blend its signature moody, Weeknd-esque production with a more explicit, meme-driven lyrical approach, expanding the project's thematic reach into direct social commentary on pet-owner dynamics.
-                            </p>
 
                             <div className="my-16 not-prose">
                                 <h2 className="font-semibold text-3xl uppercase text-primary/90 mb-6">Personnel</h2>
@@ -150,27 +152,33 @@ export default function OriginPage() {
             </div>
             
             <aside className="lg:col-span-1 lg:sticky lg:top-24 h-fit">
-                <Card className="bg-card/80 border-border/80">
+                <Card className="bg-card/80 border-primary/20 shadow-xl">
                     <CardHeader>
-                        <CardTitle className="font-semibold text-3xl text-card-foreground uppercase">3AMΣ</CardTitle>
-                        <CardDescription>Conceptual Musical Project</CardDescription>
+                        <CardTitle className="font-semibold text-2xl text-card-foreground uppercase">Project Specs</CardTitle>
+                        <CardDescription className="text-primary font-medium">3AMΣ (Midnight Murmurs)</CardDescription>
                     </CardHeader>
-                    <CardContent className="text-sm space-y-4 text-card-foreground">
+                    <CardContent className="text-sm space-y-6 text-card-foreground">
                         <div>
-                            <h4 className="font-semibold text-card-foreground">Also known as</h4>
-                            <p className="text-card-foreground/80">3AMΣzoomies</p>
+                            <h4 className="font-semibold text-card-foreground uppercase tracking-wider text-xs mb-1 opacity-70">Also known as</h4>
+                            <p className="text-card-foreground/90 font-medium">3AMΣzoomies</p>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-card-foreground">Genre</h4>
-                            <p className="text-card-foreground/80">Alternative R&B, Pop, Electronic</p>
+                            <h4 className="font-semibold text-card-foreground uppercase tracking-wider text-xs mb-1 opacity-70">Genre</h4>
+                            <p className="text-card-foreground/90 font-medium">Alternative R&B, Pop, Electronic</p>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-card-foreground">Debut Album</h4>
-                            <p className="text-card-foreground/80">Midnight Murmurs (2024)</p>
+                            <h4 className="font-semibold text-card-foreground uppercase tracking-wider text-xs mb-1 opacity-70">Release Year</h4>
+                            <p className="text-card-foreground/90 font-medium">2024</p>
                             </div>
                         <div>
-                            <h4 className="font-semibold text-card-foreground">Primary Influences</h4>
-                            <p className="text-card-foreground/80">The Weeknd (After Hours, Dawn FM)</p>
+                            <h4 className="font-semibold text-card-foreground uppercase tracking-wider text-xs mb-1 opacity-70">Primary Influences</h4>
+                            <p className="text-card-foreground/90 font-medium italic">Abel Tesfaye, Mike Polk Jr., Feline Instinct</p>
+                        </div>
+                        <Separator className="bg-primary/10" />
+                        <div className="pt-2">
+                             <p className="text-xs italic text-muted-foreground leading-relaxed">
+                                "The master of this house, the king upon the throne."
+                             </p>
                         </div>
                     </CardContent>
                 </Card>
