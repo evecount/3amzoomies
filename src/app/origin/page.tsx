@@ -38,7 +38,7 @@ export default function OriginPage() {
         <Separator className="mb-12"/>
         
         <div className="grid lg:grid-cols-4 gap-12 items-start">
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 w-full">
                 <Card className="bg-card shadow-2xl border-none">
                     <CardContent className="p-0 md:p-6">
                         <article className="prose prose-invert prose-lg max-w-none prose-a:text-primary hover:prose-a:text-primary/80 leading-relaxed">
@@ -85,8 +85,8 @@ export default function OriginPage() {
                                 <h2 className="font-semibold text-3xl uppercase text-primary/90 mb-6">Track Listing</h2>
                                 
                                 <h3 className="font-semibold text-2xl uppercase text-primary/80 mb-4 mt-8">Act I: Delusion & Chaos</h3>
-                                <div className="overflow-x-auto rounded-lg border border-border">
-                                    <Table className="text-card-foreground w-full">
+                                <div className="overflow-x-auto rounded-lg border border-border w-full">
+                                    <Table className="text-card-foreground w-full min-w-[500px]">
                                         <TableHeader>
                                             <TableRow>
                                                 <TableHead className="w-12">No.</TableHead>
