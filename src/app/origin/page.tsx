@@ -86,10 +86,10 @@ export default function OriginPage() {
                                 
                                 <h3 className="font-semibold text-2xl uppercase text-primary/80 mb-4 mt-8">Act I: Delusion & Chaos</h3>
                                 <div className="overflow-x-auto">
-                                    <Table className="text-card-foreground min-w-[600px]">
+                                    <Table className="text-card-foreground w-full">
                                         <TableHeader>
                                             <TableRow>
-                                                <TableHead>No.</TableHead>
+                                                <TableHead className="w-12">No.</TableHead>
                                                 <TableHead>Title</TableHead>
                                                 <TableHead>Perspective</TableHead>
                                                 <TableHead>Time</TableHead>
